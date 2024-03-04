@@ -9,14 +9,14 @@ const footer = () => {
         <section className="section-footer" id="Getinvolved">  
             <div className="footer-head">
                 <h3>Get Involved</h3>
+                <div className="media">
+                    <img src={insta} className="social-media" />
+                    <img src={facebook} className="social-media facebook" />
+                    <img src={twitter} className="social-media" />
+                </div>
             </div>
             <div className="footer-body">
                 <div className="log-icons">
-                    <div className="media">
-                        <img src={insta} className="social-media" />
-                        <img src={facebook} className="social-media" />
-                        <img src={twitter} className="social-media" />
-                    </div>
                     <img src={logo} alt="GHH" onError={logo2}/>
                 </div>
                 <div className="address">address</div>
