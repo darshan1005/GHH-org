@@ -32,7 +32,9 @@ const Hero = () => {
                             <img data-aos='fade-left' data-aos-duration="3000" data-aos-delay="100" src={arrow} alt="arrows image" />
                         </div>
                     </div>
-                    <div data-aos='fade-left' data-aos-duration="2000" className="card">
+                    <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" className="card">
                         <div className="img-box">
                             <img src={boy} alt="School boy" />
                         </div>

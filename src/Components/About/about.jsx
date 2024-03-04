@@ -1,5 +1,16 @@
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
 
-const about = () => {
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const About = () => {
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
         <>
             <div id="Aboutus"></div>
@@ -8,10 +19,14 @@ const about = () => {
                     <p className="title">About Us</p>
                 </div>
                 <div className="owner-details">
-                    <div className="lead">
+                    <div data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" className="lead">
                         <p className="details">Lead Name <br /> Other details</p>
                     </div>
-                    <div className="admin">
+                    <div data-aos="flip-right"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000" className="admin">
                         <p className="details">Admin Name <br /> Other details</p>
                     </div>
                 </div>
@@ -29,4 +44,4 @@ const about = () => {
     )
 }
 
-export default about;
+export default About;

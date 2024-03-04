@@ -44,7 +44,7 @@ a {
     background-color: #fcdec0;
     position: sticky;
     top: 0;
-    z-index: 99;
+    z-index: 999;
 
     .logo-container {
         width: 5vw;
@@ -247,7 +247,7 @@ a {
             position: relative;
             left: 13%;
             margin-top: 1.8%;
-            z-index: 99;
+            z-index: 998;
 
             .img-box {
                 background-color: white;

@@ -43,3 +43,15 @@ Live Demo
 Explore a live demo of the Grace Helping Hands React + Vite template at https://gracehelpinghandsorg.netlify.app. Witness the simplicity and efficiency of React development with Vite in action!
 
 For any questions, feedback, or support inquiries, feel free to reach out to Grace Helping Hands via our website or contact information provided.
+
+# About AOS
+
+AOS (Animate On Scroll) is a small library that allows you to animate elements on your website as you scroll down the page. It provides a simple and lightweight way to add animations to your site without the need for complex JavaScript or CSS animations.
+
+With AOS, you can easily create engaging and dynamic user experiences by animating elements such as text, images, and backgrounds as they come into view. This can help draw attention to important content, improve user engagement, and make your website more visually appealing.
+
+To use AOS in your React application developed with the Grace Helping Hands React + Vite template, you can simply include the AOS library in your project and configure it to animate elements as desired. AOS provides flexible options for customizing animations, including duration, easing, offset, and more, allowing you to tailor the animation effects to suit your design preferences.
+
+For more information on how to integrate and use AOS in your React application, refer to the official documentation and examples provided by the AOS project.
+
+Official Website: [AOS - Animate On Scroll Library](https://michalsnik.github.io/aos/)
