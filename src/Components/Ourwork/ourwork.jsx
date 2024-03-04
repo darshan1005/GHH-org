@@ -10,7 +10,7 @@ const about = () => {
     return (
         <>
             <div id='Ourwork'></div>
-            <section className="ourwork-section" >
+            <section className="ourwork-section">
                 <div className="ourwork">
                     <h3>Our Works</h3>
                     <div className="works">

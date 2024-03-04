@@ -19,7 +19,9 @@ const about = () => {
                 <div className="mission">
                     <h3>Our Mission</h3>
                     <div className="mission-statement">
-                        <p className="statement">Our mission to help the people in need, provide education</p>
+                        <p className="statement">
+                            Grace Helping Hands is an organization dedicated to assisting people, students, and the elderly by providing essential support using their own funds. Our mission is to make a positive impact on the lives of those in need by offering assistance with basic necessities and support services.
+                        </p>
                     </div>
                 </div>
             </section>

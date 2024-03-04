@@ -1,64 +1,44 @@
 const work = () => [
     {
         id: 1,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        text: "During the corona pandemic, groceries are donated to the needy."
     },
     {
         id: 2,
-        text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "On the name of kids who lost their parents in corona, one lakh rupees is fixed deposit is done."
     },
     {
         id: 3,
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        text: "For the people who have been suffering from corona and cancer, donation is made in the form of money for medicine expenses."
     },
     {
         id: 4,
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        text: "For the people living in old age home, groceries and clothes are donated."
     },
     {
         id: 5,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        text: "For the people who do not have the basic needs, food, clothes, blankets are donated."
     },
     {
         id: 6,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        text: "For poor kids, we are helping in their education by donating the amount required for fees."
     },
     {
         id: 7,
-        text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        text: "For a physically handicapped man, we helped him by providing livelihood by Xerox shop."
     },
     {
         id: 8,
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        text: "For a widow lady, tailoring machine is donated to provide her livelihood."
     },
     {
         id: 9,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        text: "For the poor kids, note books are donated."
     },
     {
         id: 10,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 11,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        id: 12,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        id: 13,
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-        id: 14,
-        text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    },
-    {
-        id: 15,
-        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-    },
+        text: "For the kids in tribal areas, clothes are been donated."
+    }
 ];
 
 export default work;

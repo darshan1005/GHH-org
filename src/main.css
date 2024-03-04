@@ -22,7 +22,7 @@ a {
 }
 
 .nav-title {
-  width: 100%;
+  width: 100vw;
   min-width: 50%;
   height: auto;
   padding: 1rem;
@@ -36,8 +36,8 @@ a {
   z-index: 99;
 }
 .nav-title .logo-container {
-  width: 5%;
-  height: 21%;
+  width: 5vw;
+  height: 6.3vh;
 }
 .nav-title .logo-container img {
   width: 100%;
@@ -59,7 +59,7 @@ a {
   list-style: none;
   padding: 9px 15px;
   margin: auto 28px auto 28px;
-  font-size: 1.3rem;
+  font-size: 1.1vw;
 }
 .nav-title .nav-list .list .navs:hover {
   height: 21%;
@@ -77,8 +77,8 @@ a {
 }
 .nav-title .donate-btn .donate {
   all: unset;
-  width: 7rem;
-  height: 2rem;
+  width: 7vw;
+  height: 3vh;
   padding: 6px;
   background-color: #7D5A50;
   color: rgb(255, 255, 255);
@@ -96,14 +96,13 @@ a {
 }
 
 .Hero-section {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
   max-width: 100%;
 }
 .Hero-section .title-spans {
-  width: 100%;
+  width: 100vw;
   min-width: 50%;
-  height: 13.6rem;
+  height: 12vw;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -111,7 +110,7 @@ a {
 }
 .Hero-section .title-spans .c-title {
   padding: 0.5rem;
-  font-size: 5rem;
+  font-size: 4.5vw;
   display: flex;
   align-items: baseline;
   text-shadow: 1px 1px #FCDEC0, 0 0 #7D5A50, 0 0 5px rgb(0, 0, 27);
@@ -136,16 +135,16 @@ a {
 .Hero-section .title-spans .title3 {
   font-family: "Julee", cursive;
   color: rgba(97, 97, 97, 0.473);
-  font-size: 4rem;
+  font-size: 4vw;
 }
 .Hero-section .title-spans .title4 {
   font-family: "Inknut Antiqua", serif;
   color: #5e606b;
 }
 .Hero-section .subtitle {
-  width: 100%;
+  width: 100vw;
   min-width: 50%;
-  height: 30rem;
+  height: 25vw;
   background: #E5B299;
   display: flex;
   flex-direction: row;
@@ -155,15 +154,15 @@ a {
   flex-direction: column;
   position: relative;
   top: 12%;
-  left: 12%;
+  left: 13%;
 }
 .Hero-section .subtitle .subtitle-statement .statement {
-  width: 60rem;
-  font-size: 3.5rem;
+  width: 50vw;
+  font-size: 2.7vw;
 }
 .Hero-section .subtitle .subtitle-statement .sub_statement {
   margin-top: 2%;
-  font-size: 1.2rem;
+  font-size: 1vw;
   color: rgba(0, 0, 0, 0.562);
   width: 30rem;
 }
@@ -177,13 +176,13 @@ a {
   align-items: center;
 }
 .Hero-section .subtitle .subtitle-statement .join-btn-arrows .join-us {
-  width: 14rem;
-  height: 3.2rem;
-  margin-top: 2.2rem;
+  width: 14vw;
+  height: 3.2vw;
+  margin-top: 2.2vw;
   border-radius: 30rem;
   text-align: center;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1vw;
   background-color: #FCDEC0;
 }
 .Hero-section .subtitle .subtitle-statement .join-btn-arrows .join-us:hover {
@@ -195,26 +194,26 @@ a {
 .Hero-section .subtitle .subtitle-statement .join-btn-arrows img {
   width: auto;
   height: auto;
-  margin-top: 2.2rem;
-  margin-left: 3rem;
+  margin-top: 2.2vw;
+  margin-left: 3vw;
 }
 .Hero-section .subtitle .card {
   background: #7D5A50;
-  width: 30rem;
-  height: 37rem;
+  width: 24vw;
+  height: 31.4vw;
   border: 2px solid black;
   border-radius: 20px;
   position: relative;
-  left: 17rem;
-  margin-top: 2.8rem;
+  left: 13%;
+  margin-top: 1.8%;
 }
 .Hero-section .subtitle .card .img-box {
   background-color: white;
-  width: 24rem;
-  height: 17rem;
+  width: 19vw;
+  height: 14vw;
   display: flex;
   margin: 0 auto;
-  margin-top: 3rem;
+  margin-top: 2.6rem;
   border-radius: 20px;
 }
 .Hero-section .subtitle .card .img-box img {
@@ -225,11 +224,11 @@ a {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  gap: 1.2rem;
+  gap: 1vw;
 }
 .Hero-section .subtitle .card .card-content h4 {
-  font-size: 1.6rem;
-  margin-top: 1rem;
+  font-size: 1.2vw;
+  margin-top: 8%;
   text-align: center;
   color: rgb(255, 255, 255);
 }
@@ -242,13 +241,13 @@ a {
 }
 .Hero-section .subtitle .card .card-content ul .heading {
   padding: 6px;
-  font-size: 1.4rem;
+  font-size: 1.1vw;
   font-weight: 600;
   color: rgb(221, 221, 221);
 }
 .Hero-section .subtitle .card .card-content ul .semi-content {
-  font-size: 1.3rem;
-  margin-left: 1rem;
+  font-size: 1vw;
+  margin-left: 1vw;
   padding: 0.55rem;
   color: rgba(172, 172, 172, 0.575);
 }
@@ -257,26 +256,27 @@ a {
   transition: all 0.1s ease-in-out;
 }
 .Hero-section .hero-footer {
-  width: 100%;
+  width: 100vw;
   min-width: 50%;
-  height: 12rem;
+  height: 20vh;
   background: #7D5A50;
   display: flex;
   align-items: center;
 }
 .Hero-section .hero-footer .black-div {
-  width: 54rem;
+  width: 47vw;
   min-width: 20rem;
-  height: 8rem;
+  height: 12vh;
   background: black;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 14rem;
+  margin-left: 13%;
 }
 .Hero-section .hero-footer .black-div h3 {
   color: #7D5A50;
   font-family: "inter";
+  font-size: 1.1vw;
 }
 .Hero-section .hero-footer .black-div h3:hover {
   color: white;
@@ -288,15 +288,21 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 7%;
+  cursor: pointer;
 }
 .about-section .adout-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background: #7D5A50;
-  padding: 1rem 2.5rem;
+  width: 10vw;
+  height: 7vh;
   box-shadow: 8px -8px black;
 }
 .about-section .adout-title .title {
-  font-size: 1.8rem;
+  font-size: 1.4vw;
   color: white;
 }
 .about-section .owner-details {
@@ -304,8 +310,8 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
-  gap: 4.5rem;
+  margin-top: 4%;
+  gap: 4vw;
 }
 .about-section .owner-details .lead {
   background: url(./assets/Hands-holding.jpg);
@@ -315,8 +321,8 @@ a {
   background-size: cover;
   order: 1;
   justify-self: center;
-  width: 300px;
-  height: 300px;
+  width: 16vw;
+  height: 16vw;
 }
 .about-section .owner-details .lead:hover {
   transition: all 0.2 ease-in;
@@ -329,9 +335,9 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
-  height: 18rem;
+  height: 16vw;
   opacity: 0;
 }
 .about-section .owner-details .lead p:hover {
@@ -347,8 +353,8 @@ a {
   background-size: cover;
   order: 1;
   justify-self: center;
-  width: 300px;
-  height: 300px;
+  width: 16vw;
+  height: 16vw;
 }
 .about-section .owner-details .admin:hover {
   transition: all 0.2 ease-in;
@@ -361,9 +367,9 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   font-weight: 600;
-  height: 18rem;
+  height: 16vw;
   opacity: 0;
 }
 .about-section .owner-details .admin p:hover {
@@ -371,11 +377,17 @@ a {
   color: rgb(0, 0, 0);
   opacity: 1;
 }
+.about-section .mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .about-section .mission h3 {
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  font-size: xx-large;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 2vw;
   font-family: "inknut antiqua";
   font-weight: 500;
 }
@@ -383,23 +395,23 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 10rem;
+  width: 55%;
+  height: 18vh;
   border: 2px solid black;
   border-radius: 10px;
   padding: 3rem;
   background: #FCDEC0;
 }
 .about-section .mission .mission-statement p {
-  font-size: xx-large;
+  font-size: 1.2vw;
 }
 
 #Ourwork {
-  height: 0.85rem;
+  height: 2rem;
 }
 
 .ourwork-section {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -407,9 +419,9 @@ a {
 }
 .ourwork-section .ourwork h3 {
   text-align: center;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
-  font-size: xx-large;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  font-size: 2vw;
   font-family: "inknut antiqua";
   font-weight: 500;
 }
@@ -429,12 +441,12 @@ a {
   margin: 0 auto;
   text-align: center;
   overflow-y: auto;
-  height: 20rem;
+  height: 20vw;
   box-sizing: content-box;
   cursor: pointer;
 }
 .ourwork-section .ourwork .works ul li {
-  font-size: 1.6rem;
+  font-size: 1.4vw;
   width: 100%;
   justify-content: center;
   list-style: none;
@@ -462,19 +474,18 @@ a {
   padding: 8px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 65.5%;
+  width: calc(70% + 8px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
 }
 .ourwork-section .images img {
-  width: 300px;
-  height: 300px;
+  width: 17vw;
+  height: 17vw;
   margin: 4px;
-  scroll-snap-align: middle;
+  scroll-snap-align: start;
   border: 1px solid black;
-  cursor: grab;
 }
 .ourwork-section .images img:hover {
   border: 2px solid black;
@@ -502,27 +513,33 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 .section-gallery .gallery-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background: #7D5A50;
-  padding: 1rem 2.5rem;
+  width: 10vw;
+  height: 7vh;
   box-shadow: 8px -8px black;
-  margin-top: 4rem;
 }
 .section-gallery .gallery-title .title {
   font-size: 1.8rem;
   color: white;
 }
 .section-gallery .gallery-images {
-  margin-top: 4rem;
-  margin-bottom: 1rem;
+  margin-top: 4%;
+  margin-bottom: 1%;
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   place-items: center;
+  row-gap: 1.5rem;
   width: 65.5%;
-  height: 300px;
+  height: 40vh;
   overflow-x: auto;
   scroll-snap-type: y mandatory;
 }
@@ -557,20 +574,19 @@ a {
 }
 .section-footer .footer-head {
   width: 100%;
-  height: 6rem;
+  height: 10vh;
   background: #B4846C;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 80%;
+  gap: 70%;
 }
 .section-footer .footer-head h3 {
   display: flex;
   justify-content: flex-start;
-  font-size: 2rem;
+  font-size: 1.5vw;
   color: rgb(0, 0, 0);
-  margin-left: 2rem;
 }
 .section-footer .footer-head .media {
   display: flex;
@@ -581,8 +597,7 @@ a {
 .section-footer .footer-head .media .social-media {
   display: flex;
   align-items: center;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.5vw;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -591,22 +606,22 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 3rem;
+  padding: 2vw;
 }
 .section-footer .footer-body .log-icons {
-  width: 30rem;
-  height: 30rem;
+  width: 20vw;
+  height: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
 .section-footer .footer-body .log-icons img {
-  width: 28rem;
+  width: 28vw;
 }
 .section-footer .footer-body .address {
-  width: 30rem;
-  height: 30rem;
+  width: 20vw;
+  height: 20vw;
   background: rgb(231, 231, 231);
   display: flex;
   align-items: center;
@@ -614,17 +629,17 @@ a {
   color: rgb(0, 0, 0);
 }
 .section-footer .footer-body .contact {
-  width: 30rem;
-  height: 30rem;
+  width: 20vw;
+  height: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 .section-footer .footer-body .contact .contact {
-  width: 30rem;
-  height: 8rem;
+  width: 20vw;
+  height: 12vh;
   background-color: whitesmoke;
   color: black;
 }
@@ -648,11 +663,11 @@ a {
 }
 .top a {
   text-decoration: none;
-  color: #7D5A50;
+  color: #000000;
 }
 .top.visible {
   visibility: visible;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */

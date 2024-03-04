@@ -33,7 +33,7 @@ a {
 
 // nav
 .nav-title {
-    width: 100%;
+    width: 100vw;
     min-width: 50%;
     height: auto;
     padding: 1rem;
@@ -47,8 +47,8 @@ a {
     z-index: 99;
 
     .logo-container {
-        width: 5%;
-        height: 21%;
+        width: 5vw;
+        height: 6.3vh;
 
         img {
             width: 100%;
@@ -72,7 +72,7 @@ a {
                 list-style: none;
                 padding: 9px 15px;
                 margin: auto 28px auto 28px;
-                font-size: 1.3rem;
+                font-size: 1.1vw;
 
                 &:hover {
                     height: 21%;
@@ -94,8 +94,8 @@ a {
 
         .donate {
             all: unset;
-            width: 7rem;
-            height: 2rem;
+            width: 7vw;
+            height: 3vh;
             padding: 6px;
             background-color: $secondary-color;
             color: rgb(255, 255, 255);
@@ -117,14 +117,13 @@ a {
 
 // Hero section
 .Hero-section {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
     max-width: 100%;
 
     .title-spans {
-        width: 100%;
+        width: 100vw;
         min-width: 50%;
-        height: 13.6rem;
+        height: 12vw;
         display: flex;
         justify-content: center;
         align-items: baseline;
@@ -133,7 +132,7 @@ a {
 
         .c-title {
             padding: .5rem;
-            font-size: 5rem;
+            font-size: 4.5vw;
             display: flex;
             align-items: baseline;
             text-shadow: 1px 1px $primary-color, 0 0 $secondary-color, 0 0 5px rgb(0, 0, 27);
@@ -165,7 +164,7 @@ a {
         .title3 {
             font-family: "Julee", cursive;
             color: rgba(97, 97, 97, 0.473);
-            font-size: 4rem;
+            font-size: 4vw;
         }
 
         .title4 {
@@ -175,9 +174,9 @@ a {
     }
 
     .subtitle {
-        width: 100%;
+        width: 100vw;
         min-width: 50%;
-        height: 30rem;
+        height: 25vw;
         background: $background-color;
         display: flex;
         flex-direction: row;
@@ -187,16 +186,16 @@ a {
             flex-direction: column;
             position: relative;
             top: 12%;
-            left: 12%;
+            left: 13%;
 
             .statement {
-                width: 60rem;
-                font-size: 3.5rem;
+                width: 50vw;
+                font-size: 2.7vw;
             }
 
             .sub_statement {
                 margin-top: 2%;
-                font-size: 1.2rem;
+                font-size: 1vw;
                 color: rgba(0, 0, 0, 0.562);
                 width: 30rem;
 
@@ -212,13 +211,13 @@ a {
                 align-items: center;
 
                 .join-us {
-                    width: 14rem;
-                    height: 3.2rem;
-                    margin-top: 2.2rem;
+                    width: 14vw;
+                    height: 3.2vw;
+                    margin-top: 2.2vw;
                     border-radius: 30rem;
                     text-align: center;
                     font-weight: 600;
-                    font-size: 1rem;
+                    font-size: 1vw;
                     background-color: $primary-color;
 
                     &:hover {
@@ -233,29 +232,29 @@ a {
                 img {
                     width: auto;
                     height: auto;
-                    margin-top: 2.2rem;
-                    margin-left: 3rem;
+                    margin-top: 2.2vw;
+                    margin-left: 3vw;
                 }
             }
         }
 
         .card {
             background: $secondary-color;
-            width: 30rem;
-            height: 37rem;
+            width: 24vw;
+            height: 31.4vw;
             border: 2px solid black;
             border-radius: 20px;
             position: relative;
-            left: 17rem;
-            margin-top: 2.8rem;
+            left: 13%;
+            margin-top: 1.8%;
 
             .img-box {
                 background-color: white;
-                width: 24rem;
-                height: 17rem;
+                width: 19vw;
+                height: 14vw;
                 display: flex;
                 margin: 0 auto;
-                margin-top: 3rem;
+                margin-top: 2.6rem;
                 border-radius: 20px;
 
                 img {
@@ -268,11 +267,11 @@ a {
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
-                gap: 1.2rem;
+                gap: 1vw;
 
                 h4 {
-                    font-size: 1.6rem;
-                    margin-top: 1rem;
+                    font-size: 1.2vw;
+                    margin-top: 8%;
                     text-align: center;
                     color: rgb(255, 255, 255);
                 }
@@ -286,14 +285,14 @@ a {
 
                     .heading {
                         padding: 6px;
-                        font-size: 1.4rem;
+                        font-size: 1.1vw;
                         font-weight: 600;
                         color: rgb(221, 221, 221);
                     }
 
                     .semi-content {
-                        font-size: 1.3rem;
-                        margin-left: 1rem;
+                        font-size: 1vw;
+                        margin-left: 1vw;
                         padding: .55rem;
                         color: rgba(172, 172, 172, 0.575);
 
@@ -308,26 +307,27 @@ a {
     }
 
     .hero-footer {
-        width: 100%;
+        width: 100vw;
         min-width: 50%;
-        height: 12rem;
+        height: 20vh;
         background: $secondary-color;
         display: flex;
         align-items: center;
 
         .black-div {
-            width: 54rem;
+            width: 47vw;
             min-width: 20rem;
-            height: 8rem;
+            height: 12vh;
             background: black;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-left: 14rem;
+            margin-left: 13%;
 
             h3 {
                 color: $secondary-color;
                 font-family: 'inter';
+                font-size: 1.1vw;
 
                 &:hover {
                     color: white;
@@ -344,15 +344,21 @@ a {
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 7%;
+    cursor: pointer;
 
     .adout-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         background: #7D5A50;
-        padding: 1rem 2.5rem;
+        width: 10vw;
+        height: 7vh;
         box-shadow: 8px -8px black;
 
         .title {
-            font-size: 1.8rem;
+            font-size: 1.4vw;
             color: white;
         }
     }
@@ -362,8 +368,8 @@ a {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 5rem;
-        gap: 4.5rem;
+        margin-top: 4%;
+        gap: 4vw;
 
         .lead {
             background: url(./assets/Hands-holding.jpg);
@@ -373,8 +379,8 @@ a {
             background-size: cover;
             order: 1;
             justify-self: center;
-            width: 300px;
-            height: 300px;
+            width: 16vw;
+            height: 16vw;
 
             &:hover {
                 transition: all .2 ease-in;
@@ -388,9 +394,9 @@ a {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 font-weight: 600;
-                height: 18rem;
+                height: 16vw;
                 opacity: 0;
 
                 &:hover {
@@ -409,8 +415,8 @@ a {
             background-size: cover;
             order: 1;
             justify-self: center;
-            width: 300px;
-            height: 300px;
+            width: 16vw;
+            height: 16vw;
 
             &:hover {
                 transition: all .2 ease-in;
@@ -424,9 +430,9 @@ a {
                 align-items: center;
                 justify-content: center;
                 text-align: center;
-                font-size: 1.5rem;
+                font-size: 1.5vw;
                 font-weight: 600;
-                height: 18rem;
+                height: 16vw;
                 opacity: 0;
 
                 &:hover {
@@ -439,11 +445,15 @@ a {
     }
 
     .mission {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         h3 {
             text-align: center;
-            margin-top: 4rem;
-            margin-bottom: 1rem;
-            font-size: xx-large;
+            margin-top: 5%;
+            margin-bottom: 2%;
+            font-size: 2vw;
             font-family: "inknut antiqua";
             font-weight: 500;
         }
@@ -452,27 +462,26 @@ a {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 10rem;
+            width: 55%;
+            height: 18vh;
             border: 2px solid black;
             border-radius: 10px;
             padding: 3rem;
             background: $primary-color;
 
             p {
-                font-size: xx-large;
+                font-size: 1.2vw;
             }
         }
     }
 }
 
-// our work
+// Our work
 #Ourwork {
-    height: .85rem;
+    height: 2rem;
 }
-
 .ourwork-section {
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,9 +490,9 @@ a {
     .ourwork {
         h3 {
             text-align: center;
-            margin-top: 4rem;
-            margin-bottom: 1rem;
-            font-size: xx-large;
+            margin-top: 4%;
+            margin-bottom: 1%;
+            font-size: 2vw;
             font-family: "inknut antiqua";
             font-weight: 500;
         }
@@ -503,12 +512,12 @@ a {
                 margin: 0 auto;
                 text-align: center;
                 overflow-y: auto;
-                height: 20rem;
+                height: 20vw;
                 box-sizing: content-box;
                 cursor: pointer;
 
                 li {
-                    font-size: 1.6rem;
+                    font-size: 1.4vw;
                     width: 100%;
                     justify-content: center;
                     list-style: none;
@@ -538,49 +547,48 @@ a {
     }
 
     // work images
-
     .images {
         margin-top: 4rem;
         margin-bottom: 1rem;
         padding: 8px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        width: 65.5%;
+        width: calc(70% + 8px);
         overflow-x: auto;
         scroll-snap-type: x mandatory;
-
+    
         img {
-            width: 300px;
-            height: 300px;
+            width: 17vw;
+            height: 17vw;
             margin: 4px;
-            scroll-snap-align: middle;
+            scroll-snap-align: start;
             border: 1px solid black;
-            cursor: grab;
-
+    
             &:hover {
                 border: 2px solid black;
                 transition: all .1s ease-in-out;
             }
         }
-
+    
         // scrollbar
         &::-webkit-scrollbar {
             width: 10px;
             height: 10px;
         }
-
+    
         &::-webkit-scrollbar-thumb {
             background: #FCDEC0;
             border-radius: 5px;
         }
-
+    
         &::-webkit-scrollbar-track {
             background: #7D5A50;
             border-radius: 5px;
         }
     }
+    
 }
 
 // gallery
@@ -592,13 +600,18 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3%;
+    margin-top: 3%;
 
     .gallery-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
         background: #7D5A50;
-        padding: 1rem 2.5rem;
+        width: 10vw;
+        height: 7vh;
         box-shadow: 8px -8px black;
-        margin-top: 4rem;
 
         .title {
             font-size: 1.8rem;
@@ -608,14 +621,15 @@ a {
     }
 
     .gallery-images {
-        margin-top: 4rem;
-        margin-bottom: 1rem;
+        margin-top: 4%;
+        margin-bottom: 1%;
         padding: 10px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
+        row-gap: 1.5rem;
         width: 65.5%;
-        height: 300px;
+        height: 40vh;
         overflow-x: auto;
         scroll-snap-type: y mandatory;
 
@@ -658,20 +672,19 @@ a {
 
     .footer-head {
         width: 100%;
-        height: 6rem;
+        height: 10vh;
         background: #B4846C;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
-        gap: 80%;
+        gap: 70%;
 
         h3 {
             display: flex;
             justify-content: flex-start;
-            font-size: 2rem;
+            font-size: 1.5vw;
             color: rgb(0, 0, 0);
-            margin-left: 2rem;
         }
 
         .media {
@@ -683,8 +696,7 @@ a {
             .social-media {
                 display: flex;
                 align-items: center;
-                width: 2.5rem;
-                height: 2.5rem;
+                width: 2.5vw;
                 border-radius: 50%;
                 cursor: pointer;
             }
@@ -696,24 +708,24 @@ a {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        padding: 3rem;
+        padding: 2vw;
 
         .log-icons {
-            width: 30rem;
-            height: 30rem;
+            width: 20vw;
+            height: 20vw;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
 
             img {
-                width: 28rem;
+                width: 28vw;
             }
         }
 
         .address {
-            width: 30rem;
-            height: 30rem;
+            width: 20vw;
+            height: 20vw;
             background: rgb(231, 231, 231);
             display: flex;
             align-items: center;
@@ -722,17 +734,17 @@ a {
         }
 
         .contact {
-            width: 30rem;
-            height: 30rem;
+            width: 20vw;
+            height: 20vw;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            gap: 2rem;
+            gap: 1rem;
 
             .contact {
-                width: 30rem;
-                height: 8rem;
+                width: 20vw;
+                height: 12vh;
                 background-color: whitesmoke;
                 color: black;
             }
@@ -760,15 +772,14 @@ a {
 
     a {
         text-decoration: none;
-        color: #7D5A50;
+        color: #000000;
     }
 
     &.visible {
         visibility: visible;
-        transition: all .2s ease-in-out;
+        transition: all .1s ease-in-out;
     }
 }
-
 // media screens (
 // ms: 320, mm: 375, ml: 425, 
 // tablet: 768, 
