@@ -1,11 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-
+import { useEffect } from 'react';
 
 import boy from '../../assets/School_boy_img.png'
 import arrow from '../../assets/Arrows.png'
 
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const Hero = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
         <>
             <section className='Hero-section' id='Home'>
@@ -17,14 +25,14 @@ const Hero = () => {
                 </div>
                 <div className="subtitle">
                     <div className="subtitle-statement">
-                        <p className="statement">Uniting hands, like threads weaving hope, Grace Helping Hands organization forms a tapestry of change.</p>
-                        <p className='sub_statement'>Let’s collaborate to make a positive difference in the world.</p>
+                        <p className="statement" id='statement_id'>Uniting hands, like threads weaving hope, Grace Helping Hands organization forms a tapestry of change.</p>
+                        <p  className='sub_statement'>Let’s collaborate to make a positive difference in the world.</p>
                         <div className="join-btn-arrows">
                             <button className="join-us">Join us</button>
-                            <img src={arrow} alt="arrows image" />
+                            <img data-aos='fade-left' data-aos-duration="3000" data-aos-delay="100" src={arrow} alt="arrows image" />
                         </div>
                     </div>
-                    <div className="card">
+                    <div data-aos='fade-left' data-aos-duration="2000" className="card">
                         <div className="img-box">
                             <img src={boy} alt="School boy" />
                         </div>
@@ -41,7 +49,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='hero-footer'>
-                    <div className="black-div">
+                    <div data-aos='fade-right' data-aos-duration="3000" data-aos-delay="100" className="black-div">
                         <h3>Together, let’s create change-one step, one act of kindness at a time</h3>
                     </div>
                 </div>

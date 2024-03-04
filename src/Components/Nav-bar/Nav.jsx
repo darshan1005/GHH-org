@@ -1,13 +1,22 @@
-import logo from '../../assets/Asset 10@2x.png'
-import logo2 from '../../assets/GHH 9@2x.png'
+import { useEffect } from 'react';
+import logo from '../../assets/Asset 10@2x.png';
+import logo2 from '../../assets/GHH 9@2x.png';
 
-const nav = () => {
+// Import AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Nav = () => {
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
         <div className='nav-title'>
-            <div className="logo-container">
-                <img src={logo} alt="GHH" onError={logo2} />
+            <div data-aos='fade-down' data-aos-duration="2000" className="logo-container">
+                <img src={logo} alt="GHH" onError={(e) => { e.target.src = logo2; }} />
             </div>
-            <div className="nav-list">
+            <div data-aos='fade-down' data-aos-duration="2000" className="nav-list">
                 <ul className="list">
                     <li className="navs" ><a href="#Aboutus">About Us</a></li>
                     <li className="navs" ><a href="#Ourwork">Our Works</a></li>
@@ -15,11 +24,11 @@ const nav = () => {
                     <li className="navs" ><a href="#Getinvolved">Get Involved</a></li>
                 </ul>
             </div>
-            <div className="donate-btn">
+            <div data-aos='fade-down' data-aos-duration="2000" className="donate-btn">
                 <button className="donate">Donate</button>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default nav;
+export default Nav;
