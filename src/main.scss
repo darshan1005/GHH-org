@@ -33,15 +33,15 @@ a {
 
 // nav
 .nav-title {
-    width: 100vw;
-    min-width: 50%;
-    height: auto;
-    padding: 1rem;
+    width: 100%;
+    height: 21%;
+    padding: 1.2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     background-color: #fcdec0;
+    border: 1px solid $primary-color;
     position: sticky;
     top: 0;
     left: 0;
@@ -49,7 +49,6 @@ a {
 
     .logo-container {
         width: 5vw;
-        height: 6.3vh;
 
         img {
             width: 100%;
@@ -71,9 +70,9 @@ a {
 
             .navs {
                 list-style: none;
-                padding: 9px 15px;
+                padding: .7vw 1vw;
                 margin: auto 28px auto 28px;
-                font-size: 1.1vw;
+                font-size: 1vw;
 
                 &:hover {
                     height: 21%;
@@ -88,7 +87,7 @@ a {
     }
 
     .donate-btn {
-        height: 21%;
+        height: 3vw;
         display: flex;
         align-items: center;
         text-align: center;
@@ -98,6 +97,7 @@ a {
             width: 7vw;
             height: 3vh;
             padding: 6px;
+            font-size: .8vw;
             background-color: $secondary-color;
             color: rgb(255, 255, 255);
             border-radius: 30rem;
@@ -231,7 +231,7 @@ a {
                 }
 
                 img {
-                    width: auto;
+                    width: 22vw;
                     height: auto;
                     margin-top: 2.2vw;
                     margin-left: 3vw;
@@ -256,7 +256,7 @@ a {
                 height: 14vw;
                 display: flex;
                 margin: 0 auto;
-                margin-top: 2.6rem;
+                margin-top: 8.5%;
                 border-radius: 20px;
 
                 img {
@@ -295,7 +295,7 @@ a {
                     .semi-content {
                         font-size: 1vw;
                         margin-left: 1vw;
-                        padding: .55rem;
+                        padding: .55vw;
                         color: rgba(172, 172, 172, 0.575);
 
                         &:hover {
@@ -311,7 +311,7 @@ a {
     .hero-footer {
         width: 100vw;
         min-width: 50%;
-        height: 20vh;
+        height: 10vw;
         background: $secondary-color;
         display: flex;
         align-items: center;
@@ -319,7 +319,7 @@ a {
         .black-div {
             width: 47vw;
             min-width: 20rem;
-            height: 12vh;
+            height: 6vw;
             background: black;
             display: flex;
             align-items: center;
@@ -356,7 +356,7 @@ a {
         text-align: center;
         background: #7D5A50;
         width: 10vw;
-        height: 7vh;
+        height: 3.5vw;
         box-shadow: 8px -8px black;
 
         .title {
@@ -451,6 +451,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
         h3 {
             text-align: center;
             margin-top: 5%;
@@ -472,7 +473,7 @@ a {
             background: $primary-color;
 
             p {
-                font-size: 1.2vw;
+                font-size: 1.4em;
             }
         }
     }
@@ -519,7 +520,7 @@ a {
                 cursor: pointer;
 
                 li {
-                    font-size: 2vw;
+                    font-size: 2rem;
                     width: 100%;
                     justify-content: center;
                     list-style: none;
@@ -611,11 +612,11 @@ a {
         text-align: center;
         background: #7D5A50;
         width: 10vw;
-        height: 7vh;
+        height: 3.5vw;
         box-shadow: 8px -8px black;
 
         .title {
-            font-size: 1.8rem;
+            font-size: 1.4vw;
             color: white;
         }
 
@@ -626,17 +627,18 @@ a {
         margin-bottom: 1%;
         padding: 10px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         place-items: center;
-        row-gap: 1.5rem;
-        width: 65.5%;
+        gap: 1rem;
+        width: 90%;
         height: 40vh;
         overflow-x: auto;
+        overflow-x: hidden;
         scroll-snap-type: y mandatory;
 
         img {
-            width: 280px;
-            height: 280px;
+            width: 17vw;
+            height: 17vw;
             padding: 4px;
             scroll-snap-align: start;
             border: 1px solid black;
@@ -762,8 +764,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 4rem;
-    height: 4rem;
+    width: 3.5vw;
+    height: 3.5vw;
     border-radius: 50%;
     background: #FCDEC0;
     border: 2px solid black;
@@ -787,287 +789,262 @@ a {
 // tablet: 768, 
 // laptop:1024, laptop large: 1440)
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
-@media screen and (max-width: 320px) {}
+@media screen and (max-width: 320px) {
+    .nav-title {
+        width: 34.2rem;
+        .logo-container{
+            width: rem;
+        }
+        .nav-list {
+            display: flex;
+            justify-content: flex-end;
+            .list {
+                .navs {
+                    margin: auto 6px auto 6px;
+                    font-size: .5rem;
+                }
+            }
+        }
+        .donate-btn {
+            .donate {
+                border-radius: 10px;
+                width: 3rem;
+                height: .9rem;
+                font-size: 8px;
+            }
+        }
+    }
+
+.Hero-section{
+    .title-spans{
+        width: 32.7rem;
+    }
+
+    .subtitle{
+        width: 32.7rem;
+        .subtitle-statement{
+            width: 50%;
+        }
+    }
+
+    // .card{
+    // }
+}
+}
 
 @media screen and (min-width: 321px) and (max-width: 374px) {}
 
 @media screen and (min-width: 375px) and (max-width: 425px) {}
 
 /* Tablet screens (tablet: 768) */
-@media screen and (min-width: 426px) and (max-width: 768px) {}
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
-/* Laptop screens (laptop: 1024) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    
-    .nav-title{
-        .nav-list{
-            .list{
-                .navs{
-                    font-size: 1rem;
-                    padding: 7px 10px;
+    .nav-title {
+        .nav-list {
+            .list {
+                .navs {
+                    padding: .8vw .8vw;
+                    margin: auto 24px auto 24px;
+                    font-size: 1.6vw;
                 }
             }
         }
-        .donate-btn{
-            .donate{
-                width: 5rem;
-                height: 1.5rem;
+        .donate-btn {
+            .donate {
+                height: 2vh;
+                padding: 6px;
+                font-size: 1.1vw;
             }
         }
     }
 
     .Hero-section{
-        .title-spans{
-            height: 10rem;
-            .c-title{
-                font-size: 3.5rem;
-            }
-            .title3{
-                font-size: 3rem;
+        .subtitle{
+            .card{
+                left: 0;
+                border-radius: 10px;
+                .img-box{
+                    border-radius: 10px;
+                }
             }
         }
+    }
 
-        .subtitle{
-            height: 24rem;
-            .subtitle-statement{
-                left: 5%;
-                .statement{
-                    width: 35rem;
-                    font-size: 2rem;
-                }
-
-                .join-btn-arrows{
-                    left: 5%;
-                    .join-us{
-                        width: 11rem;
-                        height: 3rem;
-                    }
-                    img{
-                        width: 45%;
-                    }
+    .about-section{
+        .about-title{
+            box-shadow: 4px -4px black;
+        }
+        .owner-details{
+            .lead{
+                width: 10rem;
+                height: 10rem;
+                p{
+                width: 10rem;
+                height: 10rem;
                 }
             }
-            .card{
-                width: 21rem;
-                height: 31rem;
-                left: 2rem;
-                .img-box{
-                    width: 15rem;
+            .admin{
+                width: 10rem;
+                height: 10rem;
+                p{
+                    width: 10rem;
                     height: 10rem;
                 }
-                .card-content {
-                    gap: 1.4rem;
+            }
+        }
 
-                    h4 {
-                        margin-top: 2.4rem;
-                        font-size: large;
-                    }
-                    ul{
-                        .heading{
-                            font-size: 2;
-                        }
-
-                        .semi-content{
-                            font-size: 1rem;
-                        }
-                    }
+        .mission{
+            .mission-statement{
+                width: 80%;
+    
+                p{
+                    font-size: 1.055rem;
                 }
             }
         }
-        .hero-footer{
-            .black-div{
-                width: 36rem;
-                margin-left: 2.6rem;
+    }  
 
-                h3{
-                    font-size: 1rem;
-                }
-            }
-        } 
-    }
-
-    .ourwork-section {
-        .images {
-            width: 80%;
-            img {
-                width: 180px;
-                height: 180px;
-            }
-        }
-    }
-
-    .section-gallery {
-        .gallery-images {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: .5rem;
-            img{
-                width: 180px;
-                height: 180px;
-            }
-        }
-    }
-
-    .section-footer {
-        .footer-head{
-            height: 4rem;
+    .ourwork-section{
+        .ourwork{
             h3{
-                font-size: 1.6rem;
+                margin-top: 2%;
             }
-        }
-        .footer-body {
-            display: flex;
-            flex-direction: column;
-            margin-top: -5rem;
-            margin-bottom: -3rem;
-            .log-icons {
-                display: flex;
-                flex-direction: row;
-                gap: 1rem;
-                .media {
-                    display: flex;
-                    flex-direction: column;
-                    .social-media {
-                        width: 3rem;
-                        height: 3rem;
+            .works{
+                ul{
+                    height: 28vw;
+                    li{
+                        font-size: 1.7vw;
                     }
                 }
-                img{
-                    width: 18rem;
-                }
-            }
-            .contact{
-                gap: 0;
             }
         }
+    }
+
+    .section-gallery{
+        .gallery-title{
+            box-shadow: 4px -4px black;
+        }
+        .gallery-images{
+            width: 78%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .section-footer{
+        .footer-head{
+            height: 6vh;
+
+            h3{
+                font-size: 2.2vw;
+            }
+
+            .media{
+                .social-media{
+                    width: 3.2vw;
+                }
+            }
+        }
+    }
+
+    .top{
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+}
+
+/* Laptop screens (laptop: 1024) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .nav-title {
+        .nav-list {
+            .list {
+                .navs {
+                    padding: .8vw 1vw;
+                    margin: auto 24px auto 24px;
+                    font-size: 1.2vw;
+                }
+            }
+        }
+        .donate-btn {
+            .donate {
+                height: 2vh;
+                padding: 6px;
+                font-size: 1.1vw;
+            }
+        }
+    }
+
+    .about-section{
+        .mission{
+            .mission-statement{
+                width: 80%;
+                .statement{
+                    font-size: 2vw;
+                }
+            }
+        }
+    }
+
+    .ourwork-section{
+        .ourwork{
+            .works{
+                ul{
+                    height: 25vw;
+                }
+            }
+        }
+    }
+
+    .section-gallery{
+        .gallery-images{
+            width: 75%;
+            overflow-x: hidden;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            
+        }
+    }
+
+    .section-footer{
+        .footer-head{
+            height: 8vh;
+
+            h3{
+                font-size: 2vw;
+            }
+
+            .media{
+                .social-media{
+                    width: 3vw;
+                }
+            }
+        }
+    }
+
+    .top{
+        width: 5vw;
+        height: 5vw;
     }
 }
 
 /* Larger laptop screens (laptop large: 1440) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
-    .Hero-section {
-        .title-spans {
-            height: 13.1rem;
-            width: 100%;
-            min-width: 40%;
-
-            .c-title {
-                padding: 0.3rem;
-                font-size: 4.5rem;
-            }
-
-            .title3 {
-                font-size: 3.5rem;
-            }
-        }
-
-        .subtitle {
-            height: 32rem;
-
-            .subtitle-statement {
-                margin-top: 1rem;
-                left: 9%;
-
-                .statement {
-                    width: 45rem;
-                    font-size: 2.6rem;
-                }
-
-                .join-btn-arrows {
-                    left: 9%;
-                    margin-top: 2.1rem;
-
-                    .join-us {
-                        width: 12rem;
-                        height: 3rem;
-                    }
-
-                    img {
-                        width: 55%;
-                    }
-                }
-            }
-
-            .card {
-                width: 27rem;
-                left: 12rem;
-
-                .img-box {
-                    width: 21rem;
-                    height: 15rem;
-                }
-
-                .card-content {
-                    gap: 1.4rem;
-
-                    h4 {
-                        margin-top: 1.5rem;
-                        font-size: 1.4rem;
-                    }
-                }
-            }
-        }
-
-        .hero-footer {
-            height: 12.43rem;
-
-            .black-div {
-                width: 46rem;
-                margin-left: 8rem;
-            }
-        }
-    }
-
     .ourwork-section {
         .images {
-            width: 70%;
-
             img {
-                width: 240px;
-                height: 240px;
+                width: 18vw;
+                height: 18vw;
             }
         }
     }
 
     .section-gallery {
         .gallery-images {
+            width: 75%;
+            overflow-x: hidden;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
-    .section-footer {
-        .footer-body {
-            padding: 1rem;
-
-            .log-icons {
-                width: 25rem;
-                height: 25rem;
-                margin-top: 3rem;
-
-                .media {
-                    .social-media {
-                        gap: 1rem;
-                        width: 4.5rem;
-                        height: 4.5rem;
-                    }
-
-                    img {
-                        width: 22rem;
-                    }
-                }
-            }
-
-            .address {
-                width: 25rem;
-                height: 25rem;
-            }
-
-            .contact{
-                width: 25rem;
-                height: 25rem;
-            }
+            grid-template-columns: repeat(4, 1fr);
         }
     }
 }
