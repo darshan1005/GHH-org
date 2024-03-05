@@ -787,15 +787,18 @@ a {
 // tablet: 768, 
 // laptop:1024, laptop large: 1440)
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
-/* Mobile screens (max-width: 320px) */
+/* Mobile screens (max-width: 320px) */ 
 @media screen and (max-width: 320px) {
+    /* Navigation */
     .nav-title {
         width: 100%;
         padding: 0 1rem;
+        height: auto;
         .logo-container {
             width: 3rem;
         }
         .nav-list {
+            height: auto;
             display: flex;
             justify-content: flex-end;
             .list {
@@ -806,48 +809,67 @@ a {
             }
         }
         .donate-btn {
+            height: auto;
             .donate {
                 display: none;
             }
         }
     }
 
+    /* Hero Section */
     .Hero-section {
+        width: 100%;
+        max-width: 100%;
         .title-spans {
             width: 100%;
+            min-width: auto;
+            height: auto;
             padding: 0 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            .c-title {
+                font-size: 3vw;
+            }
+            .title3 {
+                font-size: 3vw;
+            }
         }
-
         .subtitle {
             width: 100%;
+            height: auto;
             padding: 0 1rem;
+            flex-direction: column;
+            align-items: center;
             .subtitle-statement {
                 width: 100%;
+                left: auto;
+                .statement {
+                    font-size: 2vw;
+                }
+                .sub_statement {
+                    font-size: 0.8rem;
+                    width: auto;
+                }
+                .join-btn-arrows {
+                    .join-us {
+                        width: auto;
+                        font-size: 0.8rem;
+                    }
+                    img {
+                        width: auto;
+                        height: 1.5rem;
+                        margin-top: 0.5rem;
+                        margin-left: 0.5rem;
+                    }
+                }
             }
-        }
-    }
-
-    .section-gallery{
-        .gallery-images{
-            width: 90%;
-        }
-    }
-    
-
-    .section-footer{
-        .footer-head{
-            height: 60px;
-            h3{
-                margin-left: .85rem;
-                width: 100%;
-                font-size: small;
+            .card {
+                width: 90%;
+                height: auto;
+                margin-top: 5%;
+                right: 0;
             }
-            .media{
-                margin-right: .85rem;
-            }
-        }
-        .footer-body{
-            padding: 3rem;
         }
     }
 }

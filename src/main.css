@@ -674,14 +674,17 @@ a {
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
 /* Mobile screens (max-width: 320px) */
 @media screen and (max-width: 320px) {
+  /* Navigation */
   .nav-title {
     width: 100%;
     padding: 0 1rem;
+    height: auto;
   }
   .nav-title .logo-container {
     width: 3rem;
   }
   .nav-title .nav-list {
+    height: auto;
     display: flex;
     justify-content: flex-end;
   }
@@ -689,36 +692,65 @@ a {
     margin: auto 6px auto 6px;
     font-size: 0.5rem;
   }
+  .nav-title .donate-btn {
+    height: auto;
+  }
   .nav-title .donate-btn .donate {
     display: none;
   }
+  /* Hero Section */
+  .Hero-section {
+    width: 100%;
+    max-width: 100%;
+  }
   .Hero-section .title-spans {
     width: 100%;
+    min-width: auto;
+    height: auto;
     padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .Hero-section .title-spans .c-title {
+    font-size: 3vw;
+  }
+  .Hero-section .title-spans .title3 {
+    font-size: 3vw;
   }
   .Hero-section .subtitle {
     width: 100%;
+    height: auto;
     padding: 0 1rem;
+    flex-direction: column;
+    align-items: center;
   }
   .Hero-section .subtitle .subtitle-statement {
     width: 100%;
+    left: auto;
   }
-  .section-gallery .gallery-images {
+  .Hero-section .subtitle .subtitle-statement .statement {
+    font-size: 2vw;
+  }
+  .Hero-section .subtitle .subtitle-statement .sub_statement {
+    font-size: 0.8rem;
+    width: auto;
+  }
+  .Hero-section .subtitle .subtitle-statement .join-btn-arrows .join-us {
+    width: auto;
+    font-size: 0.8rem;
+  }
+  .Hero-section .subtitle .subtitle-statement .join-btn-arrows img {
+    width: auto;
+    height: 1.5rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .Hero-section .subtitle .card {
     width: 90%;
-  }
-  .section-footer .footer-head {
-    height: 60px;
-  }
-  .section-footer .footer-head h3 {
-    margin-left: 0.85rem;
-    width: 100%;
-    font-size: small;
-  }
-  .section-footer .footer-head .media {
-    margin-right: 0.85rem;
-  }
-  .section-footer .footer-body {
-    padding: 3rem;
+    height: auto;
+    margin-top: 5%;
+    right: 0;
   }
 }
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
