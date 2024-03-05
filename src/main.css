@@ -143,23 +143,23 @@ a {
   color: #5e606b;
 }
 .Hero-section .subtitle {
-  width: 100vw;
-  min-width: 50%;
+  width: 100%;
   height: 25vw;
   background: #E5B299;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .Hero-section .subtitle .subtitle-statement {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 12%;
-  left: 13%;
+  left: 3%;
 }
 .Hero-section .subtitle .subtitle-statement .statement {
-  width: 50vw;
-  font-size: 2.7vw;
+  width: 44vw;
+  font-size: 2.5vw;
 }
 .Hero-section .subtitle .subtitle-statement .sub_statement {
   margin-top: 2%;
@@ -205,8 +205,8 @@ a {
   border: 2px solid black;
   border-radius: 20px;
   position: relative;
-  left: 13%;
-  margin-top: 1.8%;
+  margin-top: 9%;
+  right: 2%;
   z-index: 998;
 }
 .Hero-section .subtitle .card .img-box {
@@ -260,15 +260,14 @@ a {
 .Hero-section .hero-footer {
   width: 100vw;
   min-width: 50%;
-  height: 10vw;
+  height: 9.1vw;
   background: #7D5A50;
   display: flex;
   align-items: center;
 }
 .Hero-section .hero-footer .black-div {
-  width: 47vw;
-  min-width: 20rem;
-  height: 6vw;
+  width: 47%;
+  height: 60%;
   background: black;
   display: flex;
   align-items: center;
@@ -304,7 +303,7 @@ a {
   box-shadow: 8px -8px black;
 }
 .about-section .adout-title .title {
-  font-size: 1.4vw;
+  font-size: 100%;
   color: white;
 }
 .about-section .owner-details {
@@ -514,8 +513,8 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3%;
-  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-top: 1%;
 }
 .section-gallery .gallery-title {
   display: flex;
@@ -539,16 +538,15 @@ a {
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
   gap: 1rem;
-  width: 90%;
-  height: 40vh;
+  width: 85%;
+  height: 35vh;
   overflow-x: auto;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 .section-gallery .gallery-images img {
-  width: 17vw;
-  height: 17vw;
-  padding: 4px;
+  width: 16vw;
+  height: 16vw;
   scroll-snap-align: start;
   border: 1px solid black;
   cursor: auto;
@@ -674,12 +672,14 @@ a {
 }
 
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
+/* Mobile screens (max-width: 320px) */
 @media screen and (max-width: 320px) {
   .nav-title {
-    width: 34.2rem;
+    width: 100%;
+    padding: 0 1rem;
   }
   .nav-title .logo-container {
-    width: rem;
+    width: 3rem;
   }
   .nav-title .nav-list {
     display: flex;
@@ -690,20 +690,44 @@ a {
     font-size: 0.5rem;
   }
   .nav-title .donate-btn .donate {
-    border-radius: 10px;
-    width: 3rem;
-    height: 0.9rem;
-    font-size: 8px;
+    display: none;
   }
   .Hero-section .title-spans {
-    width: 32.7rem;
+    width: 100%;
+    padding: 0 1rem;
   }
   .Hero-section .subtitle {
-    width: 32.7rem;
+    width: 100%;
+    padding: 0 1rem;
   }
   .Hero-section .subtitle .subtitle-statement {
-    width: 50%;
+    width: 100%;
   }
+  .section-gallery .gallery-images {
+    width: 90%;
+  }
+  .section-footer .footer-head {
+    height: 60px;
+  }
+  .section-footer .footer-head h3 {
+    margin-left: 0.85rem;
+    width: 100%;
+    font-size: small;
+  }
+  .section-footer .footer-head .media {
+    margin-right: 0.85rem;
+  }
+  .section-footer .footer-body {
+    padding: 3rem;
+  }
+}
+/* Mobile screens (min-width: 321px) and (max-width: 374px) */
+@media screen and (min-width: 321px) and (max-width: 374px) {
+  /* Write appropriate media queries for this range if needed */
+}
+/* Mobile screens (min-width: 375px) and (max-width: 425px) */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  /* Write appropriate media queries for this range if needed */
 }
 /* Tablet screens (tablet: 768) */
 @media screen and (min-width: 426px) and (max-width: 768px) {
