@@ -789,11 +789,13 @@ a {
 // tablet: 768, 
 // laptop:1024, laptop large: 1440)
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
+/* Mobile screens (max-width: 320px) */
 @media screen and (max-width: 320px) {
     .nav-title {
-        width: 34.2rem;
-        .logo-container{
-            width: rem;
+        width: 100%;
+        padding: 0 1rem;
+        .logo-container {
+            width: 3rem;
         }
         .nav-list {
             display: flex;
@@ -815,26 +817,31 @@ a {
         }
     }
 
-.Hero-section{
-    .title-spans{
-        width: 32.7rem;
-    }
+    .Hero-section {
+        .title-spans {
+            width: 100%;
+            padding: 0 1rem;
+        }
 
-    .subtitle{
-        width: 32.7rem;
-        .subtitle-statement{
-            width: 50%;
+        .subtitle {
+            width: 100%;
+            padding: 0 1rem;
+            .subtitle-statement {
+                width: 100%;
+            }
         }
     }
-
-    // .card{
-    // }
-}
 }
 
-@media screen and (min-width: 321px) and (max-width: 374px) {}
+/* Mobile screens (min-width: 321px) and (max-width: 374px) */
+@media screen and (min-width: 321px) and (max-width: 374px) {
+    /* Write appropriate media queries for this range if needed */
+}
 
-@media screen and (min-width: 375px) and (max-width: 425px) {}
+/* Mobile screens (min-width: 375px) and (max-width: 425px) */
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    /* Write appropriate media queries for this range if needed */
+}
 
 /* Tablet screens (tablet: 768) */
 @media screen and (min-width: 426px) and (max-width: 768px) {
