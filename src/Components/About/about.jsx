@@ -21,7 +21,7 @@ const About = () => {
                 <div className="owner-details">
                     <div data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000" className="lead">
+                        data-aos-duration="1000" className="lead">
                         <p className="details">Lead Name <br /> Other details</p>
                     </div>
                     <div data-aos="flip-right"

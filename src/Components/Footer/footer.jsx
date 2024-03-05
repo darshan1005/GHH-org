@@ -1,34 +1,62 @@
-import logo from '../../assets/Asset 10@2x.png'
-import logo2 from '../../assets/GHH 9@2x.png'
-import insta from '../../assets/instagram.svg'
-import facebook from '../../assets/facebook.svg'
-import youtube from '../../assets/youtube.svg'
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
+import logo from '../../assets/Asset 10@2x.png';
+import logo2 from '../../assets/GHH 9@2x.png';
+import insta from '../../assets/instagram.svg';
+import facebook from '../../assets/facebook.svg';
+import youtube from '../../assets/youtube.svg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const footer = () => {
+const Footer = () => {
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
+
     return (
-        <section className="section-footer" id="Getinvolved">  
+        <section className="section-footer" id="Getinvolved">
             <div className="footer-head">
                 <h3>Get Involved</h3>
                 <div className="media">
-                    <img src={insta} className="social-media insta" />
-                    <img src={facebook} className="social-media facebook" />
-                    <img src={youtube} className="social-media youtube" />
+                    <img
+                        data-aos="flip-right"
+                        data-aos-duration="800"
+                        data-aos-once = 'true'
+                        src={insta}
+                        alt="Instagram"
+                        className="social-media insta"
+                    />
+                    <img
+                        data-aos="flip-right"
+                        data-aos-duration="800"
+                        data-aos-once = 'true'
+                        src={facebook}
+                        alt="Facebook"
+                        className="social-media facebook"
+                    />
+                    <img
+                        data-aos="flip-right"
+                        data-aos-duration="800"
+                        data-aos-once = 'true'
+                        src={youtube}
+                        alt="YouTube"
+                        className="social-media youtube"
+                    />
                 </div>
             </div>
             <div className="footer-body">
-                
-            <div className="address">address</div>
+                <div className="address">Address</div>
                 <div className="log-icons">
-                    <img src={logo2} alt="GHH" onError={logo}/>
+                    <img src={logo2} alt="GHH Logo" onError={(e) => { e.target.src = logo; }} />
                 </div>
                 <div className="contact">
                     <div className="contact number">Phone number</div>
                     <div className="contact email">Email</div>
-                    <div className="contact whatsapp">Whats App</div>
+                    <div className="contact whatsapp">WhatsApp</div>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default footer;
+export default Footer;

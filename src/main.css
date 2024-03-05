@@ -33,6 +33,7 @@ a {
   background-color: #fcdec0;
   position: sticky;
   top: 0;
+  left: 0;
   z-index: 999;
 }
 .nav-title .logo-container {
@@ -447,7 +448,7 @@ a {
   cursor: pointer;
 }
 .ourwork-section .ourwork .works ul li {
-  font-size: 1.4vw;
+  font-size: 2vw;
   width: 100%;
   justify-content: center;
   list-style: none;
@@ -458,7 +459,6 @@ a {
   border-radius: 2px;
   margin-bottom: 4px;
   padding: 8px;
-  box-shadow: 0 0 2px rgb(185, 185, 185);
 }
 .ourwork-section .ourwork .works ul li:hover {
   transition: all 0.2 ease-in;
@@ -656,11 +656,12 @@ a {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background: white;
+  background: #FCDEC0;
   border: 2px solid black;
   cursor: pointer;
   visibility: hidden;
   transition: visibility 0.3s ease;
+  z-index: 3;
 }
 .top a {
   text-decoration: none;

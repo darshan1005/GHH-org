@@ -1,9 +1,14 @@
-/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
+import React, { useEffect } from 'react';
 import work from './work';
+import Image from './image-scroll';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-import Image from './image-scroll'
-
-const about = () => {
+const About = () => {
+    useEffect(() => {
+        AOS.init({ duration: 800 });
+    }, []);
 
     const works = work();
 
@@ -16,7 +21,9 @@ const about = () => {
                     <div className="works">
                         <ul>
                             {works.map((item) => (
-                                <li key={item.id}>{item.text}</li>
+                                <li key={item.id} data-aos="flip-right" data-aos-duration="800">
+                                    {item.text}
+                                </li>
                             ))}
                         </ul>
                     </div>
@@ -24,8 +31,7 @@ const about = () => {
                 <Image />
             </section>
         </>
-
     );
 };
 
-export default about;
+export default About;

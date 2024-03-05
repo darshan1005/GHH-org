@@ -11,7 +11,7 @@ import 'aos/dist/aos.css';
 
 const Hero = () => {
     useEffect(() => {
-        AOS.init({ duration: 2000 });
+        AOS.init({ duration: 1000 });
     }, []);
 
     return (
@@ -29,12 +29,12 @@ const Hero = () => {
                         <p  className='sub_statement'>Let’s collaborate to make a positive difference in the world.</p>
                         <div className="join-btn-arrows">
                             <button className="join-us">Join us</button>
-                            <img data-aos='fade-left' data-aos-duration="3000" data-aos-delay="100" src={arrow} alt="arrows image" />
+                            <img data-aos='fade-left' data-aos-duration="1000" data-aos-delay="100" src={arrow} alt="arrows image" />
                         </div>
                     </div>
                     <div data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000" className="card">
+                        data-aos-duration="1000" className="card">
                         <div className="img-box">
                             <img src={boy} alt="School boy" />
                         </div>
@@ -51,7 +51,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='hero-footer'>
-                    <div data-aos='fade-right' data-aos-duration="3000" data-aos-delay="100" className="black-div">
+                    <div data-aos='fade-right' data-aos-duration="2000" data-aos-delay="80" className="black-div">
                         <h3>Together, let’s create change-one step, one act of kindness at a time</h3>
                     </div>
                 </div>

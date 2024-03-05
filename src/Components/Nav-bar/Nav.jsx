@@ -13,10 +13,10 @@ const Nav = () => {
 
     return (
         <div className='nav-title'>
-            <div data-aos='fade-down' data-aos-duration="2000" className="logo-container">
+            <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="logo-container">
                 <img src={logo} alt="GHH" onError={(e) => { e.target.src = logo2; }} />
             </div>
-            <div data-aos='fade-down' data-aos-duration="2000" className="nav-list">
+            <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="nav-list">
                 <ul className="list">
                     <li className="navs" ><a href="#Aboutus">About Us</a></li>
                     <li className="navs" ><a href="#Ourwork">Our Works</a></li>
@@ -24,7 +24,7 @@ const Nav = () => {
                     <li className="navs" ><a href="#Getinvolved">Get Involved</a></li>
                 </ul>
             </div>
-            <div data-aos='fade-down' data-aos-duration="2000" className="donate-btn">
+            <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="donate-btn">
                 <button className="donate">Donate</button>
             </div>
         </div>
