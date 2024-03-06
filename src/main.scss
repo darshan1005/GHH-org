@@ -180,8 +180,9 @@ a {
         background: $background-color;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
+        gap: 60px;
 
         .subtitle-statement {
             display: flex;
@@ -309,8 +310,7 @@ a {
     }
 
     .hero-footer {
-        width: 100vw;
-        min-width: 50%;
+        width: 100%;
         height: 9.1vw;
         background: $secondary-color;
         display: flex;
@@ -359,7 +359,7 @@ a {
         box-shadow: 8px -8px black;
 
         .title {
-            font-size: 100%;
+            font-size: 1.4vw;
             color: white;
         }
     }
@@ -483,7 +483,7 @@ a {
     height: 2rem;
 }
 .ourwork-section {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -790,90 +790,90 @@ a {
 /* Mobile screens (max-width: 320px) */ 
 @media screen and (max-width: 320px) {
     /* Navigation */
-    .nav-title {
-        width: 100%;
-        padding: 0 1rem;
-        height: auto;
-        .logo-container {
-            width: 3rem;
-        }
-        .nav-list {
-            height: auto;
-            display: flex;
-            justify-content: flex-end;
-            .list {
-                .navs {
-                    margin: auto 6px auto 6px;
-                    font-size: .5rem;
-                }
-            }
-        }
-        .donate-btn {
-            height: auto;
-            .donate {
-                display: none;
-            }
-        }
-    }
+    // .nav-title {
+    //     width: 100%;
+    //     padding: 0 1rem;
+    //     height: auto;
+    //     .logo-container {
+    //         width: 3rem;
+    //     }
+    //     .nav-list {
+    //         height: auto;
+    //         display: flex;
+    //         justify-content: flex-end;
+    //         .list {
+    //             .navs {
+    //                 margin: auto 6px auto 6px;
+    //                 font-size: .5rem;
+    //             }
+    //         }
+    //     }
+    //     .donate-btn {
+    //         height: auto;
+    //         .donate {
+    //             display: none;
+    //         }
+    //     }
+    // }
 
     /* Hero Section */
-    .Hero-section {
-        width: 100%;
-        max-width: 100%;
-        .title-spans {
-            width: 100%;
-            min-width: auto;
-            height: auto;
-            padding: 0 1rem;
-            display: flex;
-            justify-content: center;
-            align-items: baseline;
-            .c-title {
-                font-size: 3vw;
-            }
-            .title3 {
-                font-size: 3vw;
-            }
-        }
-        .subtitle {
-            width: 100%;
-            height: auto;
-            padding: 0 1rem;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 5%;
-            .subtitle-statement {
-                width: 100%;
-                left: auto;
-                .statement {
-                    font-size: 2vw;
-                }
-                .sub_statement {
-                    font-size: 0.8rem;
-                    width: auto;
-                }
-                .join-btn-arrows {
-                    .join-us {
-                        width: auto;
-                        font-size: 0.8rem;
-                    }
-                    img {
-                        width: auto;
-                        height: 1.5rem;
-                        margin-top: 0.5rem;
-                        margin-left: 0.5rem;
-                    }
-                }
-            }
-            .card {
-                width: 90%;
-                height: auto;
-                margin-top: 5%;
-                right: 0;
-            }
-        }
-    }
+    // .Hero-section {
+    //     width: 100%;
+    //     max-width: 100%;
+    //     .title-spans {
+    //         width: 100%;
+    //         min-width: auto;
+    //         height: auto;
+    //         padding: 0 1rem;
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: baseline;
+    //         .c-title {
+    //             font-size: 3vw;
+    //         }
+    //         .title3 {
+    //             font-size: 3vw;
+    //         }
+    //     }
+    //     .subtitle {
+    //         width: 100%;
+    //         height: auto;
+    //         padding: 0 1rem;
+    //         flex-direction: column;
+    //         align-items: center;
+    //         justify-content: center;
+    //         gap: 5%;
+    //         .subtitle-statement {
+    //             width: 100%;
+    //             left: auto;
+    //             .statement {
+    //                 font-size: 2vw;
+    //             }
+    //             .sub_statement {
+    //                 font-size: 0.8rem;
+    //                 width: auto;
+    //             }
+    //             .join-btn-arrows {
+    //                 .join-us {
+    //                     width: auto;
+    //                     font-size: 0.8rem;
+    //                 }
+    //                 img {
+    //                     width: auto;
+    //                     height: 1.5rem;
+    //                     margin-top: 0.5rem;
+    //                     margin-left: 0.5rem;
+    //                 }
+    //             }
+    //         }
+    //         .card {
+    //             width: 90%;
+    //             height: auto;
+    //             margin-top: 5%;
+    //             right: 0;
+    //         }
+    //     }
+    // }
 }
 
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
@@ -900,8 +900,10 @@ a {
             }
         }
         .donate-btn {
+            display: flex;
+            align-items: center;
             .donate {
-                height: 2vh;
+                height: 3vh;
                 padding: 6px;
                 font-size: 1.1vw;
             }
@@ -910,11 +912,33 @@ a {
 
     .Hero-section{
         .subtitle{
+            .subtitle-statement{
+                left: 5rem;
+            }
             .card{
-                left: 0;
-                border-radius: 10px;
+                right: 3rem;
+                border-radius: 7px;
                 .img-box{
-                    border-radius: 10px;
+                    border-radius: 7px;
+                    img{
+                        border-radius: 7px;
+                    }
+                }
+                .card-content{
+                    h4{
+                        font-size: 9px;
+                    }
+    
+                    ul{
+                        .heading{
+                            font-size: 8px;
+                            color: white;
+                        }
+
+                        .semi-content{
+                            padding: 4px;
+                        }
+                    }
                 }
             }
         }
@@ -983,7 +1007,7 @@ a {
 
     .section-footer{
         .footer-head{
-            height: 6vh;
+            height: 10vh;
 
             h3{
                 font-size: 2.2vw;
@@ -991,7 +1015,7 @@ a {
 
             .media{
                 .social-media{
-                    width: 3.2vw;
+                    width: 3vw;
                 }
             }
         }
@@ -1017,7 +1041,7 @@ a {
         }
         .donate-btn {
             .donate {
-                height: 2vh;
+                height: 4vh;
                 padding: 6px;
                 font-size: 1.1vw;
             }
@@ -1027,6 +1051,8 @@ a {
     .about-section{
         .mission{
             .mission-statement{
+                padding: 2rem;
+                height: 10rem;
                 width: 80%;
                 .statement{
                     font-size: 2vw;
@@ -1057,7 +1083,7 @@ a {
 
     .section-footer{
         .footer-head{
-            height: 8vh;
+            height: 12vh;
 
             h3{
                 font-size: 2vw;
@@ -1080,6 +1106,35 @@ a {
 /* Larger laptop screens (laptop large: 1440) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
 
+    .nav-title{
+        .donate-btn{
+            .donate{
+                height: 6vh;
+                padding: 6px;
+            }
+        }
+    }
+
+    .Hero-section{
+        .subtitle{
+            .subtitle-statement{
+                left: 0;
+            }
+            .card{
+                right: 0;
+            }
+        }
+    }
+
+    .about-section{
+        .mission{
+            .mission-statement{
+                padding: 2rem;
+                height: 10rem;
+                width: 80%;
+            }
+        }
+    }
     .ourwork-section {
         .images {
             img {
@@ -1091,10 +1146,17 @@ a {
 
     .section-gallery {
         .gallery-images {
+            height: 20vw;
             width: 75%;
             overflow-x: hidden;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .section-footer{
+        .footer-head{
+            height: 6vw;
         }
     }
 }

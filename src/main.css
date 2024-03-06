@@ -148,8 +148,9 @@ a {
   background: #E5B299;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 60px;
 }
 .Hero-section .subtitle .subtitle-statement {
   display: flex;
@@ -258,8 +259,7 @@ a {
   transition: all 0.1s ease-in-out;
 }
 .Hero-section .hero-footer {
-  width: 100vw;
-  min-width: 50%;
+  width: 100%;
   height: 9.1vw;
   background: #7D5A50;
   display: flex;
@@ -303,7 +303,7 @@ a {
   box-shadow: 8px -8px black;
 }
 .about-section .adout-title .title {
-  font-size: 100%;
+  font-size: 1.4vw;
   color: white;
 }
 .about-section .owner-details {
@@ -412,7 +412,7 @@ a {
 }
 
 .ourwork-section {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -675,85 +675,7 @@ a {
 /* Mobile screens (max-width: 320px) */
 @media screen and (max-width: 320px) {
   /* Navigation */
-  .nav-title {
-    width: 100%;
-    padding: 0 1rem;
-    height: auto;
-  }
-  .nav-title .logo-container {
-    width: 3rem;
-  }
-  .nav-title .nav-list {
-    height: auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .nav-title .nav-list .list .navs {
-    margin: auto 6px auto 6px;
-    font-size: 0.5rem;
-  }
-  .nav-title .donate-btn {
-    height: auto;
-  }
-  .nav-title .donate-btn .donate {
-    display: none;
-  }
   /* Hero Section */
-  .Hero-section {
-    width: 100%;
-    max-width: 100%;
-  }
-  .Hero-section .title-spans {
-    width: 100%;
-    min-width: auto;
-    height: auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-  .Hero-section .title-spans .c-title {
-    font-size: 3vw;
-  }
-  .Hero-section .title-spans .title3 {
-    font-size: 3vw;
-  }
-  .Hero-section .subtitle {
-    width: 100%;
-    height: auto;
-    padding: 0 1rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 5%;
-  }
-  .Hero-section .subtitle .subtitle-statement {
-    width: 100%;
-    left: auto;
-  }
-  .Hero-section .subtitle .subtitle-statement .statement {
-    font-size: 2vw;
-  }
-  .Hero-section .subtitle .subtitle-statement .sub_statement {
-    font-size: 0.8rem;
-    width: auto;
-  }
-  .Hero-section .subtitle .subtitle-statement .join-btn-arrows .join-us {
-    width: auto;
-    font-size: 0.8rem;
-  }
-  .Hero-section .subtitle .subtitle-statement .join-btn-arrows img {
-    width: auto;
-    height: 1.5rem;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-  }
-  .Hero-section .subtitle .card {
-    width: 90%;
-    height: auto;
-    margin-top: 5%;
-    right: 0;
-  }
 }
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
 @media screen and (min-width: 321px) and (max-width: 374px) {
@@ -770,17 +692,37 @@ a {
     margin: auto 24px auto 24px;
     font-size: 1.6vw;
   }
+  .nav-title .donate-btn {
+    display: flex;
+    align-items: center;
+  }
   .nav-title .donate-btn .donate {
-    height: 2vh;
+    height: 3vh;
     padding: 6px;
     font-size: 1.1vw;
   }
+  .Hero-section .subtitle .subtitle-statement {
+    left: 5rem;
+  }
   .Hero-section .subtitle .card {
-    left: 0;
-    border-radius: 10px;
+    right: 3rem;
+    border-radius: 7px;
   }
   .Hero-section .subtitle .card .img-box {
-    border-radius: 10px;
+    border-radius: 7px;
+  }
+  .Hero-section .subtitle .card .img-box img {
+    border-radius: 7px;
+  }
+  .Hero-section .subtitle .card .card-content h4 {
+    font-size: 9px;
+  }
+  .Hero-section .subtitle .card .card-content ul .heading {
+    font-size: 8px;
+    color: white;
+  }
+  .Hero-section .subtitle .card .card-content ul .semi-content {
+    padding: 4px;
   }
   .about-section .about-title {
     box-shadow: 4px -4px black;
@@ -825,13 +767,13 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
   .section-footer .footer-head {
-    height: 6vh;
+    height: 10vh;
   }
   .section-footer .footer-head h3 {
     font-size: 2.2vw;
   }
   .section-footer .footer-head .media .social-media {
-    width: 3.2vw;
+    width: 3vw;
   }
   .top {
     width: 6.5vw;
@@ -846,11 +788,13 @@ a {
     font-size: 1.2vw;
   }
   .nav-title .donate-btn .donate {
-    height: 2vh;
+    height: 4vh;
     padding: 6px;
     font-size: 1.1vw;
   }
   .about-section .mission .mission-statement {
+    padding: 2rem;
+    height: 10rem;
     width: 80%;
   }
   .about-section .mission .mission-statement .statement {
@@ -866,7 +810,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
   }
   .section-footer .footer-head {
-    height: 8vh;
+    height: 12vh;
   }
   .section-footer .footer-head h3 {
     font-size: 2vw;
@@ -881,14 +825,33 @@ a {
 }
 /* Larger laptop screens (laptop large: 1440) */
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .nav-title .donate-btn .donate {
+    height: 6vh;
+    padding: 6px;
+  }
+  .Hero-section .subtitle .subtitle-statement {
+    left: 0;
+  }
+  .Hero-section .subtitle .card {
+    right: 0;
+  }
+  .about-section .mission .mission-statement {
+    padding: 2rem;
+    height: 10rem;
+    width: 80%;
+  }
   .ourwork-section .images img {
     width: 18vw;
     height: 18vw;
   }
   .section-gallery .gallery-images {
+    height: 20vw;
     width: 75%;
     overflow-x: hidden;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+  }
+  .section-footer .footer-head {
+    height: 6vw;
   }
 }/*# sourceMappingURL=main.css.map */
