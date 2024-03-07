@@ -45,14 +45,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-body">
-                <div className="address">Address</div>
+                <div className="address">🚩</div>
                 <div className="log-icons">
                     <img src={logo2} alt="GHH Logo" onError={(e) => { e.target.src = logo; }} />
                 </div>
                 <div className="contact">
-                    <div className="contact number">Phone number</div>
-                    <div className="contact email">Email</div>
-                    <div className="contact whatsapp">WhatsApp</div>
+                    <div className="contact number">📞</div>
+                    <div className="contact email">📩</div>
+                    <div className="contact whatsapp">📱</div>
                 </div>
             </div>
         </section>

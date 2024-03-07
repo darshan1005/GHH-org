@@ -18,10 +18,10 @@ const Nav = () => {
             </div>
             <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="nav-list">
                 <ul className="list">
-                    <li className="navs" ><a href="#Aboutus">About Us</a></li>
-                    <li className="navs" ><a href="#Ourwork">Our Works</a></li>
-                    <li className="navs" ><a href="#Gallery">Gallery</a></li>
-                    <li className="navs" ><a href="#Getinvolved">Get Involved</a></li>
+                    <li className="navs" ><a href="#Aboutus">ABOUT US</a></li>
+                    <li className="navs" ><a href="#Ourwork">OUR WORKS</a></li>
+                    <li className="navs" ><a href="#Gallery">GALLERY</a></li>
+                    <li className="navs" ><a href="#Getinvolved">GET INVOLVED</a></li>
                 </ul>
             </div>
             <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="donate-btn">

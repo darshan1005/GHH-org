@@ -1,15 +1,9 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from 'react';
+import React from 'react';
 import work from './work';
 import Image from './image-scroll';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 const About = () => {
-    useEffect(() => {
-        AOS.init({ duration: 800 });
-    }, []);
-
     const works = work();
 
     return (
@@ -21,7 +15,7 @@ const About = () => {
                     <div className="works">
                         <ul>
                             {works.map((item) => (
-                                <li key={item.id} data-aos="flip-right" data-aos-duration="800">
+                                <li key={item.id} >
                                     {item.text}
                                 </li>
                             ))}

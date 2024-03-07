@@ -29,7 +29,7 @@ const TopButton = () => {
 
     return (
         <button className={`top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-            <a href="#Home">Top</a>
+            <a href="#Home">🔝</a>
         </button>
     );
 };
