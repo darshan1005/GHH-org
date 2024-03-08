@@ -676,9 +676,165 @@ a {
 
 /* Mobile screens (ms: 320, mm: 375, ml: 425) */
 /* Mobile screens (max-width: 320px) */
+@media screen and (max-width: 320px) {
+  .nav-title {
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 0.4rem;
+  }
+  .nav-title .logo-container {
+    width: 6vw;
+    height: 15%;
+  }
+  .nav-title .nav-list .list .navs {
+    padding: 5px 15px;
+  }
+  .nav-title .nav-list .list .navs:hover {
+    padding: 5px 15px;
+  }
+  .nav-title .donate-btn .donate {
+    height: 4px;
+    font-size: 4px;
+  }
+  .Hero-section .title-spans .c-title {
+    text-shadow: 1px 1px #FCDEC0, 0 0 #7D5A50, 0 0 2px rgb(0, 0, 27);
+  }
+  .Hero-section .subtitle .subtitle-statement {
+    margin-left: 0;
+  }
+  .Hero-section .subtitle .sub_statement {
+    color: white;
+  }
+  .Hero-section .subtitle .card {
+    border-radius: 4px;
+    margin-left: -4.5rem;
+    top: 3%;
+  }
+  .Hero-section .subtitle .card .img-box {
+    border-radius: 4px;
+  }
+  .Hero-section .subtitle .card .card-content h4 {
+    margin-top: 2px;
+  }
+  .Hero-section .subtitle .card .card-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Hero-section .subtitle .card .card-content ul .heading {
+    font-size: 6px;
+    color: white;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+  .Hero-section .subtitle .card .card-content ul .semi-content {
+    padding: 1px;
+    color: rgb(211, 210, 210);
+    margin-left: 0.7rem;
+  }
+  .Hero-section .hero-footer {
+    height: 3rem;
+  }
+  .Hero-section .hero-footer .black-div {
+    width: 45%;
+    height: 45%;
+    margin-right: 2rem;
+  }
+  .Hero-section .hero-footer .black-div h3 {
+    font-size: 1.2vw;
+    color: white;
+  }
+  .about-section .mission h3 {
+    font-size: 10px;
+  }
+  .about-section .mission .mission-statement {
+    height: 8rem;
+    width: 75%;
+  }
+  .about-section .mission .mission-statement .statement {
+    width: 17rem;
+    font-size: 10px;
+  }
+  .ourwork-section {
+    margin-top: -2rem;
+  }
+  .ourwork-section .ourwork h3 {
+    font-size: 10px;
+    margin-bottom: -1.5rem;
+  }
+  .ourwork-section .ourwork .works {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 87%;
+  }
+  .ourwork-section .ourwork .works ul {
+    height: 10rem;
+  }
+  .ourwork-section .ourwork .works ul li {
+    font-size: 10px;
+  }
+  .ourwork-section .images {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+  }
+  .ourwork-section .images::-webkit-scrollbar {
+    width: 10px;
+    height: 2px;
+  }
+  .ourwork-section .images::-webkit-scrollbar-thumb {
+    background: #FCDEC0;
+    border-radius: 4px;
+  }
+  .ourwork-section .images::-webkit-scrollbar-track {
+    background: #7D5A50;
+    border-radius: 4px;
+  }
+  .section-gallery .gallery-title {
+    margin-bottom: -1rem;
+  }
+  .section-gallery .gallery-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4px;
+    -moz-column-gap: 4px;
+         column-gap: 4px;
+  }
+  .section-gallery .gallery-images::-webkit-scrollbar {
+    display: none;
+  }
+  .section-footer .footer-head {
+    height: 2rem;
+  }
+  .section-footer .footer-head h3 {
+    font-size: 10px;
+  }
+  .section-footer .footer-head .media {
+    gap: 4px;
+  }
+  .section-footer .footer-body .address {
+    font-size: small;
+  }
+  .section-footer .footer-body .contact {
+    gap: 0.2rem;
+  }
+  .top {
+    width: 25px;
+    height: 25px;
+  }
+}
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
 @media screen and (min-width: 321px) and (max-width: 374px) {
-  /* Write appropriate media queries for this range if needed */
+  .nav-title {
+    padding: 0;
+  }
+  .ourwork-section .ourwork .works {
+    width: 90%;
+  }
+  .ourwork-section .ourwork .works ul li {
+    font-size: 8px;
+  }
 }
 /* Mobile screens (min-width: 375px) and (max-width: 425px) */
 @media screen and (min-width: 375px) and (max-width: 425px) {
@@ -747,20 +903,27 @@ a {
     font-size: 1.2vw;
     color: white;
   }
+  .about-section .mission h3 {
+    font-size: 10px;
+  }
   .about-section .mission .mission-statement {
-    width: 80%;
+    width: 83%;
   }
   .about-section .mission .mission-statement .statement {
-    font-size: small;
+    font-size: smaller;
+  }
+  .ourwork-section {
+    margin-top: -2rem;
   }
   .ourwork-section .ourwork h3 {
-    margin-bottom: -1rem;
+    font-size: 10px;
+    margin-bottom: -1.5rem;
   }
   .ourwork-section .ourwork .works {
     display: flex;
     margin: 0 auto;
     margin-top: 1rem;
-    width: 80%;
+    width: 87%;
   }
   .ourwork-section .ourwork .works ul {
     height: 10rem;
@@ -783,6 +946,9 @@ a {
   .ourwork-section .images::-webkit-scrollbar-track {
     background: #7D5A50;
     border-radius: 4px;
+  }
+  .section-gallery .gallery-title {
+    margin-bottom: -1rem;
   }
   .section-gallery .gallery-images {
     display: grid;
@@ -921,6 +1087,9 @@ a {
     padding: 0.8vw 1vw;
     margin: auto 24px auto 24px;
     font-size: 1.2vw;
+  }
+  .nav-title .nav-list .list .navs:hover {
+    padding: 0.8vw 1vw;
   }
   .nav-title .donate-btn .donate {
     width: 6rem;
