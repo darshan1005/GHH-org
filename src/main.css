@@ -965,15 +965,15 @@ a {
     background: #7D5A50;
     border-radius: 4px;
   }
-  .section-gallery .gallery-title {
-    margin-bottom: -1rem;
-  }
   .section-gallery .gallery-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 4px;
-    -moz-column-gap: 4px;
-         column-gap: 4px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 18rem;
+    height: 10rem;
+  }
+  .section-gallery .gallery-images img {
+    height: 5rem;
+    width: 5rem;
   }
   .section-gallery .gallery-images::-webkit-scrollbar {
     display: none;

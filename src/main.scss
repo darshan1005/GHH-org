@@ -1219,15 +1219,16 @@ a {
     }
 
     .section-gallery {
-        .gallery-title {
-            margin-bottom: -1rem;
-        }
-
         .gallery-images {
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            row-gap: 4px;
-            column-gap: 4px;
+            grid-template-columns: repeat(3, 1fr);
+            width: 18rem;
+            height: 10rem;
+
+            img{
+                height: 5rem;
+                width: 5rem;
+            }
 
             // scrollbar
             &::-webkit-scrollbar {
