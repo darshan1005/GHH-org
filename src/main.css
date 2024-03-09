@@ -822,6 +822,9 @@ a {
   .nav-title {
     padding: 0;
   }
+  .nav-title .donate-btn {
+    display: none;
+  }
   .ourwork-section .ourwork .works {
     width: 90%;
   }
@@ -842,21 +845,21 @@ a {
 /* Mobile screens (min-width: 375px) and (max-width: 425px) */
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .nav-title {
-    padding: 1rem;
+    padding: 8px;
   }
   .nav-title .logo-container {
     width: 6vw;
     height: 15%;
   }
   .nav-title .nav-list .list .navs {
+    font-size: 7px;
     padding: 5px 15px;
   }
   .nav-title .nav-list .list .navs:hover {
     padding: 5px 15px;
   }
-  .nav-title .donate-btn .donate {
-    height: 5px;
-    font-size: 4px;
+  .nav-title .donate-btn {
+    display: none;
   }
   .Hero-section .title-spans .c-title {
     text-shadow: 1px 1px #FCDEC0, 0 0 #7D5A50, 0 0 2px rgb(0, 0, 27);
@@ -990,9 +993,9 @@ a {
     display: flex;
     align-items: center;
   }
-  .nav-title .donate-btn .donate {
+  .nav-title .donate-btn a .donate {
     height: 2vh;
-    font-size: 1.2vw;
+    font-size: 10px;
   }
   .Hero-section .subtitle .subtitle-statement {
     margin-left: 6rem;

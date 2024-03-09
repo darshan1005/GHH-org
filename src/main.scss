@@ -1008,6 +1008,11 @@ a {
 
     .nav-title {
         padding: 0;
+
+        .donate-btn {
+            display: none;
+        }
+
     }
 
     .ourwork-section {
@@ -1043,7 +1048,7 @@ a {
 @media screen and (min-width: 375px) and (max-width: 425px) {
 
     .nav-title {
-        padding: 1rem;
+        padding: 8px;
 
         .logo-container {
             width: 6vw;
@@ -1053,6 +1058,7 @@ a {
         .nav-list {
             .list {
                 .navs {
+                    font-size: 7px;
                     padding: 5px 15px;
 
                     &:hover {
@@ -1063,10 +1069,7 @@ a {
         }
 
         .donate-btn {
-            .donate {
-                height: 5px;
-                font-size: 4px;
-            }
+            display: none;
         }
     }
 
@@ -1255,7 +1258,6 @@ a {
         .nav-list {
             .list {
                 .navs {
-
                     font-size: 1.4vw;
                 }
             }
@@ -1265,9 +1267,11 @@ a {
             display: flex;
             align-items: center;
 
-            .donate {
-                height: 2vh;
-                font-size: 1.2vw;
+            a {
+                .donate {
+                    height: 2vh;
+                    font-size: 10px;
+                }
             }
         }
     }
