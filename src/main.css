@@ -527,47 +527,23 @@ a {
   width: 10vw;
   height: 3.5vw;
   box-shadow: 0.5vw -0.5vw black;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 .section-gallery .gallery-title .title {
   font-size: 1.4vw;
   color: white;
 }
-.section-gallery .gallery-images {
-  margin-top: 4%;
-  margin-bottom: 1%;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  place-items: center;
-  gap: 1rem;
-  width: 85%;
-  height: 35vh;
-  overflow-x: auto;
-  overflow-x: hidden;
-  scroll-snap-type: y mandatory;
+.section-gallery .grid-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 35rem;
+  overflow-y: auto;
+  margin-bottom: 3rem;
 }
-.section-gallery .gallery-images img {
-  width: 16vw;
-  height: 16vw;
-  scroll-snap-align: start;
-  border: 1px solid black;
-  cursor: auto;
-}
-.section-gallery .gallery-images img:hover {
-  border: 2px solid black;
-  transition: all 0.1s ease-in-out;
-}
-.section-gallery .gallery-images::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-.section-gallery .gallery-images::-webkit-scrollbar-thumb {
-  background: #FCDEC0;
-  border-radius: 5px;
-}
-.section-gallery .gallery-images::-webkit-scrollbar-track {
-  background: #7D5A50;
-  border-radius: 5px;
+.section-gallery ::-webkit-scrollbar {
+  display: none;
 }
 
 .section-footer {
@@ -788,6 +764,10 @@ a {
     margin-top: -1rem;
     margin-bottom: -1rem;
   }
+  .ourwork-section .images img {
+    width: 14rem;
+    height: 10rem;
+  }
   .ourwork-section .images::-webkit-scrollbar {
     width: 10px;
     height: 2px;
@@ -800,18 +780,15 @@ a {
     background: #7D5A50;
     border-radius: 4px;
   }
-  .section-gallery .gallery-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 12rem;
-    height: 10rem;
+  .section-gallery {
+    margin-top: -1rem;
   }
-  .section-gallery .gallery-images img {
-    height: 5rem;
-    width: 5rem;
+  .section-gallery .gallery-title {
+    width: 3rem;
+    height: 1rem;
   }
-  .section-gallery .gallery-images::-webkit-scrollbar {
-    display: none;
+  .section-gallery .gallery-title .title {
+    font-size: 8px;
   }
   .section-footer .footer-head {
     height: 2rem;
@@ -846,6 +823,16 @@ a {
   }
   .ourwork-section .ourwork .works ul li {
     font-size: 8px;
+  }
+  .section-gallery {
+    margin-top: -1rem;
+  }
+  .section-gallery .gallery-title {
+    width: 4rem;
+    height: 1.5rem;
+  }
+  .section-gallery .gallery-title .title {
+    font-size: 11px;
   }
 }
 /* Mobile screens (min-width: 375px) and (max-width: 425px) */
@@ -952,6 +939,11 @@ a {
   .ourwork-section .images {
     margin-top: -1rem;
     margin-bottom: -1rem;
+    width: 80%;
+  }
+  .ourwork-section .images img {
+    width: 16rem;
+    height: 12rem;
   }
   .ourwork-section .images::-webkit-scrollbar {
     width: 10px;
@@ -964,19 +956,6 @@ a {
   .ourwork-section .images::-webkit-scrollbar-track {
     background: #7D5A50;
     border-radius: 4px;
-  }
-  .section-gallery .gallery-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 18rem;
-    height: 10rem;
-  }
-  .section-gallery .gallery-images img {
-    height: 5rem;
-    width: 5rem;
-  }
-  .section-gallery .gallery-images::-webkit-scrollbar {
-    display: none;
   }
   .section-footer .footer-head {
     height: 2rem;
@@ -1076,13 +1055,15 @@ a {
   .ourwork-section .ourwork .works ul li {
     font-size: 1.7vw;
   }
+  .ourwork-section .images {
+    width: 80%;
+  }
+  .ourwork-section .images img {
+    width: 16rem;
+    height: 14rem;
+  }
   .section-gallery .gallery-title {
     box-shadow: 4px -4px black;
-  }
-  .section-gallery .gallery-images {
-    width: 78%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
   }
   .section-footer .footer-head {
     height: 7vh;
@@ -1139,12 +1120,6 @@ a {
   .ourwork-section .ourwork .works ul {
     height: 25vw;
   }
-  .section-gallery .gallery-images {
-    width: 75%;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
   .section-footer .footer-head {
     height: 12vh;
   }
@@ -1183,13 +1158,6 @@ a {
   .ourwork-section .images img {
     width: 18vw;
     height: 18vw;
-  }
-  .section-gallery .gallery-images {
-    height: 20vw;
-    width: 75%;
-    overflow-x: hidden;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
   }
   .section-footer .footer-head {
     height: 6vw;
