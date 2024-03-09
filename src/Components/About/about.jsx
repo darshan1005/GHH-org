@@ -22,12 +22,12 @@ const About = () => {
                     <div data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000" className="lead">
-                        <p className="details">Lead Name <br /> Other details</p>
+                        <p className="details">Botsa Hemalatha <br /> GHH Lead</p>
                     </div>
                     <div data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000" className="admin">
-                        <p className="details">Admin Name <br /> Other details</p>
+                        <p className="details">Admin Name <br /> GHH CO-Lead</p>
                     </div>
                 </div>
 
