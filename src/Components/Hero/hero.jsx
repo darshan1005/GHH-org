@@ -28,7 +28,9 @@ const Hero = () => {
                         <p className="statement" id='statement_id'>Uniting hands, like threads weaving hope, Grace Helping Hands organization forms a tapestry of change.</p>
                         <p  className='sub_statement'>Let’s collaborate to make a positive difference in the world.</p>
                         <div className="join-btn-arrows">
-                            <button className="join-us">Join us</button>
+                            <a href="#Getinvolved">
+                                <button className="join-us">Join us</button>
+                            </a>
                             <img data-aos='fade-left' data-aos-duration="1000" data-aos-delay="100" src={arrow} alt="arrows image" />
                         </div>
                     </div>
