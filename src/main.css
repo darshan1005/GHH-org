@@ -347,7 +347,7 @@ a {
 }
 .about-section .owner-details .lead p:hover {
   transition: all 0.2 ease-in;
-  color: rgb(255, 255, 255);
+  color: white;
   opacity: 1;
 }
 .about-section .owner-details .admin {
@@ -369,9 +369,10 @@ a {
 .about-section .owner-details .admin p {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: center;
+  padding-bottom: 6px;
   font-size: 1.5vw;
   font-weight: 600;
   height: 16vw;
@@ -379,7 +380,7 @@ a {
 }
 .about-section .owner-details .admin p:hover {
   transition: all 0.3 ease-in;
-  color: #FCDEC0;
+  color: white;
   opacity: 1;
 }
 .about-section .mission {
@@ -484,7 +485,7 @@ a {
   scroll-snap-type: x mandatory;
 }
 .ourwork-section .images img {
-  width: 17vw;
+  width: 22vw;
   height: 17vw;
   margin: 4px;
   scroll-snap-align: start;
@@ -809,8 +810,11 @@ a {
     gap: 0.2rem;
   }
   .top {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+    float: right;
+    left: 10px;
+    bottom: 10px;
   }
 }
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
