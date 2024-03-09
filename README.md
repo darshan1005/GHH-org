@@ -55,3 +55,89 @@ To use AOS in your React application developed with the Grace Helping Hands Reac
 For more information on how to integrate and use AOS in your React application, refer to the official documentation and examples provided by the AOS project.
 
 Official Website: [AOS - Animate On Scroll Library](https://michalsnik.github.io/aos/)
+
+# React Grid Image
+React Grid Image is a React component that displays a grid of images in a responsive layout. It is designed to make it easy to create visually appealing image grids for displaying galleries, portfolios, or any other collection of images.
+
+Installation
+You can install React Grid Image via npm or yarn:
+
+bash
+Copy code
+npm install react-grid-image
+or
+
+bash
+Copy code
+yarn add react-grid-image
+Usage
+To use React Grid Image, simply import the component and pass in the necessary props:
+
+javascript
+Copy code
+import React from 'react';
+import GridImage from 'react-grid-image';
+
+const MyComponent = () => {
+  const images = [
+    { src: 'image1.jpg', alt: 'Image 1' },
+    { src: 'image2.jpg', alt: 'Image 2' },
+    { src: 'image3.jpg', alt: 'Image 3' },
+    // Add more images as needed
+  ];
+
+  return (
+    <div>
+      <GridImage images={images} />
+    </div>
+  );
+};
+
+export default MyComponent;
+Props
+React Grid Image accepts the following props:
+
+images: An array of objects, each representing an image to be displayed in the grid. Each object should have the following properties:
+
+src: The URL of the image.
+alt: The alternative text for the image.
+columns: (Optional) The number of columns in the grid. Defaults to 3.
+
+gap: (Optional) The gap between images in the grid, in pixels. Defaults to 10.
+
+onClick: (Optional) A function to be called when an image in the grid is clicked. Receives the clicked image object as an argument.
+
+className: (Optional) Additional CSS class names to be applied to the grid container.
+
+Example
+javascript
+Copy code
+import React from 'react';
+import GridImage from 'react-grid-image';
+
+const MyComponent = () => {
+  const images = [
+    { src: 'image1.jpg', alt: 'Image 1' },
+    { src: 'image2.jpg', alt: 'Image 2' },
+    { src: 'image3.jpg', alt: 'Image 3' },
+    // Add more images as needed
+  ];
+
+  const handleImageClick = (image) => {
+    console.log('Clicked image:', image);
+  };
+
+  return (
+    <div>
+      <GridImage
+        images={images}
+        columns={4}
+        gap={5}
+        onClick={handleImageClick}
+        className="custom-grid"
+      />
+    </div>
+  );
+};
+
+export default MyComponent;

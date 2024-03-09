@@ -35,7 +35,7 @@ const About = () => {
                     <h3>Our Mission</h3>
                     <div className="mission-statement">
                         <p className="statement">
-                            Grace Helping Hands is an organization dedicated to assisting people, students, and the elderly by providing essential support using their own funds. Our mission is to make a positive impact on the lives of those in need by offering assistance with basic necessities and support services.
+                            We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by  providing the basic necessities. We may not able to help everyone but we are trying to help because <b>WE BELIEVE HUMANITY DRIVES THE WORLD</b>.
                         </p>
                     </div>
                 </div>

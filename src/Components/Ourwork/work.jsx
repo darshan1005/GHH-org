@@ -5,11 +5,11 @@ const work = () => [
     },
     {
         id: 2,
-        text: "On the name of kids who lost their parents in corona, one lakh rupees is fixed deposit is done."
+        text: "On the name of kids who lost their parents in corona, one lakh rupees fixed deposit is done."
     },
     {
         id: 3,
-        text: "For the people who have been suffering from corona and cancer, donation is made in the form of money for medicine expenses."
+        text: "For the people who have been suffering from corona and cancer, donation is made in the form of money for medical expenses."
     },
     {
         id: 4,
