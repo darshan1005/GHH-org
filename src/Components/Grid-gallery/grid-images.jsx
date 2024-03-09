@@ -254,17 +254,20 @@ const imagesArray = [
 
 export default function gridimages() {
     return (
-        <section className="section-gallery">
-            <div className="gallery-title">
-                <p className="title">Gallery</p>
-            </div>
-            <div className="grid-gallery">
-                <ImageGallery
-                    imagesInfoArray={imagesArray}
-                    columnWidth={230}
-                    gapSize={24}
-                />
-            </div>
-        </section>
+        <>
+            <div id="Gallery"></div>
+            <section className="section-gallery">
+                <div className="gallery-title">
+                    <p className="title">Gallery</p>
+                </div>
+                <div className="grid-gallery">
+                    <ImageGallery
+                        imagesInfoArray={imagesArray}
+                        columnWidth={230}
+                        gapSize={24}
+                    />
+                </div>
+            </section>
+        </>
     );
 }
