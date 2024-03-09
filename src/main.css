@@ -665,15 +665,14 @@ a {
     height: 15%;
   }
   .nav-title .nav-list .list .navs {
-    font-size: 5px;
+    font-size: 6px;
     padding: 4px 12px;
   }
   .nav-title .nav-list .list .navs:hover {
     padding: 4px 12px;
   }
-  .nav-title .donate-btn .donate {
-    height: 4px;
-    font-size: 4px;
+  .nav-title .donate-btn {
+    display: none;
   }
   .Hero-section .title-spans .c-title {
     text-shadow: 1px 1px #FCDEC0, 0 0 #7D5A50, 0 0 2px rgb(0, 0, 27);

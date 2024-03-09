@@ -25,8 +25,8 @@ const Nav = () => {
                 </ul>
             </div>
             <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="donate-btn">
-            <a href='#Getinvolved'>
-                <button className="donate">Donate</button></a>
+                <a href='#Getinvolved'>
+                    <button className="donate">Donate</button></a>
             </div>
         </div>
     );

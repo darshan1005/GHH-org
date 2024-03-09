@@ -787,7 +787,7 @@ a {
         .nav-list {
             .list {
                 .navs {
-                    font-size: 5px;
+                    font-size: 6px;
                     padding: 4px 12px;
 
                     &:hover {
@@ -798,10 +798,7 @@ a {
         }
 
         .donate-btn {
-            .donate {
-                height: 4px;
-                font-size: 4px;
-            }
+            display: none;
         }
     }
 
