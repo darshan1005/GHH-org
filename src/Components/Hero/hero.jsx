@@ -8,6 +8,8 @@ import handsbg from '../../assets/hands-images/hands-bg-white.jpg'
 import handsholding from '../../assets/hands-images/Hands-holding.jpg'
 import helpinghands from '../../assets/hands-images/Helping-hands.jpg'
 import tree from '../../assets/hands-images/tress-removebg-preview.png'
+import sunshine from '../../assets/hands-images/sunshine.jpg'
+import heart from '../../assets/hands-images/heart.jpg'
 import arrow from '../../assets/Arrows.png'
 
 // Import AOS
@@ -19,7 +21,7 @@ import ImageAnimation from './image-animation';
 const Hero = () => {
 
     const images = [
-        boy, foodhelp, handsbg, handsholding, helpinghands, tree
+        boy, foodhelp, handsbg, handsholding, helpinghands, tree, sunshine, heart
     ]
 
     useEffect(() => {
