@@ -2,14 +2,26 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import boy from '../../assets/School_boy_img.png'
+import boy from '../../assets/hands-images/School_boy_img.png'
+import foodhelp from '../../assets/hands-images/Food-help.jpg';
+import handsbg from '../../assets/hands-images/hands-bg-white.jpg'
+import handsholding from '../../assets/hands-images/Hands-holding.jpg'
+import helpinghands from '../../assets/hands-images/Helping-hands.jpg'
+import tree from '../../assets/hands-images/tress-removebg-preview.png'
 import arrow from '../../assets/Arrows.png'
 
 // Import AOS
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import ImageAnimation from './image-animation';
+
 const Hero = () => {
+
+    const images = [
+        boy, foodhelp, handsbg, handsholding, helpinghands, tree
+    ]
+
     useEffect(() => {
         AOS.init({ duration: 1000 });
     }, []);
@@ -38,7 +50,7 @@ const Hero = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000" className="card">
                         <div className="img-box">
-                            <img src={boy} alt="School boy" />
+                            <ImageAnimation images={images} className="img-box" />
                         </div>
                         <div className="card-content">
                             <h4>Join Us in Building a Beautiful World</h4>

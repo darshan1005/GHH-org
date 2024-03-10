@@ -2,9 +2,9 @@
 import React, { useEffect } from 'react';
 import logo from '../../assets/Asset 10@2x.png';
 import logo2 from '../../assets/GHH 9@2x.png';
-import insta from '../../assets/instagram.svg';
-import facebook from '../../assets/facebook.svg';
-import youtube from '../../assets/youtube.svg';
+import insta from '../../assets/media/instagram.svg';
+import facebook from '../../assets/media/facebook.svg';
+import youtube from '../../assets/media/youtube.svg';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

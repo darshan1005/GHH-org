@@ -265,6 +265,7 @@ export default function gridimages() {
                         imagesInfoArray={imagesArray}
                         columnWidth={230}
                         gapSize={24}
+                        className = "images"
                     />
                 </div>
             </section>
