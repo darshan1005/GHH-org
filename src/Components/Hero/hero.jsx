@@ -2,15 +2,14 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-import boy from '../../assets/hands-images/School_boy_img.png'
+import boy from '../../assets/hands-images/School_boy_img.png';
 import foodhelp from '../../assets/hands-images/Food-help.jpg';
-import handsbg from '../../assets/hands-images/hands-bg-white.jpg'
-import handsholding from '../../assets/hands-images/Hands-holding.jpg'
-import helpinghands from '../../assets/hands-images/Helping-hands.jpg'
-import tree from '../../assets/hands-images/tress-removebg-preview.png'
-import sunshine from '../../assets/hands-images/sunshine.jpg'
-import heart from '../../assets/hands-images/heart.jpg'
-import arrow from '../../assets/Arrows.png'
+import handsholding from '../../assets/hands-images/Hands-holding.jpg';
+import helpinghands from '../../assets/hands-images/Helping-hands.jpg';
+import tree from '../../assets/hands-images/tress-removebg-preview.png';
+import sunshine from '../../assets/hands-images/sunshine.jpg';
+import heart from '../../assets/hands-images/heart.jpg';
+import arrow from '../../assets/Arrows.png';
 
 // Import AOS
 import AOS from 'aos';
@@ -21,7 +20,7 @@ import ImageAnimation from './image-animation';
 const Hero = () => {
 
     const images = [
-        boy, foodhelp, handsbg, handsholding, helpinghands, tree, sunshine, heart
+        boy, sunshine, foodhelp, handsholding, helpinghands, tree, heart
     ]
 
     useEffect(() => {
