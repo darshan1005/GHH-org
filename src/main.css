@@ -321,71 +321,48 @@ a {
   margin-top: 4%;
   gap: 4vw;
 }
-.about-section .owner-details .lead {
-  background: url(./assets/leads/Lead.jpg);
-  filter: drop-shadow(20px -20px 4px rgba(68, 68, 68, 0.2666666667));
-  border: 2px solid #000;
+.about-section .owner-details .lead,
+.about-section .owner-details .admin {
   background-repeat: center;
   background-size: cover;
+  border: 2px solid #000;
   order: 1;
   justify-self: center;
   width: 16vw;
   height: 16vw;
-}
-.about-section .owner-details .lead:hover {
-  transition: all 0.2 ease-in;
-  filter: brightness(0.8);
-  opacity: 1;
-}
-.about-section .owner-details .lead p {
   position: relative;
+}
+.about-section .owner-details .lead p,
+.about-section .owner-details .admin p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  padding-bottom: 6px;
+  padding: 6px;
   font-size: 1.5vw;
   font-weight: 600;
-  height: 16vw;
   opacity: 0;
-}
-.about-section .owner-details .lead p:hover {
-  transition: all 0.2 ease-in;
+  background: black;
   color: white;
+  transition: opacity 0.3s ease-in;
+}
+.about-section .owner-details .lead:hover p,
+.about-section .owner-details .admin:hover p {
   opacity: 1;
+}
+.about-section .owner-details .lead:hover,
+.about-section .owner-details .admin:hover {
+  filter: drop-shadow(20px -20px 4px rgba(68, 68, 68, 0.2666666667));
+}
+.about-section .owner-details .lead {
+  background-image: url(./assets/leads/Lead.jpg);
 }
 .about-section .owner-details .admin {
-  background: url(./assets/hands-images/Hands-holding.jpg);
-  filter: drop-shadow(20px 20px 4px rgba(68, 68, 68, 0.2666666667));
-  border: 2px solid #000;
-  background-repeat: center;
-  background-size: cover;
-  order: 1;
-  justify-self: center;
-  width: 16vw;
-  height: 16vw;
-}
-.about-section .owner-details .admin:hover {
-  transition: all 0.2 ease-in;
-  filter: brightness(0.8);
-  opacity: 1;
-}
-.about-section .owner-details .admin p {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 6px;
-  font-size: 1.5vw;
-  font-weight: 600;
-  height: 16vw;
-  opacity: 0;
-}
-.about-section .owner-details .admin p:hover {
-  transition: all 0.3 ease-in;
-  color: white;
-  opacity: 1;
+  background-image: url(./assets/leads/Admin.jpg);
 }
 .about-section .mission {
   display: flex;

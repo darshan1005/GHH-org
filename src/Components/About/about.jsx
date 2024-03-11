@@ -27,7 +27,7 @@ const About = () => {
                     <div data-aos="flip-right"
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="2000" className="admin">
-                        <p className="details">Admin Name <br /> GHH CO-Lead</p>
+                        <p className="details">Metta Bhanupratap <br /> GHH Administrator</p>
                     </div>
                 </div>
 

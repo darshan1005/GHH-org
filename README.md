@@ -14,14 +14,8 @@ Currently, there are two official plugins available for integrating React with V
 Plugin Repository
 @vitejs/plugin-react-swc: This alternative plugin uses SWC for Fast Refresh, offering another option for efficient component reloading.
 
-Plugin Repository
-Getting Started
-To begin using the React + Vite template provided by Grace Helping Hands, follow these steps:
-
-Clone the repository from https://github.com/gracehelpinghandsorg/react-vite-template.
-
 Install dependencies using npm or yarn:
-
+```
 bash
 Copy code
 npm install
@@ -34,6 +28,7 @@ Copy code
 npm run dev
 # or
 yarn dev
+```
 Begin coding your React application using Vite, taking advantage of the fast refresh and efficient development environment provided by the template.
 
 Deployment
@@ -61,7 +56,7 @@ React Grid Image is a React component that displays a grid of images in a respon
 
 Installation
 You can install React Grid Image via npm or yarn:
-
+```
 bash
 Copy code
 npm install react-grid-image
@@ -70,11 +65,13 @@ or
 bash
 Copy code
 yarn add react-grid-image
+```
 Usage
 To use React Grid Image, simply import the component and pass in the necessary props:
 
-javascript
+## javascript
 Copy code
+```
 import React from 'react';
 import GridImage from 'react-grid-image';
 
@@ -94,6 +91,7 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+```
 Props
 React Grid Image accepts the following props:
 
@@ -112,6 +110,7 @@ className: (Optional) Additional CSS class names to be applied to the grid conta
 Example
 javascript
 Copy code
+```
 import React from 'react';
 import GridImage from 'react-grid-image';
 
@@ -141,3 +140,4 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+```

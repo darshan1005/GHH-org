@@ -380,81 +380,54 @@ a {
         justify-content: center;
         margin-top: 4%;
         gap: 4vw;
-
-        .lead {
-            background: url(./assets/leads/Lead.jpg);
-            filter: drop-shadow(20px -20px 4px #4444);
-            border: 2px solid #000;
+    
+        .lead,
+        .admin {
             background-repeat: center;
             background-size: cover;
+            border: 2px solid #000;
             order: 1;
             justify-self: center;
             width: 16vw;
             height: 16vw;
-
-            &:hover {
-                transition: all .2 ease-in;
-                filter: brightness(.8);
-                opacity: 1;
-            }
-
+            position: relative;
+    
             p {
-                position: relative;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
                 display: flex;
-                align-items: flex-end;
+                align-items: center;
                 justify-content: center;
                 text-align: center;
-                padding-bottom: 6px;
+                padding: 6px;
                 font-size: 1.5vw;
                 font-weight: 600;
-                height: 16vw;
                 opacity: 0;
-
-                &:hover {
-                    transition: all .2 ease-in;
-                    color: white;
-                    opacity: 1;
-                }
+                background: black;
+                color: white;
+                transition: opacity 0.3s ease-in;
+            }
+    
+            &:hover p {
+                opacity: 1;
+            }
+    
+            &:hover {
+                filter: drop-shadow(20px -20px 4px #4444); // Apply drop shadow effect on hover
             }
         }
-
+    
+        .lead {
+            background-image: url(./assets/leads/Lead.jpg);
+        }
+    
         .admin {
-            background: url(./assets/hands-images/Hands-holding.jpg);
-            filter: drop-shadow(20px 20px 4px #4444);
-            border: 2px solid #000;
-            background-repeat: center;
-            background-size: cover;
-            order: 1;
-            justify-self: center;
-            width: 16vw;
-            height: 16vw;
-
-            &:hover {
-                transition: all .2 ease-in;
-                filter: brightness(.8);
-                opacity: 1;
-            }
-
-            p {
-                position: relative;
-                display: flex;
-                align-items: flex-end;
-                justify-content: center;
-                text-align: center;
-                padding-bottom: 6px;
-                font-size: 1.5vw;
-                font-weight: 600;
-                height: 16vw;
-                opacity: 0;
-
-                &:hover {
-                    transition: all .3 ease-in;
-                    color: white;
-                    opacity: 1;
-                }
-            }
+            background-image: url(./assets/leads/Admin.jpg);
         }
     }
+    
 
     .mission {
         display: flex;
