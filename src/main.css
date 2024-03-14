@@ -182,6 +182,9 @@ a {
   align-items: center;
 }
 .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 14vw;
   height: 3.2vw;
   margin-top: 2.2vw;
@@ -662,8 +665,12 @@ a {
   .Hero-section .subtitle .subtitle-statement {
     margin-left: 0;
   }
-  .Hero-section .subtitle .sub_statement {
-    color: white;
+  .Hero-section .subtitle .subtitle-statement .sub_statement {
+    color: rgb(0, 0, 0);
+  }
+  .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
+    border: none;
+    font-size: 5px;
   }
   .Hero-section .subtitle .card {
     border-radius: 4px;
@@ -698,8 +705,9 @@ a {
   }
   .Hero-section .hero-footer .black-div {
     width: 45%;
-    height: 45%;
-    margin-right: 2rem;
+    height: 50%;
+    position: relative;
+    left: -0.75rem;
   }
   .Hero-section .hero-footer .black-div h3 {
     font-size: 1.2vw;
@@ -712,14 +720,14 @@ a {
     filter: drop-shadow(7px 7px 2px rgba(68, 68, 68, 0.2666666667));
   }
   .about-section .mission {
-    width: 95%;
+    width: 98%;
   }
   .about-section .mission h3 {
     font-size: 10px;
   }
   .about-section .mission .mission-statement {
     height: 7rem;
-    width: 75%;
+    width: 80%;
   }
   .about-section .mission .mission-statement .statement {
     font-size: 9px;
@@ -735,7 +743,7 @@ a {
     display: flex;
     margin: 0 auto;
     margin-top: 1rem;
-    width: 87%;
+    width: 95%;
   }
   .ourwork-section .ourwork .works ul {
     height: 10rem;
@@ -764,7 +772,7 @@ a {
     border-radius: 4px;
   }
   .section-gallery {
-    margin-top: -1rem;
+    margin-top: -3rem;
   }
   .section-gallery .gallery-title {
     width: 3rem;
@@ -772,6 +780,9 @@ a {
   }
   .section-gallery .gallery-title .title {
     font-size: 8px;
+  }
+  .section-gallery .grid-gallery {
+    width: 80%;
   }
   .section-footer .footer-head {
     height: 2rem;
@@ -800,32 +811,7 @@ a {
   }
 }
 /* Mobile screens (min-width: 321px) and (max-width: 374px) */
-@media screen and (min-width: 321px) and (max-width: 374px) {
-  .nav-title {
-    padding: 0;
-  }
-  .nav-title .donate-btn {
-    display: none;
-  }
-  .ourwork-section .ourwork .works {
-    width: 90%;
-  }
-  .ourwork-section .ourwork .works ul li {
-    font-size: 8px;
-  }
-  .section-gallery {
-    margin-top: -1rem;
-  }
-  .section-gallery .gallery-title {
-    width: 4rem;
-    height: 1.5rem;
-  }
-  .section-gallery .gallery-title .title {
-    font-size: 11px;
-  }
-}
-/* Mobile screens (min-width: 375px) and (max-width: 425px) */
-@media screen and (min-width: 375px) and (max-width: 425px) {
+@media screen and (min-width: 321px) and (max-width: 375px) {
   .nav-title {
     padding: 8px;
   }
@@ -849,8 +835,12 @@ a {
   .Hero-section .subtitle .subtitle-statement {
     margin-left: 0;
   }
-  .Hero-section .subtitle .sub_statement {
-    color: white;
+  .Hero-section .subtitle .subtitle-statement .sub_statement {
+    color: rgb(0, 0, 0);
+  }
+  .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
+    border: none;
+    font-size: 6px;
   }
   .Hero-section .subtitle .card {
     border-radius: 4px;
@@ -886,7 +876,8 @@ a {
   .Hero-section .hero-footer .black-div {
     width: 45%;
     height: 45%;
-    margin-right: 2rem;
+    position: relative;
+    left: -0.75rem;
   }
   .Hero-section .hero-footer .black-div h3 {
     font-size: 1.2vw;
@@ -947,6 +938,19 @@ a {
     background: #7D5A50;
     border-radius: 4px;
   }
+  .section-gallery {
+    margin-top: -3rem;
+  }
+  .section-gallery .gallery-title {
+    width: 3rem;
+    height: 1rem;
+  }
+  .section-gallery .gallery-title .title {
+    font-size: 8px;
+  }
+  .section-gallery .grid-gallery {
+    width: 80%;
+  }
   .section-footer .footer-head {
     height: 2rem;
   }
@@ -963,8 +967,169 @@ a {
     gap: 0.2rem;
   }
   .top {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+  }
+}
+/* Mobile screens (min-width: 375px) and (max-width: 425px) */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .nav-title {
+    padding: 8px;
+  }
+  .nav-title .logo-container {
+    width: 6vw;
+    height: 15%;
+  }
+  .nav-title .nav-list .list .navs {
+    font-size: 7px;
+    padding: 5px 15px;
+  }
+  .nav-title .nav-list .list .navs:hover {
+    padding: 5px 15px;
+  }
+  .nav-title .donate-btn {
+    display: none;
+  }
+  .Hero-section .title-spans .c-title {
+    text-shadow: 1px 1px #FCDEC0, 0 0 #7D5A50, 0 0 2px rgb(0, 0, 27);
+  }
+  .Hero-section .subtitle .subtitle-statement {
+    margin-left: 0;
+  }
+  .Hero-section .subtitle .subtitle-statement .sub_statement {
+    color: rgb(0, 0, 0);
+  }
+  .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
+    border: none;
+    font-size: 6px;
+  }
+  .Hero-section .subtitle .card {
+    border-radius: 4px;
+    margin-left: -4.5rem;
+    top: 3%;
+    padding-top: 0.7rem;
+  }
+  .Hero-section .subtitle .card .img-box {
+    border-radius: 4px;
+  }
+  .Hero-section .subtitle .card .card-content h4 {
+    margin-top: 5px;
+  }
+  .Hero-section .subtitle .card .card-content ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Hero-section .subtitle .card .card-content ul .heading {
+    font-size: 6px;
+    color: white;
+    margin-bottom: -3px;
+    padding-top: 0;
+  }
+  .Hero-section .subtitle .card .card-content ul .semi-content {
+    padding: 1px;
+    color: rgb(211, 210, 210);
+    margin-left: 0.7rem;
+  }
+  .Hero-section .hero-footer {
+    height: 3rem;
+  }
+  .Hero-section .hero-footer .black-div {
+    width: 45%;
+    height: 45%;
+    position: relative;
+    left: -0.75rem;
+  }
+  .Hero-section .hero-footer .black-div h3 {
+    font-size: 1.2vw;
+    color: white;
+  }
+  .about-section .owner-details .lead {
+    filter: drop-shadow(10px -10px 4px rgba(68, 68, 68, 0.2666666667));
+  }
+  .about-section .owner-details .admin {
+    filter: drop-shadow(10px -10px 4px rgba(68, 68, 68, 0.2666666667));
+  }
+  .about-section .mission h3 {
+    font-size: 10px;
+  }
+  .about-section .mission .mission-statement {
+    width: 83%;
+  }
+  .about-section .mission .mission-statement .statement {
+    font-size: smaller;
+  }
+  .ourwork-section {
+    margin-top: -2rem;
+  }
+  .ourwork-section .ourwork h3 {
+    font-size: 10px;
+    margin-bottom: -1.5rem;
+  }
+  .ourwork-section .ourwork .works {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 87%;
+  }
+  .ourwork-section .ourwork .works ul {
+    height: 10rem;
+  }
+  .ourwork-section .ourwork .works ul li {
+    font-size: 10px;
+  }
+  .ourwork-section .images {
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    width: 80%;
+  }
+  .ourwork-section .images img {
+    width: 16rem;
+    height: 12rem;
+  }
+  .ourwork-section .images::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+  }
+  .ourwork-section .images::-webkit-scrollbar-thumb {
+    background: #FCDEC0;
+    border-radius: 4px;
+  }
+  .ourwork-section .images::-webkit-scrollbar-track {
+    background: #7D5A50;
+    border-radius: 4px;
+  }
+  .section-gallery .gallery-title {
+    display: flex;
+    margin: 0 auto;
+    width: 3rem;
+    height: 1rem;
+    margin-bottom: 1rem;
+  }
+  .section-gallery .gallery-title .title {
+    font-size: 8px;
+  }
+  .section-gallery .grid-gallery {
+    width: 80%;
+  }
+  .section-footer .footer-head {
+    height: 2rem;
+  }
+  .section-footer .footer-head h3 {
+    font-size: 10px;
+  }
+  .section-footer .footer-head .media {
+    gap: 4px;
+  }
+  .section-footer .footer-body .address {
+    font-size: small;
+  }
+  .section-footer .footer-body .contact {
+    gap: 0.2rem;
+  }
+  .top {
+    width: 45px;
+    height: 45px;
   }
 }
 /* Tablet screens (tablet: 768) */

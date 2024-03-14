@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
+import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 
 const TopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -29,7 +30,7 @@ const TopButton = () => {
 
     return (
         <button className={`top ${isVisible ? 'visible' : ''}`} onClick={scrollToTop}>
-            <a href="#Home">🔝</a>
+            <a href="#Home"><KeyboardDoubleArrowUpIcon /></a>
         </button>
     );
 };
