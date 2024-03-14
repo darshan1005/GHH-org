@@ -418,7 +418,7 @@ a {
             }
     
             &:hover {
-                filter: drop-shadow(20px -20px 4px #4444); // Apply drop shadow effect on hover
+                filter: drop-shadow(20px -20px 4px #4444); 
             }
         }
     
@@ -585,6 +585,7 @@ a {
 }
 
 .section-gallery {
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -860,12 +861,24 @@ a {
     }
 
     .about-section {
+        .about-title{
+            width: 3rem;
+            height: 1rem;
+
+            .title {
+                font-size: 8px;
+            }
+        }
         .owner-details {
             .lead {
+                width: 4rem;
+                height: 4rem;
                 filter: drop-shadow(7px -7px 2px #4444);
             }
 
             .admin {
+                width: 4rem;
+                height: 4rem;
                 filter: drop-shadow(7px 7px 2px #4444);
             }
         }
@@ -993,7 +1006,7 @@ a {
     }
 }
 
-/* Mobile screens (min-width: 321px) and (max-width: 374px) */
+/* Mobile screens (min-width: 321px) and (max-width: 375px) */
 @media screen and (min-width: 321px) and (max-width: 375px) {
 
     .nav-title {
@@ -1103,10 +1116,14 @@ a {
     .about-section {
         .owner-details {
             .lead {
+                width: 4.5rem;
+                height: 4.5rem;
                 filter: drop-shadow(10px -10px 4px #4444);
             }
 
             .admin {
+                width: 4.5rem;
+                height: 4.5rem;
                 filter: drop-shadow(10px -10px 4px #4444);
             }
         }
@@ -1226,7 +1243,7 @@ a {
 
 }
 
-/* Mobile screens (min-width: 375px) and (max-width: 425px) */
+/* Mobile screens (min-width: 376px) and (max-width: 425px) */
 @media screen and (min-width: 376px) and (max-width: 425px) {
 
     .nav-title {
@@ -1334,13 +1351,28 @@ a {
     }
 
     .about-section {
+        .about-title{
+            display: flex;
+            margin: 0 auto;
+            width: 3rem;
+            height: 1rem;
+            margin-bottom: 1rem;
+
+            .title {
+                font-size: 8px;
+            }
+        }
         .owner-details {
             .lead {
-                filter: drop-shadow(10px -10px 4px #4444);
+                width: 7rem;
+                height: 7rem;
+                filter: drop-shadow(10px -10px 2px #4444);
             }
 
             .admin {
-                filter: drop-shadow(10px -10px 4px #4444);
+                width: 7rem;
+                height: 7rem;
+                filter: drop-shadow(10px 10px 2px #4444);
             }
         }
 
@@ -1601,6 +1633,10 @@ a {
     }
 
     .section-gallery {
+        display: flex;
+        margin: 0 auto;
+        margin-top: -2rem;
+        width: 95%;
         .gallery-title {
             box-shadow: 4px -4px black;
         }
@@ -1646,10 +1682,12 @@ a {
         }
 
         .donate-btn {
-            .donate {
-                width: 6rem;
-                height: 1.5rem;
-                font-size: 1.1vw;
+            a{
+                .donate {
+                    width: 6rem;
+                    height: 1.5rem;
+                    font-size: 1.1vw;
+                }
             }
         }
     }
@@ -1704,6 +1742,12 @@ a {
                 }
             }
         }
+    }
+
+    .section-gallery{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
     }
 
     .section-footer {
@@ -1779,6 +1823,12 @@ a {
                 height: 18vw;
             }
         }
+    }
+
+    .section-gallery{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
     }
 
     .section-footer {
