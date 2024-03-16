@@ -647,8 +647,9 @@ a {
     padding: 0.4rem;
   }
   .nav-title .logo-container {
-    width: 6vw;
+    width: 9vw;
     height: 15%;
+    margin-top: 4px;
   }
   .nav-title .nav-list .list .navs {
     font-size: 6px;
@@ -738,11 +739,12 @@ a {
     font-size: 10px;
   }
   .about-section .mission .mission-statement {
-    height: 7rem;
-    width: 80%;
+    height: 6.5rem;
+    width: 85%;
+    word-break: normal;
   }
   .about-section .mission .mission-statement .statement {
-    font-size: 9px;
+    font-size: 1vh;
   }
   .ourwork-section {
     margin-top: -2rem;
@@ -828,8 +830,9 @@ a {
     padding: 8px;
   }
   .nav-title .logo-container {
-    width: 6vw;
+    width: 9vw;
     height: 15%;
+    margin-top: 4px;
   }
   .nav-title .nav-list .list .navs {
     font-size: 7px;
@@ -910,6 +913,8 @@ a {
   }
   .about-section .mission .mission-statement {
     width: 83%;
+    word-wrap: break-word;
+    word-break: normal;
   }
   .about-section .mission .mission-statement .statement {
     font-size: smaller;
@@ -993,8 +998,9 @@ a {
     padding: 8px;
   }
   .nav-title .logo-container {
-    width: 6vw;
+    width: 9vw;
     height: 15%;
+    margin-top: 4px;
   }
   .nav-title .nav-list .list .navs {
     font-size: 7px;
@@ -1085,6 +1091,8 @@ a {
   }
   .about-section .mission .mission-statement {
     width: 83%;
+    word-wrap: break-word;
+    word-break: normal;
   }
   .about-section .mission .mission-statement .statement {
     font-size: smaller;
@@ -1164,6 +1172,11 @@ a {
 }
 /* Tablet screens (tablet: 768) */
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  .nav-title .logo-container {
+    width: 7vw;
+    height: 15%;
+    margin-top: 4px;
+  }
   .nav-title .nav-list .list .navs {
     font-size: 1.4vw;
   }

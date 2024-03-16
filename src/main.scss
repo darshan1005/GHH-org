@@ -760,8 +760,9 @@ a {
         padding: .4rem;
 
         .logo-container {
-            width: 6vw;
+            width: 9vw;
             height: 15%;
+            margin-top: 4px;
         }
 
         .nav-list {
@@ -891,11 +892,12 @@ a {
             }
 
             .mission-statement {
-                height: 7rem;
-                width: 80%;
+                height: 6.5rem;
+                width: 85%; 
+                word-break: normal;
 
                 .statement {
-                    font-size: 9px;
+                    font-size: 1vh;
                 }
             }
         }
@@ -1013,8 +1015,9 @@ a {
         padding: 8px;
 
         .logo-container {
-            width: 6vw;
+            width: 9vw;
             height: 15%;
+            margin-top: 4px;
         }
 
         .nav-list {
@@ -1135,6 +1138,8 @@ a {
 
             .mission-statement {
                 width: 83%;
+                word-wrap: break-word;
+                word-break: normal;
 
                 .statement {
                     font-size: smaller;
@@ -1250,8 +1255,9 @@ a {
         padding: 8px;
 
         .logo-container {
-            width: 6vw;
+            width: 9vw;
             height: 15%;
+            margin-top: 4px;
         }
 
         .nav-list {
@@ -1383,6 +1389,8 @@ a {
 
             .mission-statement {
                 width: 83%;
+                word-wrap: break-word;
+                word-break: normal;
 
                 .statement {
                     font-size: smaller;
@@ -1496,6 +1504,11 @@ a {
 @media screen and (min-width: 426px) and (max-width: 768px) {
 
     .nav-title {
+        .logo-container{
+            width: 7vw;
+            height: 15%;
+            margin-top: 4px;
+        }
         .nav-list {
             .list {
                 .navs {
