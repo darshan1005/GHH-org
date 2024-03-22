@@ -1000,7 +1000,7 @@ a {
   }
 }
 /* Mobile screens (min-width: 376px) and (max-width: 425px) */
-@media screen and (min-width: 376px) and (max-width: 426px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
   .nav-title {
     padding: 8px;
   }
@@ -1175,45 +1175,52 @@ a {
   }
 }
 /* Tablet screens (tablet: 768) */
-@media screen and (min-width: 427px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .nav-title {
+    padding: 4px;
+  }
   .nav-title .logo-container {
     width: 7vw;
     height: 15%;
     margin-top: 4px;
   }
   .nav-title .nav-list .list .navs {
-    font-size: 1.4vw;
+    font-weight: 700;
+    font-size: 1.5vw;
+    padding: 8px 24px;
+  }
+  .nav-title .nav-list .list .navs:hover {
+    padding: 8px 24px;
   }
   .nav-title .donate-btn {
-    display: flex;
-    align-items: center;
-  }
-  .nav-title .donate-btn a .donate {
-    height: 2vh;
-    font-size: 10px;
+    display: none;
   }
   .Hero-section .subtitle .subtitle-statement {
     margin-left: 6rem;
   }
   .Hero-section .subtitle .card {
-    margin-top: 5rem;
     margin-right: 5rem;
-    margin-left: -2rem;
+    margin-left: -4rem;
     border-radius: 7px;
-    padding-top: 1.2rem;
+    padding-top: 2%;
+    padding-bottom: 1rem;
   }
   .Hero-section .subtitle .card .img-box {
     border-radius: 7px;
+    margin: auto 0.75rem auto 0.77rem;
   }
   .Hero-section .subtitle .card .card-content h4 {
-    font-size: 9px;
+    font-size: 1.1vw;
+  }
+  .Hero-section .subtitle .card .card-content ul {
+    margin-top: -0.2rem;
   }
   .Hero-section .subtitle .card .card-content ul .heading {
-    font-size: 8px;
+    font-size: 1.1vw;
     color: white;
   }
   .Hero-section .subtitle .card .card-content ul .semi-content {
-    padding: 4px;
+    color: rgb(243, 243, 243);
   }
   .Hero-section .hero-footer {
     height: 10vw;
@@ -1250,18 +1257,20 @@ a {
     width: 80%;
   }
   .about-section .mission .mission-statement p {
-    font-size: 1.055rem;
+    padding: 1rem;
+    font-size: 14px;
   }
   .ourwork-section .ourwork h3 {
     margin-top: 2%;
   }
   .ourwork-section .ourwork .works ul {
-    height: 28vw;
+    height: 28%;
   }
   .ourwork-section .ourwork .works ul li {
     font-size: 1.7vw;
   }
   .ourwork-section .images {
+    margin-bottom: -1rem;
     width: 80%;
   }
   .ourwork-section .images img {
@@ -1279,6 +1288,9 @@ a {
     height: 2.2rem;
     font-size: medium;
     box-shadow: 4px -4px black;
+  }
+  .section-gallery .grid-gallery {
+    height: 20rem;
   }
   .section-footer .footer-head {
     height: 7vh;

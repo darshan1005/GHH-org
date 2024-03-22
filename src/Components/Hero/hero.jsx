@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 
 import boy from '../../assets/hands-images/School_boy_img.png';
 import foodhelp from '../../assets/hands-images/Food-help.jpg';
-import handsholding from '../../assets/hands-images/Hands-holding.jpg';
-import helpinghands from '../../assets/hands-images/Helping-hands.jpg';
 import tree from '../../assets/hands-images/tress-removebg-preview.png';
 import sunshine from '../../assets/hands-images/sunshine.jpg';
 import heart from '../../assets/hands-images/heart.jpg';
@@ -20,7 +18,7 @@ import ImageAnimation from './image-animation';
 const Hero = () => {
 
     const images = [
-        boy, sunshine, foodhelp, handsholding, helpinghands, tree, heart
+        boy, sunshine, foodhelp, tree, heart
     ]
 
     useEffect(() => {
@@ -51,7 +49,7 @@ const Hero = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000" className="card">
                         <div className="img-box">
-                            <ImageAnimation images={images} className="img-box" />
+                            <ImageAnimation images={images}  />
                         </div>
                         <div className="card-content">
                             <h4>Join Us in Building a Beautiful World</h4>

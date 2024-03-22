@@ -1251,7 +1251,7 @@ a {
 }
 
 /* Mobile screens (min-width: 376px) and (max-width: 425px) */
-@media screen and (min-width: 376px) and (max-width: 426px) {
+@media screen and (min-width: 376px) and (max-width: 425px) {
 
     .nav-title {
         padding: 8px;
@@ -1497,9 +1497,10 @@ a {
 }
 
 /* Tablet screens (tablet: 768) */
-@media screen and (min-width: 427px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 768px) {
 
     .nav-title {
+        padding: 4px;
         .logo-container{
             width: 7vw;
             height: 15%;
@@ -1508,21 +1509,20 @@ a {
         .nav-list {
             .list {
                 .navs {
-                    font-size: 1.4vw;
+                    font-weight: 700;
+                    font-size: 1.5vw;
+                    padding: 8px 24px;
+
+                    &:hover{
+                        padding: 8px 24px;
+
+                    }
                 }
             }
         }
 
         .donate-btn {
-            display: flex;
-            align-items: center;
-
-            a {
-                .donate {
-                    height: 2vh;
-                    font-size: 10px;
-                }
-            }
+            display: none;
         }
     }
 
@@ -1533,29 +1533,31 @@ a {
             }
 
             .card {
-                margin-top: 5rem;
                 margin-right: 5rem;
-                margin-left: -2rem;
+                margin-left: -4rem;
                 border-radius: 7px;
-                padding-top: 1.2rem;
+                padding-top: 2%;
+                padding-bottom: 1rem;
 
                 .img-box {
                     border-radius: 7px;
+                    margin: auto .75rem auto .77rem;
                 }
 
                 .card-content {
                     h4 {
-                        font-size: 9px;
+                        font-size: 1.1vw;
                     }
 
                     ul {
+                        margin-top: -.2rem;
                         .heading {
-                            font-size: 8px;
+                            font-size: 1.1vw;
                             color: white;
                         }
 
                         .semi-content {
-                            padding: 4px;
+                            color: rgb(243, 243, 243);
                         }
                     }
                 }
@@ -1609,9 +1611,9 @@ a {
         .mission {
             .mission-statement {
                 width: 80%;
-
-                p {
-                    font-size: 1.055rem;
+                p {  
+                    padding: 1rem;
+                    font-size: 14px;
                 }
             }
         }
@@ -1625,7 +1627,7 @@ a {
 
             .works {
                 ul {
-                    height: 28vw;
+                    height: 28%;
 
                     li {
                         font-size: 1.7vw;
@@ -1635,6 +1637,7 @@ a {
         }
 
         .images {
+            margin-bottom: -1rem;
             width: 80%;
 
             img {
@@ -1654,6 +1657,9 @@ a {
             height: 2.2rem;
             font-size: medium;
             box-shadow: 4px -4px black;
+        }
+        .grid-gallery{
+            height: 20rem;
         }
     }
 
