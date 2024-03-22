@@ -15,9 +15,8 @@ const About = () => {
         <>
             <div id="Aboutus"></div>
             <section className="about-section" >
-                <div className="adout-title">
-                    <p className="title">About Us</p>
-                </div>
+                <p className="adout-title">About Us</p>
+
                 <div className="owner-details">
                     <div data-aos="flip-left"
                         data-aos-easing="ease-out-cubic"

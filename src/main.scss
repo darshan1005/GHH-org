@@ -360,7 +360,7 @@ a {
     margin-top: 7%;
     cursor: pointer;
 
-    .adout-title {
+    .adout-title{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -369,11 +369,8 @@ a {
         width: 10vw;
         height: 3.5vw;
         box-shadow: .5vw -.5vw black;
-
-        .title {
-            font-size: 1.4vw;
-            color: white;
-        }
+        font-size: 1.4vw;
+        color: white;
     }
 
     .owner-details {
@@ -602,14 +599,10 @@ a {
         width: 10vw;
         height: 3.5vw;
         box-shadow: .5vw -.5vw black;
-        margin-bottom: 2rem;
-        margin-top: 4rem;
-
-        .title {
-            font-size: 1.4vw;
-            color: white;
-        }
-
+        margin-bottom: 4rem;
+        margin-top: 3.5rem;
+        font-size: 1.4vw;
+        color: white;
     }
 
     // grid gallery
@@ -757,7 +750,7 @@ a {
         position: sticky;
         left: 0;
         top: 0;
-        padding: .4rem;
+        padding: 2px;
 
         .logo-container {
             width: 9vw;
@@ -861,14 +854,11 @@ a {
         }
     }
 
-    .about-section {
-        .about-title{
-            width: 3rem;
-            height: 1rem;
-
-            .title {
-                font-size: 8px;
-            }
+    .about-section{
+        .adout-title{
+            width: 3.8rem;
+            height: 1.6rem;
+            font-size:x-small;
         }
         .owner-details {
             .lead {
@@ -889,6 +879,7 @@ a {
 
             h3 {
                 font-size: 10px;
+                font-weight: 700;
             }
 
             .mission-statement {
@@ -909,6 +900,7 @@ a {
         .ourwork {
             h3 {
                 font-size: 10px;
+                font-weight: 700;
                 margin-bottom: -1.5rem;
             }
 
@@ -929,6 +921,7 @@ a {
         }
 
         .images {
+            width: 86%;
             margin-top: -1rem;
             margin-bottom: -1rem;
 
@@ -959,15 +952,15 @@ a {
         margin-top: -3rem;
 
         .gallery-title {
-            width: 3rem;
-            height: 1rem;
-
-            .title {
-                font-size: 8px;
-            }
+            width: 3.8rem;
+            height: 1.6rem;
+            font-size:x-small;
+            margin-bottom: 1rem;
         }
         .grid-gallery{
-            width: 80%;
+            width: 88%;
+            height: 20rem;
+            margin-left: 1rem;
         }
     }
 
@@ -1117,6 +1110,13 @@ a {
     }
 
     .about-section {
+        .adout-title{
+            display: flex;
+            margin: 0 auto;
+            width: 3.8rem;
+            height: 1.6rem;
+            font-size:x-small;
+        }
         .owner-details {
             .lead {
                 width: 4.5rem;
@@ -1134,6 +1134,7 @@ a {
         .mission {
             h3 {
                 font-size: 10px;
+                font-weight: 700;
             }
 
             .mission-statement {
@@ -1154,6 +1155,7 @@ a {
         .ourwork {
             h3 {
                 font-size: 10px;
+                font-weight: 700;
                 margin-bottom: -1.5rem;
             }
 
@@ -1205,12 +1207,12 @@ a {
         margin-top: -3rem;
 
         .gallery-title {
-            width: 3rem;
-            height: 1rem;
+            width: 3.8rem;
+            height: 1.6rem;
+            font-size:x-small;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
 
-            .title {
-                font-size: 8px;
-            }
         }
         .grid-gallery{
             width: 80%;
@@ -1249,7 +1251,7 @@ a {
 }
 
 /* Mobile screens (min-width: 376px) and (max-width: 425px) */
-@media screen and (min-width: 376px) and (max-width: 425px) {
+@media screen and (min-width: 376px) and (max-width: 426px) {
 
     .nav-title {
         padding: 8px;
@@ -1357,27 +1359,23 @@ a {
     }
 
     .about-section {
-        .about-title{
+        .adout-title{
             display: flex;
             margin: 0 auto;
-            width: 3rem;
-            height: 1rem;
-            margin-bottom: 1rem;
-
-            .title {
-                font-size: 8px;
-            }
+            width: 5.5rem;
+            height: 2.1rem;
+            font-size: small;
         }
         .owner-details {
             .lead {
-                width: 7rem;
-                height: 7rem;
+                width: 6rem;
+                height: 6rem;
                 filter: drop-shadow(10px -10px 2px #4444);
             }
 
             .admin {
-                width: 7rem;
-                height: 7rem;
+                width: 6rem;
+                height: 6rem;
                 filter: drop-shadow(10px 10px 2px #4444);
             }
         }
@@ -1385,6 +1383,7 @@ a {
         .mission {
             h3 {
                 font-size: 10px;
+                font-weight: 700;
             }
 
             .mission-statement {
@@ -1405,6 +1404,7 @@ a {
         .ourwork {
             h3 {
                 font-size: 10px;
+                font-weight: 700;
                 margin-bottom: -1.5rem;
             }
 
@@ -1453,17 +1453,13 @@ a {
     }
 
     .section-gallery{
-
         .gallery-title {
             display: flex;
             margin: 0 auto;
-            width: 3rem;
-            height: 1rem;
+            width: 5.5rem;
+            height: 2.1rem;
+            font-size: small;
             margin-bottom: 1rem;
-
-            .title {
-                font-size: 8px;
-            }
         }
         .grid-gallery{
             width: 80%;
@@ -1501,7 +1497,7 @@ a {
 }
 
 /* Tablet screens (tablet: 768) */
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 427px) and (max-width: 768px) {
 
     .nav-title {
         .logo-container{
@@ -1581,7 +1577,10 @@ a {
     }
 
     .about-section {
-        .about-title {
+        .adout-title {
+            width: 6rem;
+            height: 2.2rem;
+            font-size: medium;
             box-shadow: 4px -4px black;
         }
 
@@ -1651,6 +1650,9 @@ a {
         margin-top: -2rem;
         width: 95%;
         .gallery-title {
+            width: 6rem;
+            height: 2.2rem;
+            font-size: medium;
             box-shadow: 4px -4px black;
         }
     }

@@ -257,9 +257,7 @@ export default function gridimages() {
         <>
             <div id="Gallery"></div>
             <section className="section-gallery">
-                <div className="gallery-title">
-                    <p className="title">Gallery</p>
-                </div>
+                <p className="gallery-title">Gallery</p>
                 <div className="grid-gallery">
                     <ImageGallery
                         imagesInfoArray={imagesArray}
