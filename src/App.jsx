@@ -11,11 +11,11 @@ const App = () => {
     <>
       <Nav />
       <Hero />
-      <Top />
       <Aboutus />
       <Ourwork />
       <GridImages />
       <Footer />
+      <Top />
     </>
   )
 }
