@@ -42,7 +42,8 @@ const Hero = () => {
                             <a href="#Getinvolved">
                                 <button className="join-us">Join us</button>
                             </a>
-                            <img data-aos='fade-left' data-aos-duration="1000" data-aos-delay="100" src={arrow} alt="arrows image" />
+                            <img data-aos='fade-left' data-aos-duration="1000" data-aos-delay="100" src={arrow} alt="arrows image"
+                            className='arrow-image' />
                         </div>
                     </div>
                     <div data-aos="flip-left"
@@ -53,7 +54,6 @@ const Hero = () => {
                         </div>
                         <div className="card-content">
                             <h4>Join Us in Building a Beautiful World</h4>
-
                             <ul>
                                 <li className="heading">Every day:</li>
                                 <li className='semi-content'>100 million seek education.</li>
@@ -64,7 +64,7 @@ const Hero = () => {
                     </div>
                 </div>
                 <div className='hero-footer'>
-                    <div data-aos='fade-right' data-aos-duration="2000" data-aos-delay="80" className="black-div">
+                    <div data-aos='fade-in' data-aos-duration="2000" data-aos-delay="80" className="black-div">
                         <h3>Together, let’s create change-one step, one act of kindness at a time</h3>
                     </div>
                 </div>
