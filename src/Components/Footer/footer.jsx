@@ -51,7 +51,7 @@ const Footer = () => {
                 <div className="contact-details">
                     <div className="contact address">🚩 Plot No: 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
                     <div className="contact number">📞7382745053</div>
-                    <div className="contact email">📩dummyemail@gmail.com</div>
+                    <div className="contact email">📩 gracehelpinghands.hema@gmail.com</div>
                 </div>
             </div>
         </footer>
