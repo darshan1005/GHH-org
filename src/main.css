@@ -203,7 +203,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
+  width: 110px;
   height: 30px;
   background: #7d5a50;
   padding: 7px;
@@ -487,6 +487,15 @@ a {
   .Hero-section .subtitle .card {
     width: 80%;
   }
+  .about-section .adout-title {
+    width: 120px;
+    height: 30px;
+    padding: 12px;
+  }
+  .ourwork-section .ourwork .works ul li {
+    width: 140px;
+    height: 140px;
+  }
   .section-footer .footer-head .get-involved {
     font-size: smaller;
   }
@@ -524,14 +533,23 @@ a {
   .Hero-section .hero-footer .black-div h3 {
     font-size: medium;
   }
+  .about-section .adout-title {
+    width: 120px;
+    height: 30px;
+    padding: 12px;
+  }
   .about-section .owner-details .lead {
     width: 50%;
   }
   .about-section .owner-details .admin {
     width: 50%;
   }
+  .ourwork-section .ourwork .works ul li {
+    width: 140px;
+    height: 160px;
+  }
   .section-footer .footer-body .contact-details .contact {
-    width: 10rem;
+    width: 13rem;
     font-size: 13px;
   }
 }
@@ -692,6 +710,7 @@ a {
     height: 30rem;
   }
   .Hero-section .subtitle .subtitle-statement {
+    margin-left: 2rem;
     width: 60%;
   }
   .Hero-section .subtitle .subtitle-statement .statement {
@@ -720,10 +739,10 @@ a {
   .Hero-section .subtitle .card {
     width: 30%;
     height: 35rem;
-    margin-top: 13rem;
-    margin-right: 10px;
+    margin-top: 11rem;
+    margin-left: 4rem;
     position: absolute;
-    left: 59rem;
+    left: 58rem;
     z-index: 3;
   }
   .Hero-section .subtitle .card .img-box {
