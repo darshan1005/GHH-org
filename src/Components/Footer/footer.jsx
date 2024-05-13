@@ -14,9 +14,9 @@ const Footer = () => {
     }, []);
 
     return (
-        <section className="section-footer" id="Getinvolved">
+        <footer className="section-footer" id="Getinvolved">
             <div className="footer-head">
-                <h3>Get Involved</h3>
+                <p className='get-involved'>Get Involved</p>
                 <div className="media">
                     <img
                         data-aos="flip-right"
@@ -45,17 +45,16 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-body">
-                <div className="address">🚩</div>
                 <div className="log-icons">
                     <img src={logo2} alt="GHH Logo" onError={(e) => { e.target.src = logo; }} />
                 </div>
-                <div className="contact">
-                    <div className="contact number">📞</div>
-                    <div className="contact email">📩</div>
-                    <div className="contact whatsapp">📱</div>
+                <div className="contact-details">
+                    <div className="contact address">🚩 Plot No: 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
+                    <div className="contact number">📞7382745053</div>
+                    <div className="contact email">📩dummyemail@gmail.com</div>
                 </div>
             </div>
-        </section>
+        </footer>
     );
 };
 
