@@ -11,7 +11,7 @@ const About = () => {
             <div id='Ourwork'></div>
             <section className="ourwork-section">
                 <div className="ourwork">
-                    <h3>Our Works</h3>
+                    <h3 className='ourwork-title'>Our Works</h3>
                     <div className="works">
                         <ul>
                             {works.map((item) => (
@@ -22,7 +22,9 @@ const About = () => {
                         </ul>
                     </div>
                 </div>
-                <Image />
+                <div className="work-image-scroll">
+                    <Image />
+                </div>
             </section>
         </>
     );
