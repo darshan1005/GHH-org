@@ -53,7 +53,7 @@ const Hero = () => {
                             <ImageAnimation images={images}  />
                         </div>
                         <div className="card-content">
-                            <h4>Join Us in Building a Beautiful World</h4>
+                            <p>Join Us in Building a Beautiful World</p>
                             <ul>
                                 <li className="heading">Every day:</li>
                                 <li className='semi-content'>100 million seek education.</li>

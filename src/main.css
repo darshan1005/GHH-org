@@ -172,19 +172,27 @@ a {
 }
 .Hero-section .subtitle .card .card-content {
   padding: 7px;
+  display: grid;
+  place-items: center;
 }
-.Hero-section .subtitle .card .card-content h4 {
-  font-size: medium;
+.Hero-section .subtitle .card .card-content p {
+  font-size: 15px;
   margin-bottom: 4px;
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .Hero-section .subtitle .card .card-content ul {
-  text-align: left;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8352941176);
+  font-size: small;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .Hero-section .subtitle .card .card-content .heading {
   font-weight: 600;
-}
-.Hero-section .subtitle .card .card-content .semi-content {
-  margin-left: 10px;
+  font-size: medium;
+  color: #ffffff;
 }
 .Hero-section .hero-footer .black-div {
   background: black;
@@ -510,7 +518,10 @@ a {
 }
 @media screen and (min-width: 425px) {
   .nav-title .logo-container img {
-    width: 90%;
+    width: 100%;
+  }
+  .nav-title .nav-list .list .navs {
+    font-size: 11px;
   }
   .Hero-section .title-spans .title1 {
     font-size: x-large;
@@ -529,9 +540,10 @@ a {
     font-size: small;
   }
   .Hero-section .subtitle .card {
-    width: 65%;
+    width: 70%;
   }
   .Hero-section .hero-footer .black-div h3 {
+    padding: 7px;
     font-size: small;
     text-align: center;
   }
@@ -552,9 +564,17 @@ a {
   .about-section .owner-details .admin .admin-title {
     font-size: small;
   }
+  .about-section .mission .mission-statement .statement {
+    font-size: medium;
+  }
   .ourwork-section .ourwork .works ul li {
+    font-size: medium;
     width: 140px;
     height: 160px;
+  }
+  .ourwork-section .work-image-scroll .images img {
+    width: 14rem;
+    height: 14rem;
   }
   .section-footer .footer-body .log-icons img {
     width: 110px;
@@ -608,6 +628,9 @@ a {
     align-items: center;
     justify-content: space-between;
   }
+  .Hero-section .subtitle .subtitle-statement {
+    margin-left: 5px;
+  }
   .Hero-section .subtitle .subtitle-statement .statement {
     text-align: left;
     font-size: x-large;
@@ -638,6 +661,8 @@ a {
   }
   .Hero-section .subtitle .card {
     width: 50%;
+    margin-top: 10px;
+    margin-right: 10px;
   }
   .Hero-section .hero-footer .black-div h3 {
     font-size: large;
@@ -689,7 +714,7 @@ a {
   }
   .section-footer .footer-body .contact-details .contact {
     width: 20rem;
-    font-size: small;
+    font-size: medium;
   }
 }
 @media screen and (min-width: 1440px) {

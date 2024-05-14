@@ -196,7 +196,7 @@ a {
         border-top: 3px;
         overflow-y: hidden;
         background: white;
-
+        
         img {
           width: 100%;
           height: 180px;
@@ -206,22 +206,29 @@ a {
 
       .card-content {
         padding: 7px;
+        display: grid;
+        place-items: center;
 
-        h4 {
-          font-size: medium;
+        p {
+          font-size: 15px;
           margin-bottom: 4px;
+          color: white;
+          text-align: center;
+          font-weight: 600;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         ul {
-          text-align: left;
+          text-align: center;
+          color: #ffffffd5;
+          font-size: small;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .heading {
           font-weight: 600;
-        }
-
-        .semi-content {
-          margin-left: 10px;
+          font-size: medium;
+          color: #ffffff;
         }
       }
     }
@@ -636,7 +643,14 @@ a {
   .nav-title {
     .logo-container {
       img {
-        width: 90%;
+        width: 100%;
+      }
+    }
+    .nav-list{
+      .list{
+        .navs{
+          font-size: 11px;
+        }
       }
     }
   }
@@ -668,7 +682,7 @@ a {
         }
       }
       .card {
-        width: 65%;
+        width: 70%;
       }
   
     }
@@ -676,6 +690,7 @@ a {
     .hero-footer {
       .black-div {
         h3 {
+          padding: 7px;
           font-size: small;
           text-align: center;
         }
@@ -704,6 +719,13 @@ a {
         }
       }
     }
+    .mission{
+      .mission-statement{
+        .statement{
+          font-size: medium;
+        }
+      }
+    }
   }
 
       // our Works
@@ -712,9 +734,18 @@ a {
     .works{
       ul{
         li{
+          font-size: medium;
           width: 140px;
           height: 160px;
         }
+      }
+    }
+  }
+  .work-image-scroll{
+    .images{
+      img{
+        width: 14rem;
+        height: 14rem;
       }
     }
   }
@@ -788,6 +819,7 @@ a {
           align-items: center;
           justify-content: space-between;
           .subtitle-statement{
+            margin-left: 5px;
             .statement{
               text-align: left;
               font-size: x-large;
@@ -819,6 +851,8 @@ a {
           }
           .card{
             width: 50%;
+            margin-top: 10px;
+            margin-right: 10px;
           }
         }
 
@@ -907,7 +941,7 @@ a {
         .contact-details{
           .contact{
             width: 20rem;
-            font-size: small;
+            font-size: medium;
           }
         }
       }
