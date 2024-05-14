@@ -269,7 +269,7 @@ a {
     flex-direction: column;
     margin-top: 10px;
 
-    .lead {
+    .admin {
       width: 60%;
       margin-top: 7px;
 
@@ -278,20 +278,20 @@ a {
         box-shadow: 4px 4px 4px black;
       }
 
-      .Lead-name {
+      .Admin-name {
         font-weight: 700;
         margin-top: 4px;
       }
 
       .admin-title {
-        font-size: small;
+        font-size: 14px;
         border: 1px solid black;
         background: $primary-color;
         padding: 3px;
       }
     }
 
-    .admin {
+    .lead {
       width: 60%;
       margin-top: 7px;
 
@@ -300,13 +300,13 @@ a {
         box-shadow: -4px 4px 4px black;
       }
 
-      .Admin-name {
+      .Lead-name {
         font-weight: 700;
         margin-top: 4px;
       }
 
       .lead-title {
-        font-size: small;
+        font-size: 14px;
         border: 1px solid black;
         background: $primary-color;
         padding: 3px;
@@ -602,7 +602,7 @@ a {
     }
     }
 
-    // our Works
+ // our Works
 .ourwork-section {
   .ourwork{
     .works{
@@ -728,13 +728,13 @@ a {
     }
   }
 
-      // our Works
+ // our Works
 .ourwork-section {
   .ourwork{
     .works{
       ul{
         li{
-          font-size: medium;
+          font-size: 14px;
           width: 140px;
           height: 160px;
         }
@@ -873,16 +873,40 @@ a {
         justify-content: center; 
         align-items: center;
     
-        .lead,
-        .admin {
+        .lead {
           flex: 1; 
           text-align: center;
+          display: grid;
+          place-items: center;
     
           img {
             max-width: 65%; 
             height: auto; 
             margin: 0;
             padding: 0;
+          }
+
+          .lead-title{
+            width: max-content;
+            font-size: 15px;
+          }
+        }
+
+        .admin {
+          flex: 1; 
+          text-align: center;
+          display: grid;
+          place-items: center;
+    
+          img {
+            max-width: 59.5%; 
+            height: auto; 
+            margin: 0;
+            padding: 0;
+          }
+          .admin-title{
+            width: max-content;
+            font-size: 15px;
           }
         }
       }
@@ -1090,6 +1114,8 @@ a {
     margin-top: 30px;
 
     .lead {
+      display: grid;
+      place-items: center;
       margin-top: 7px;
 
       img {
@@ -1101,16 +1127,19 @@ a {
         font-size: xx-large;
       }
 
-      .admin-title {
-        font-size: x-large;
+      .lead-title {
+        font-size: 25px;
+        width: max-content;
       }
     }
 
     .admin {
+      display: grid;
+      place-items: center;
       margin-top: 7px;
 
       img {
-        width: 50%;
+        width: 45.5%;
         box-shadow: -4px 4px 4px black;
       }
 
@@ -1118,8 +1147,10 @@ a {
         font-size: xx-large;
       }
 
-      .lead-title {
-        font-size: x-large;
+      .admin-title {
+        text-align: center;
+        font-size: 25px;
+        width: max-content;
       }
     }
   }
