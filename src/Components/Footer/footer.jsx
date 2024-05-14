@@ -49,9 +49,9 @@ const Footer = () => {
                     <img src={logo2} alt="GHH Logo" onError={(e) => { e.target.src = logo; }} />
                 </div>
                 <div className="contact-details">
-                    <div className="contact address">🚩 Plot No: 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
+                    <div className="contact address">🚩Plot No: 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
                     <div className="contact number">📞7382745053</div>
-                    <div className="contact email">📩 gracehelpinghands.hema@gmail.com</div>
+                    <div className="contact email">📩gracehelpinghands.hema@gmail.com</div>
                 </div>
             </div>
         </footer>

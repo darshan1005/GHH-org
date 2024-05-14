@@ -25,7 +25,7 @@ const About = () => {
                         data-aos-easing="ease-out-cubic"
                         data-aos-duration="1000" className="lead">
                         <img src={Admin} alt="Admin" />
-                        <p className="Lead-name">Dasetti Hemalatha</p>
+                        <p className="Lead-name"> Dasetti Hema latha</p>
                         <p className='lead-title'> Grace Helping Hands - Lead</p>
                     </div>
                     <div data-aos="flip-right"

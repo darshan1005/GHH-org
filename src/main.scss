@@ -242,7 +242,7 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 2rem;
 
   .adout-title {
     display: flex;
@@ -311,7 +311,7 @@ a {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 2.5rem;
 
     .mission-title {
       display: flex;
@@ -343,7 +343,7 @@ a {
 
 // our Works
 .ourwork-section {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
 
   .ourwork {
     display: flex;
@@ -429,6 +429,7 @@ a {
   align-items: center;
   flex-direction: column;
   margin-bottom: 1rem;
+  margin-top: 2rem;
 
   .gallery-title {
     display: flex;
@@ -448,7 +449,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    max-height: 300px;
+    max-height: 400px;
     overflow-y: auto;
     margin-bottom: 1rem;
   }
@@ -511,7 +512,7 @@ a {
       align-items: center;
 
       img {
-        width: 150px;
+        width: 100px;
       }
     }
 
@@ -523,7 +524,7 @@ a {
       gap: 0.3rem;
 
       .contact {
-        width: 7.3rem;
+        width: 10rem;
         height: max-content;
         color: rgb(255, 255, 255);
         font-size: xx-small;
@@ -623,7 +624,7 @@ a {
     .footer-body {
       .contact-details {
         .contact {
-          width: 8rem;
+          width: 12rem;
           font-size: x-small;
         }
       }
@@ -666,16 +667,17 @@ a {
           font-size: small;
         }
       }
-    }
-
-    .card {
-      width: 85%;
+      .card {
+        width: 65%;
+      }
+  
     }
 
     .hero-footer {
       .black-div {
         h3 {
-          font-size: medium;
+          font-size: small;
+          text-align: center;
         }
       }
     }
@@ -689,11 +691,17 @@ a {
     }
     .owner-details {
       .lead {
-        width: 50%;
+        width: 45%;
+        .lead-title{
+          font-size: small;
+        }
       }
 
       .admin {
-        width: 50%;
+        width: 44%;
+        .admin-title{
+          font-size: small;
+        }
       }
     }
   }
@@ -714,9 +722,14 @@ a {
 
   .section-footer {
     .footer-body {
+      .log-icons{
+        img{
+          width: 110px;
+        }
+    }
       .contact-details {
         .contact {
-          width: 13rem;
+          width: 15rem;
           font-size: 13px;
         }
       }
@@ -894,7 +907,7 @@ a {
         .contact-details{
           .contact{
             width: 20rem;
-            font-size: medium;
+            font-size: small;
           }
         }
       }
@@ -1016,8 +1029,10 @@ a {
           display: flex;
           align-items: center;
           h3{
+            text-align: left;
             font-size: xx-large;
             padding: 15px;
+            margin-left: 15px;
           }
         }
       }
@@ -1159,8 +1174,8 @@ a {
 .section-footer {
 
   .footer-head {
-    padding: 5px;
-
+    padding: 15px;
+    height: 5rem;
     .get-involved {
       font-size: xx-large;
     }
@@ -1174,9 +1189,7 @@ a {
   }
 
   .footer-body {
-
     .log-icons {
-
       img {
         width: 450px;
       }
@@ -1186,7 +1199,7 @@ a {
       background: #5e606b;
       height: 20rem;
       .contact {
-        width:26.3rem;
+        width:35rem;
         font-size: xx-large;
       }
     }
