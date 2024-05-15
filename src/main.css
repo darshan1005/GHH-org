@@ -377,8 +377,8 @@ a {
   scroll-snap-type: x mandatory;
 }
 .ourwork-section .work-image-scroll .images img {
-  width: 10rem;
-  height: 10rem;
+  width: 12rem;
+  height: 12rem;
   scroll-snap-align: start;
   -o-object-fit: cover;
      object-fit: cover;
@@ -880,7 +880,7 @@ a {
     width: 100%;
     height: 300px;
   }
-  .Hero-section .subtitle .card .card-content h4 {
+  .Hero-section .subtitle .card .card-content p {
     font-size: 26px;
     margin-top: 1rem;
     margin-bottom: 8px;
@@ -890,6 +890,7 @@ a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-left: 20px;
   }
   .Hero-section .subtitle .card .card-content .heading {
     font-weight: 600;
