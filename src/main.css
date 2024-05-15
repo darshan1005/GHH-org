@@ -421,14 +421,31 @@ a {
   display: none;
 }
 
+.instruct-div {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 4px;
+}
+.instruct-div .instruct-title {
+  font-size: medium;
+  background: #7d5a50;
+  color: white;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  padding: 7px;
+  margin-bottom: 4px;
+}
+.instruct-div .instruct {
+  text-align: justify;
+}
+
 .section-footer {
   background-color: #000;
   opacity: 0.8;
 }
 .section-footer .footer-head {
   width: 100%;
-  height: -moz-max-content;
-  height: max-content;
+  height: 2rem;
   background: #b4846c;
   display: flex;
   flex-direction: row;
@@ -439,7 +456,7 @@ a {
 .section-footer .footer-head .get-involved {
   display: flex;
   justify-content: flex-start;
-  font-size: x-small;
+  font-size: small;
   color: rgb(0, 0, 0);
   font-weight: 600;
 }
@@ -451,7 +468,7 @@ a {
 .section-footer .footer-head .media .social-media {
   display: flex;
   align-items: center;
-  width: 11px;
+  width: 15px;
   border-radius: 50%;
   cursor: pointer;
   margin-left: 4px;
@@ -461,7 +478,7 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 2vw;
+  height: 7rem;
 }
 .section-footer .footer-body .log-icons {
   display: flex;
@@ -629,6 +646,9 @@ a {
   .ourwork-section .work-image-scroll .images img {
     width: 14rem;
     height: 14rem;
+  }
+  .section-footer .footer-body {
+    height: 10rem;
   }
   .section-footer .footer-body .log-icons img {
     width: 110px;
@@ -1025,6 +1045,24 @@ a {
     max-height: 450px;
     margin-bottom: 1.5rem;
   }
+  .instruct-div {
+    width: 60%;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .instruct-div .instruct-title {
+    font-size: x-large;
+    max-width: 100%;
+    padding: 7px;
+    margin-bottom: 4px;
+  }
+  .instruct-div .instruct {
+    text-align: justify;
+    font-size: 25px;
+  }
   .section-footer .footer-head {
     padding: 15px;
     height: 5rem;
@@ -1035,6 +1073,10 @@ a {
   .section-footer .footer-head .media .social-media {
     width: 33px;
     margin-left: 12px;
+  }
+  .section-footer .footer-body {
+    height: -moz-max-content;
+    height: max-content;
   }
   .section-footer .footer-body .log-icons img {
     width: 450px;
@@ -1052,83 +1094,5 @@ a {
     bottom: 14px;
     width: 55px;
     height: 55px;
-  }
-  .custom-modal {
-    margin-top: 50px;
-  }
-  .custom-modal .modal-content {
-    border: none;
-    border-radius: 20px;
-    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
-    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
-  }
-  .custom-modal .modal-content .modal-header {
-    background-color: transparent;
-    color: #fff;
-    border: none;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding: 20px 30px;
-    font-family: "Roboto", sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-  }
-  .custom-modal .modal-content .modal-footer {
-    background-color: transparent;
-    border: none;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 20px 30px;
-  }
-  .custom-modal .form-group {
-    margin-bottom: 20px;
-  }
-  .custom-modal .form-label {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    color: #fff;
-  }
-  .custom-modal .form-control {
-    border: none;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    padding: 15px;
-    transition: background-color 0.3s ease;
-  }
-  .custom-modal .form-control:focus {
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.5);
-  }
-  .custom-modal .btn-primary {
-    border: none;
-    border-radius: 10px;
-    background-color: #ff5722;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    transition: background-color 0.3s ease;
-  }
-  .custom-modal .btn-primary:hover {
-    background-color: #ff6e40;
-  }
-  .custom-modal .btn-secondary {
-    border: none;
-    border-radius: 10px;
-    background-color: #03a9f4;
-    color: #fff;
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 30px;
-    transition: background-color 0.3s ease;
-  }
-  .custom-modal .btn-secondary:hover {
-    background-color: #4fc3f7;
   }
 }/*# sourceMappingURL=main.css.map */
