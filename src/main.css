@@ -479,6 +479,7 @@ a {
   justify-content: space-evenly;
   align-items: center;
   height: 7rem;
+  padding: 0.5rem;
 }
 .section-footer .footer-body .log-icons {
   display: flex;
@@ -500,7 +501,7 @@ a {
   width: 10rem;
   height: -moz-max-content;
   height: max-content;
-  color: rgb(255, 255, 255);
+  color: rgb(226, 226, 226);
   font-size: xx-small;
 }
 
@@ -1077,6 +1078,7 @@ a {
   .section-footer .footer-body {
     height: -moz-max-content;
     height: max-content;
+    padding: 0;
   }
   .section-footer .footer-body .log-icons img {
     width: 450px;
