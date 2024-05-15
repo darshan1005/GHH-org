@@ -1,7 +1,11 @@
 # Grace Helping Hands
 ## Grace Helping Hands is an organization dedicated to assisting people, students, and the elderly by providing essential support using their own funds. Our mission is to make a positive impact on the lives of those in need by offering assistance with basic necessities and support services.
 # [Grace Helping Hands](https://gracehelpinghandsorg.netlify.app)
-![image](https://github.com/darshan1005/GHH-org/assets/114302987/5ee4bb97-6ba5-40f7-b861-fbad7d81b2b8)
+## Desktop
+![image](https://github.com/darshan1005/GHH-org/assets/114302987/b56863c2-a98b-490f-829f-aff1c6205f05)
+## Mobile
+![image](https://github.com/darshan1005/GHH-org/assets/114302987/9db4fd19-24dc-42df-b099-98a71c563405)
+
 
 React + Vite Template
 This template offers a minimal setup to enable React development in Vite with Hot Module Replacement (HMR) and incorporates some ESLint rules for code quality. It provides a streamlined environment for building React applications with Vite, ensuring rapid development and efficient workflows.
