@@ -132,13 +132,16 @@ a {
   align-items: center;
   margin-top: 10px;
 }
-.Hero-section .subtitle .subtitle-statement .join-btn-arrows .join-us {
+.Hero-section .subtitle .subtitle-statement .join-btn-arrows a {
+  width: -moz-max-content;
+  width: max-content;
+}
+.Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
   width: 5rem;
-  padding: 5px;
+  padding: 10px;
   font-size: small;
   border-radius: 4px;
   background: #fcdec0;
-  border: none;
   margin-bottom: 10px;
   border: 1px solid #7d5a50;
 }
@@ -288,6 +291,31 @@ a {
   width: 98%;
   text-align: justify;
   padding: 3px;
+}
+.about-section .Email-Form {
+  width: 300px;
+  margin-top: 1rem;
+}
+.about-section .Email-Form .form-title {
+  text-align: center;
+  font-size: large;
+  margin-bottom: 7px;
+}
+.about-section .Email-Form .name, .about-section .Email-Form .email, .about-section .Email-Form .describe {
+  padding: 5px;
+  border: 1px solid black;
+  margin-bottom: 3px;
+}
+.about-section .Email-Form .never-share {
+  font-size: small;
+  margin-bottom: 4px;
+  color: gray;
+}
+.about-section .Email-Form .submit-btn {
+  width: 100px;
+  background: #7d5a50;
+  color: white;
+  padding: 5px;
 }
 
 .ourwork-section {
@@ -567,6 +595,32 @@ a {
   .about-section .mission .mission-statement .statement {
     font-size: medium;
   }
+  .about-section .Email-Form {
+    margin-top: 3rem;
+    width: 350px;
+  }
+  .about-section .Email-Form .form-title {
+    text-align: center;
+    font-size: x-large;
+    margin-bottom: 7px;
+  }
+  .about-section .Email-Form .name, .about-section .Email-Form .email, .about-section .Email-Form .describe {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+  }
+  .about-section .Email-Form .never-share {
+    font-size: medium;
+    margin-bottom: 4px;
+    color: gray;
+  }
+  .about-section .Email-Form .submit-btn {
+    width: 120px;
+    height: 40px;
+    background: #7d5a50;
+    color: white;
+    padding: 5px;
+  }
   .ourwork-section .ourwork .works ul li {
     font-size: 14px;
     width: 140px;
@@ -644,10 +698,6 @@ a {
     gap: 1rem;
     justify-content: flex-start;
     padding-left: 12px;
-  }
-  .Hero-section .subtitle .subtitle-statement .join-btn-arrows a {
-    width: -moz-max-content;
-    width: max-content;
   }
   .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
     display: grid;
@@ -756,7 +806,9 @@ a {
     color: white;
     font-size: large;
   }
-  .Hero-section .title-spans .title1, .Hero-section .title-spans .title2, .Hero-section .title-spans .title4 {
+  .Hero-section .title-spans .title1,
+  .Hero-section .title-spans .title2,
+  .Hero-section .title-spans .title4 {
     font-size: 4rem;
     margin-left: 1.5rem;
   }
@@ -780,10 +832,6 @@ a {
   }
   .Hero-section .subtitle .subtitle-statement .join-btn-arrows {
     padding-left: 24px;
-  }
-  .Hero-section .subtitle .subtitle-statement .join-btn-arrows a {
-    width: -moz-max-content;
-    width: max-content;
   }
   .Hero-section .subtitle .subtitle-statement .join-btn-arrows a .join-us {
     width: 9rem;
@@ -907,6 +955,32 @@ a {
     font-size: xx-large;
     width: 70%;
   }
+  .about-section .Email-Form {
+    margin-top: 3rem;
+    width: 700px;
+  }
+  .about-section .Email-Form .form-title {
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 7px;
+  }
+  .about-section .Email-Form .name, .about-section .Email-Form .email, .about-section .Email-Form .describe {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 3px;
+  }
+  .about-section .Email-Form .never-share {
+    font-size: medium;
+    margin-bottom: 4px;
+    color: gray;
+  }
+  .about-section .Email-Form .submit-btn {
+    width: 150px;
+    height: 40px;
+    background: #7d5a50;
+    color: white;
+    padding: 5px;
+  }
   .ourwork-section {
     margin-top: 5rem;
   }
@@ -978,5 +1052,83 @@ a {
     bottom: 14px;
     width: 55px;
     height: 55px;
+  }
+  .custom-modal {
+    margin-top: 50px;
+  }
+  .custom-modal .modal-content {
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #4e54c8, #8f94fb);
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  }
+  .custom-modal .modal-content .modal-header {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 20px 30px;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .custom-modal .modal-content .modal-footer {
+    background-color: transparent;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px 30px;
+  }
+  .custom-modal .form-group {
+    margin-bottom: 20px;
+  }
+  .custom-modal .form-label {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+  }
+  .custom-modal .form-control {
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  .custom-modal .form-control:focus {
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .custom-modal .btn-primary {
+    border: none;
+    border-radius: 10px;
+    background-color: #ff5722;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  .custom-modal .btn-primary:hover {
+    background-color: #ff6e40;
+  }
+  .custom-modal .btn-secondary {
+    border: none;
+    border-radius: 10px;
+    background-color: #03a9f4;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+  }
+  .custom-modal .btn-secondary:hover {
+    background-color: #4fc3f7;
   }
 }/*# sourceMappingURL=main.css.map */
