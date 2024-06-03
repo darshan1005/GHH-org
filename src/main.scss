@@ -17,9 +17,9 @@ $secondary-color: #7d5a50;
 $gray-color: #0000002d;
 $gray-secondary: #5e606b;
 
-body::-webkit-scrollbar {
-  display: none;
-}
+// body::-webkit-scrollbar {
+//   display: none;
+// }
 
 * {
   margin: 0;
@@ -351,6 +351,8 @@ a {
   .Email-Form{
     width: 300px;
     margin-top: 1rem;
+    background-color:#fcdec0;
+    padding: 20px;
     .form-title{
       text-align: center;
       font-size: large;
@@ -464,6 +466,7 @@ a {
   flex-direction: column;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  padding: 10px;
 
   .gallery-title {
     display: flex;
@@ -486,6 +489,7 @@ a {
     max-height: 400px;
     overflow-y: auto;
     margin-bottom: 1rem;
+    padding: 5px;
   }
 
   &::-webkit-scrollbar {

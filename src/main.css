@@ -7,10 +7,6 @@ html:root {
   scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -295,6 +291,8 @@ a {
 .about-section .Email-Form {
   width: 300px;
   margin-top: 1rem;
+  background-color: #fcdec0;
+  padding: 20px;
 }
 .about-section .Email-Form .form-title {
   text-align: center;
@@ -396,6 +394,7 @@ a {
   flex-direction: column;
   margin-bottom: 1rem;
   margin-top: 2rem;
+  padding: 10px;
 }
 .section-gallery .gallery-title {
   display: flex;
@@ -416,6 +415,7 @@ a {
   max-height: 400px;
   overflow-y: auto;
   margin-bottom: 1rem;
+  padding: 5px;
 }
 .section-gallery::-webkit-scrollbar {
   display: none;
