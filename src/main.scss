@@ -80,7 +80,7 @@ a {
     }
   }
 
-  .donate-btn {
+  .contact-btn {
     display: none;
   }
 }
@@ -237,7 +237,7 @@ a {
 
   .hero-footer {
     .black-div {
-      background: black;
+      background: #694035;
       color: white;
       font-size: small;
       padding: 5px;
@@ -882,11 +882,11 @@ a {
       }
     }
 
-    .donate-btn {
+    .contact-btn {
       display: block;
 
       a {
-        .donate {
+        .contact {
           width: 5rem;
           background: #7d5a50;
           padding: 5px;
@@ -1091,22 +1091,30 @@ a {
 
     .nav-list {
       width: 70%;
+      background: #e5b299;
+      border-radius: 5rem;
+      padding: 5px 0px;
+      
+      &:hover{
+        border: 1px solid black;
+      }
 
       .list {
         .navs {
-          font-size: 20px;
+          font-size: 18px;
         }
       }
     }
 
-    .donate-btn {
+    .contact-btn {
       a {
-        .donate {
+        .contact {
           width: 7rem;
           background: #7d5a50;
           padding: 10px;
           color: white;
           font-size: large;
+          cursor: pointer;
         }
       }
     }
@@ -1129,7 +1137,7 @@ a {
     }
 
     .subtitle {
-      height: 30rem;
+      height: 31rem;
 
       .subtitle-statement {
         margin-left: 2rem;
@@ -1181,9 +1189,9 @@ a {
 
         .card-content {
           p {
-            font-size: 26px;
+            font-size: 24px;
             margin-top: 1rem;
-            margin-bottom: 8px;
+            margin-bottom: 20px;
           }
 
           ul {
@@ -1200,7 +1208,7 @@ a {
           }
 
           .semi-content {
-            font-size: x-large;
+            font-size: large;
             margin-left: 10px;
             padding: 7px;
           }
@@ -1235,28 +1243,25 @@ a {
     }
 
     .owner-details {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      justify-content: center;
       margin-top: 30px;
 
       .lead {
         display: grid;
         place-items: center;
         margin-top: 7px;
-
+        margin-left: 15rem;
+        
         img {
           width: 50%;
           box-shadow: 4px 4px 4px black;
         }
 
         .Lead-name {
-          font-size: xx-large;
+          font-size: x-large;
         }
 
         .lead-title {
-          font-size: 25px;
+          font-size: 20px;
           width: max-content;
         }
       }
@@ -1265,6 +1270,7 @@ a {
         display: grid;
         place-items: center;
         margin-top: 7px;
+        margin-right: 15rem;
 
         img {
           width: 45.5%;
@@ -1272,12 +1278,12 @@ a {
         }
 
         .Admin-name {
-          font-size: xx-large;
+          font-size: x-large;
         }
 
         .admin-title {
           text-align: center;
-          font-size: 25px;
+          font-size: 20px;
           width: max-content;
         }
       }
