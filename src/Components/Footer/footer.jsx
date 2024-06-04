@@ -50,9 +50,9 @@ const Footer = () => {
                 </div>
                 <div className="contact-details">
                     <div className='contact org-people'>Dasetti Hema latha, Metta Bhanupratap</div>
-                    <div className="contact address">Plot No: 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
+                    <div className="contact address"><b>Plot No:</b> 2, Srilakshminagar Colony, Arasavilli, Srikakulam District - 532001</div>
                     <div className="contact number">
-                        Ph: <a href="tel:7382745053" className='contact'>7382745053</a>
+                       <b>Ph:</b> <a href="tel:7382745053" className='contact'>7382745053</a>
                     </div>
                     <div className="contact email">
                         <a className='contact' href="mailto:gracehelpinghands.hema@gmail.com">gracehelpinghands.hema@gmail.com</a>

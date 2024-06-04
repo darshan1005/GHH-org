@@ -24,9 +24,9 @@ const Nav = () => {
                     <li className="navs" ><a href="#Getinvolved">GET INVOLVED</a></li>
                 </ul>
             </div>
-            <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="donate-btn">
+            <div data-aos='fade-down' data-aos-duration="1000" data-aos-once='true' className="contact-btn">
                 <a href='#Getinvolved'>
-                    <button className="donate">Contact</button></a>
+                    <button className="contact">Contact</button></a>
             </div>
         </div>
     );
