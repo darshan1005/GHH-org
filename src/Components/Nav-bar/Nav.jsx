@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 import {
   AppBar,
   Toolbar,
@@ -8,10 +8,15 @@ import {
   Menu,
   MenuItem,
   Typography,
+  useTheme,
+  Tooltip,
 } from "@mui/material";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import ToggleTheme from "../ToggleTheme/ToggleTheme";
+import { ThemeLight, ThemeDark } from "../../theme";
+import { ThemeContext } from "../../ThemeContext";
 
 // Import AOS
 import AOS from "aos";
@@ -21,6 +26,9 @@ const Nav = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
+
+  const theme = useTheme();
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -38,22 +46,28 @@ const Nav = () => {
     setAnchorElNav(null);
   };
 
+
+  const handleThemeChange = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
+  const themeMode = darkMode ? ThemeDark : ThemeLight;
+
   return (
     <AppBar
       position="sticky"
       color="default"
       sx={{
-        backgroundColor: "lightgrey",
-        height: "60px",
+        backgroundColor: theme.palette.background.default,
         maxWidth: "100% !important",
       }}
     >
       <Container
-        sx={{ height: "55px", maxWidth: "100% !important", margin: "0px" }}
+        sx={{ display: 'flex', alignContent:'center', maxWidth: "100% !important", margin: "0px" }}
       >
         <Toolbar
           disableGutters
-          sx={{ height: "50px", maxWidth: "100% !important" }}
+          sx={{  maxWidth: "100% !important" }}
         >
           {/* Logo */}
           <Box
@@ -87,6 +101,7 @@ const Nav = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
+              alignItems:'center',
               justifyContent: "end",
               height: "40px",
               margin: "0px",
@@ -97,11 +112,12 @@ const Nav = () => {
                 key={index}
                 href={page.href}
                 color="inherit"
-                sx={{ margin: "0 10px", width: "150px" }}
+                sx={{ margin: "0 10px", width: "150px", color: theme.palette.text.primary }}
               >
                 {page.name}
               </Button>
             ))}
+              <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
           </Box>
 
           {/* Mobile Menu */}

@@ -1,27 +1,31 @@
-import { Box, useTheme } from "@mui/material";
+import { Box } from "@mui/material";
 import PropTypes from "prop-types";
+import { useContext } from "react";
+import { ThemeContext } from "../../ThemeContext";
 
-const ThemeToggle = ({ onToggleSwitch, darkMode }) => {
-  const theme = useTheme();
+const ThemeToggle = () => {
+  const { darkMode, toggleTheme } = useContext(ThemeContext);
 
   return (
     <Box
       sx={{
         maxWidth: "3rem",
+        height: "1.57rem",
         borderRadius: "1rem",
         display: "flex",
         alignItems: "center",
         justifyContent: darkMode ? "end" : "start",
         padding: "2px",
-        boxShadow: `0px 0px 2px ${theme.palette.grey[900]}`,
-        backgroundColor: !darkMode ? "black" : theme.palette.common.white,
+        boxShadow: `0px 0px 2px ${darkMode ? "#000" : "#ccc"}`,
+        backgroundColor: darkMode ? "#fff" : "#000",
+        cursor: "pointer",
       }}
-      onClick={onToggleSwitch}
+      onClick={toggleTheme}
     >
       <Box
         sx={{
           borderRadius: "50%",
-          background: darkMode ? "black" : theme.palette.common.white,
+          background: darkMode ? "#000" : "#fff",
           height: "1.2rem",
           width: "1.2rem",
         }}
@@ -30,10 +34,10 @@ const ThemeToggle = ({ onToggleSwitch, darkMode }) => {
   );
 };
 
-// Corrected PropTypes validation
+// PropTypes
 ThemeToggle.propTypes = {
-  onToggleSwitch: PropTypes.func.isRequired,
-  darkMode: PropTypes.bool.isRequired,
+  onToggleSwitch: PropTypes.func,
+  darkMode: PropTypes.bool,
 };
 
 export default ThemeToggle;

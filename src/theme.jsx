@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 
-export const themeLight = createTheme({
+export const ThemeLight = createTheme({
   palette: {
     primary: {
       main: "#70778C", // Button background
@@ -53,7 +53,7 @@ export const themeLight = createTheme({
   },
 });
 
-export const themeDark = createTheme({
+export const ThemeDark = createTheme({
   palette: {
     primary: {
       main: "#EDEDED", // Button background
