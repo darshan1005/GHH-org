@@ -1,6 +1,7 @@
 import { createContext, useState, useMemo } from "react";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { ThemeLight, ThemeDark } from "./theme";
+import PropTypes from "prop-types";
 
 export const ThemeContext = createContext();
 
@@ -21,4 +22,9 @@ export const ThemeContextProvider = ({ children }) => {
       </ThemeProvider>
     </ThemeContext.Provider>
   );
+};
+
+// PropTypes
+ThemeContextProvider.propTypes = {
+  children: PropTypes.any,
 };
