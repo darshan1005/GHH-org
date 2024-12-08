@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import { Box } from "@mui/material";
+import React, { useState, useEffect } from "react";
 
 const ImageAnimation = ({ images, className }) => {
   const [randomImages, setRandomImages] = useState([]);
@@ -18,18 +19,21 @@ const ImageAnimation = ({ images, className }) => {
     setRandomImages(shuffleArray(images));
 
     const interval = setInterval(() => {
-        setTimeout(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 2000);
-      }, 5000);
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 2000);
+    }, 5000);
     return () => clearInterval(interval);
   }, [images]);
 
   return (
-    <div className={className}>
-      <img src={randomImages[currentIndex]} alt={`Image ${currentIndex}`} 
-        className="image-animation"/>
-    </div>
+    <Box className={className}>
+      <img
+        src={randomImages[currentIndex]}
+        alt={`Image ${currentIndex}`}
+        className="image-animation"
+      />
+    </Box>
   );
 };
 

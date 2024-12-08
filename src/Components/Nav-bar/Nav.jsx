@@ -9,13 +9,11 @@ import {
   MenuItem,
   Typography,
   useTheme,
-  Tooltip,
 } from "@mui/material";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
-import { ThemeLight, ThemeDark } from "../../theme";
 import { ThemeContext } from "../../ThemeContext";
 
 // Import AOS
@@ -34,8 +32,7 @@ const Nav = () => {
 
   const pages = [
     { name: "ABOUT US", href: "#Aboutus" },
-    { name: "OUR WORKS", href: "#Ourwork" },
-    { name: "GALLERY", href: "#Gallery" },
+    { name: "Contact", href: "#Getinvolved" },
   ];
 
   const handleOpenNavMenu = (event) => {
@@ -46,13 +43,6 @@ const Nav = () => {
     setAnchorElNav(null);
   };
 
-
-  const handleThemeChange = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
-
-  const themeMode = darkMode ? ThemeDark : ThemeLight;
-
   return (
     <AppBar
       position="sticky"
@@ -61,14 +51,17 @@ const Nav = () => {
         backgroundColor: theme.palette.background.default,
         maxWidth: "100% !important",
       }}
+      id="nav-bar"
     >
       <Container
-        sx={{ display: 'flex', alignContent:'center', maxWidth: "100% !important", margin: "0px" }}
+        sx={{
+          display: "flex",
+          alignContent: "center",
+          maxWidth: "100% !important",
+          margin: "0px",
+        }}
       >
-        <Toolbar
-          disableGutters
-          sx={{  maxWidth: "100% !important" }}
-        >
+        <Toolbar disableGutters sx={{ maxWidth: "100% !important" }}>
           {/* Logo */}
           <Box
             component="div"
@@ -101,7 +94,7 @@ const Nav = () => {
             sx={{
               flexGrow: 1,
               display: { xs: "none", md: "flex" },
-              alignItems:'center',
+              alignItems: "center",
               justifyContent: "end",
               height: "40px",
               margin: "0px",
@@ -112,16 +105,22 @@ const Nav = () => {
                 key={index}
                 href={page.href}
                 color="inherit"
-                sx={{ margin: "0 10px", width: "150px", color: theme.palette.text.primary }}
+                sx={{
+                  margin: "0 10px",
+                  width: "150px",
+                  color: theme.palette.text.primary,
+                }}
               >
                 {page.name}
               </Button>
             ))}
-              <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
+            <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
           </Box>
 
           {/* Mobile Menu */}
-          <Box sx={{ display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{ display: { xs: "flex", md: "none" }, alignItems: "center" }}
+          >
             <Button
               size="small"
               aria-label="menu"
@@ -129,9 +128,13 @@ const Nav = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              sx={{ display: "flex", justifyContent: "flex-end" }}
+              sx={{
+                display: "flex",
+                justifyContent: "flex-end",
+                alignItems: "center",
+              }}
             >
-              <MenuOpenIcon />
+              <MenuOpenIcon sx={{ fontSize: "2rem" }} />
             </Button>
             <Menu
               id="menu-appbar"
@@ -156,6 +159,7 @@ const Nav = () => {
                 </MenuItem>
               ))}
             </Menu>
+            <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
           </Box>
         </Toolbar>
       </Container>
