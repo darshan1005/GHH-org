@@ -30,7 +30,7 @@ const Hero = () => {
             flexDirection: "column",
             gap: 2,
             p: 2,
-            background: theme.palette.background.main,
+            background: `linear-gradient(to right, ${theme.palette.background.main}50,  ${theme.palette.background.main})`,
           }}
         >
           <Box
@@ -79,7 +79,12 @@ const Hero = () => {
           </Box>
           <Donate />
         </Box>
-        <Box sx={{ py: 4 }}>
+        <Box
+          sx={{
+            py: 4,
+            background: `linear-gradient(to right, ${theme.palette.background.main},  ${theme.palette.background.main}50)`,
+          }}
+        >
           <Box
             sx={{
               display: "flex",
