@@ -12,9 +12,6 @@ import Admin from "../../assets/leads/Admin.jpg";
 
 
 const Footer = () => {
-
- const theme = useTheme();
-
   useEffect(() => {
     AOS.init({ duration: 800 });
   }, []);
