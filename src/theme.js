@@ -1,55 +1,55 @@
-import { createTheme } from "@mui/material/styles";
+import createTheme from "@mui/material/styles/createTheme";
 
 export const ThemeLight = createTheme({
   palette: {
     primary: {
-      main: "#7d5a50", // Buttons or accents (secondary-color)
-      contrastText: "#fcdec0", // Text on primary backgrounds
+      main: "#D99755", // Light Mode - Medium orange
+      contrastText: "#663A1D", // Light Mode - Dark brown
     },
     secondary: {
-      main: "#e5b299", // Secondary highlights
+      main: "#FFBC70", // Light Mode - Peach
     },
     background: {
-      default: "#fffff",
-      main: "#fcdec0", // Main background (primary-background)
-      paper: "#e5b299", // Card/Surface background (secondary-background)
+      default: "#fff",
+      main: "#FFFAF0", // Light Mode - Light cream
+      paper: "#FFE7C2", // Light Mode - Light beige
     },
     text: {
-      primary: "#5e606b", // Main text color (secondary-text-color)
-      secondary: "#7d5a50", // Secondary text
-      disabled: "#a38d83", // Muted text
+      primary: "#8C5429", // Light Mode - Brown
+      secondary: "#B3743D", // Light Mode - Medium brown
+      disabled: "#D99755", // Light Mode - Orange
     },
     action: {
-      active: "#7d5a50", // Active buttons/icons
-      hover: "#e5b299", // Hover state
+      active: "#B3743D", // Medium brown
+      hover: "#FFBC70", // Peach
     },
-    divider: "#e5b299", // Divider color
+    divider: "#FFD399", // Light orange
   },
   typography: {
     h1: {
       fontSize: "2rem",
       fontWeight: "bold",
-      color: "#5e606b",
+      color: "#663A1D", // Dark brown
     },
     h2: {
       fontSize: "1.75rem",
       fontWeight: "500",
-      color: "#5e606b",
+      color: "#8C5429", // Brown
     },
     subtitle1: {
       fontSize: "1.25rem",
       fontWeight: "400",
-      color: "#7d5a50",
+      color: "#B3743D", // Medium brown
     },
     body1: {
       fontSize: "1rem",
-      color: "#5e606b",
+      color: "#8C5429", // Brown
     },
     button: {
       textTransform: "uppercase",
       fontSize: "0.875rem",
       fontWeight: "bold",
-      color: "#fcdec0",
+      color: "#663A1D", // Dark brown
     },
   },
 });
@@ -57,53 +57,53 @@ export const ThemeLight = createTheme({
 export const ThemeDark = createTheme({
   palette: {
     primary: {
-      main: "#e5b299", // Buttons or accents
-      contrastText: "#7d5a50", // Text on primary backgrounds
+      main: "#DCA362", // Dark Mode - Light orange
+      contrastText: "#2C221A", // Dark Mode - Dark brown
     },
     secondary: {
-      main: "#7d5a50", // Secondary highlights
+      main: "#7E603D", // Dark Mode - Brown
     },
     background: {
       default: "#000",
-      main: "#7d5a50", // Main background (darker tone)
-      paper: "#5e606b", // Card/Surface background
+      main: "#2C221A", // Dark Mode - Dark brown
+      paper: "#453524", // Dark Mode - Dark grayish brown
     },
     text: {
-      primary: "#fcdec0", // Main text color
-      secondary: "#e5b299", // Secondary text
-      disabled: "#a38d83", // Muted text
+      primary: "#F8F1E5", // Dark Mode - Very light cream
+      secondary: "#E8C08C", // Dark Mode - Light orange
+      disabled: "#7E603D", // Dark Mode - Brown
     },
     action: {
-      active: "#e5b299", // Active buttons/icons
-      hover: "#7d5a50", // Hover state
+      active: "#AD8150", // Medium brown
+      hover: "#DCA362", // Light orange
     },
-    divider: "#a38d83", // Divider color
+    divider: "#5B4630", // Dark brown
   },
   typography: {
     h1: {
       fontSize: "2rem",
       fontWeight: "bold",
-      color: "#fcdec0",
+      color: "#F3DCB9", // Cream
     },
     h2: {
       fontSize: "1.75rem",
       fontWeight: "500",
-      color: "#fcdec0",
+      color: "#E8C08C", // Light orange
     },
     subtitle1: {
       fontSize: "1.25rem",
       fontWeight: "400",
-      color: "#e5b299",
+      color: "#AD8150", // Medium brown
     },
     body1: {
       fontSize: "1rem",
-      color: "#fcdec0",
+      color: "#F8F1E5", // Very light cream
     },
     button: {
       textTransform: "uppercase",
       fontSize: "0.875rem",
       fontWeight: "bold",
-      color: "#7d5a50",
+      color: "#DCA362", // Light orange
     },
   },
 });

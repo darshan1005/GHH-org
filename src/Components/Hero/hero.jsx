@@ -1,16 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // Import AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import ImageAnimation from "./image-animation";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Typography, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
+import { Donate } from "../Donate/Donate";
 
 const Hero = () => {
+  const theme = useTheme();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -22,13 +25,17 @@ const Hero = () => {
           sx={{
             display: "flex",
             justifyContent: "center",
+            alignItems: "center",
             textAlign: "center",
-            m: 4,
+            flexDirection: "column",
+            gap: 2,
+            p: 2,
+            background: `linear-gradient(to right, ${theme.palette.background.main}50,  ${theme.palette.background.main})`,
           }}
         >
           <Box
             display="flex"
-            alignItems={"center"}
+            alignItems={"baseline"}
             justifyContent={"center"}
             gap={2}
           >
@@ -36,7 +43,7 @@ const Hero = () => {
               style={{
                 fontFamily: "inter",
                 fontWeight: "600",
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
@@ -45,7 +52,7 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: '"Inknut Antiqua", serif',
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
@@ -54,7 +61,7 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: "'Julee', cursive",
-                fontSize: "4vw",
+                fontSize: "3vw",
                 width: "max-content",
               }}
             >
@@ -63,15 +70,21 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: '"Inknut Antiqua", serif',
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
               Together
             </span>
           </Box>
+          <Donate />
         </Box>
-        <Box>
+        <Box
+          sx={{
+            py: 5,
+            background: `linear-gradient(to right, ${theme.palette.background.main},  ${theme.palette.background.main}50)`,
+          }}
+        >
           <Box
             sx={{
               display: "flex",
@@ -89,7 +102,7 @@ const Hero = () => {
                 width: "60%",
               }}
             >
-              <Typography variant="h1" id="statement_id">
+              <Typography variant="h1" color={theme.palette.text.primary}>
                 Uniting hands, like threads weaving hope, Grace Helping Hands
                 organization forms a tapestry of change.
               </Typography>
@@ -97,7 +110,12 @@ const Hero = () => {
                 Let’s collaborate to make a positive difference in the world.
               </Typography>
               <Button variant="contained" href="" sx={{ width: "max-content" }}>
-                UnTold-stories
+                <Link
+                  to="/stories"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  UnTold-stories
+                </Link>
               </Button>
             </Box>
             <Box sx={{ height: "max-content", width: "max-content" }}>
@@ -114,7 +132,12 @@ const Hero = () => {
                 Join Us in Building a Beautiful World
               </Typography>
               <Button variant="contained" size="small">
-                Gallery
+                <Link
+                  to="/gallery"
+                  style={{ color: "inherit", textDecoration: "none" }}
+                >
+                  Gallery
+                </Link>
               </Button>
             </Box>
           </Box>

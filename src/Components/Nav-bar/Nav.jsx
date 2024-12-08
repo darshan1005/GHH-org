@@ -15,6 +15,7 @@ import logo2 from "../../assets/GHH 9@2x.png";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import { ThemeContext } from "../../ThemeContext";
+import { Link } from "react-router-dom";
 
 // Import AOS
 import AOS from "aos";
@@ -30,10 +31,7 @@ const Nav = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const pages = [
-    { name: "ABOUT US", href: "#Aboutus" },
-    { name: "Contact", href: "#Getinvolved" },
-  ];
+  const pages = [{ name: "Home", href: "/" }];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -50,6 +48,7 @@ const Nav = () => {
       sx={{
         backgroundColor: theme.palette.background.default,
         maxWidth: "100% !important",
+        boxShadow: `0px 2px 6px ${theme.palette.background.paper}`,
       }}
       id="nav-bar"
     >
@@ -151,12 +150,12 @@ const Nav = () => {
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">
-                    <a
-                      href={page.href}
+                    <Link
+                      to={page.href}
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   </Typography>
                 </MenuItem>
               ))}

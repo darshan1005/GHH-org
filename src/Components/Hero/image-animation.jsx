@@ -25,8 +25,8 @@ const ImageAnimation = ({ images, interval = 5000 }) => {
         <Fade in={index === currentIndex} timeout={1000} key={index}>
           <Box
             component="img"
-            src={image.src} // Use the 'src' from the image object
-            alt={image.alt} // Use the 'alt' from the image object
+            src={image.src}
+            alt={image.alt}
             sx={{
               position: "absolute",
               top: 0,
