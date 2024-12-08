@@ -134,7 +134,9 @@ const Nav = () => {
                 alignItems: "center",
               }}
             >
-              <MenuOpenIcon sx={{ fontSize: "2rem" }} />
+              <MenuOpenIcon
+                sx={{ fontSize: "2rem", color: !darkMode ? "black" : "white" }}
+              />
             </Button>
             <Menu
               id="menu-appbar"
