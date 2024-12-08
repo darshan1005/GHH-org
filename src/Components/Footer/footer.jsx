@@ -49,6 +49,7 @@ const Footer = () => {
                   height: "290px",
                   padding: "8px",
                   borderRadius: "20px",
+                  objectFit: "cover",
                 }}
               />
               <Typography
