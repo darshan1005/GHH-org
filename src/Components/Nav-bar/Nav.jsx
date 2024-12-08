@@ -51,8 +51,6 @@ const Nav = () => {
     setDarkMode((prevMode) => !prevMode);
   };
 
-  const themeMode = darkMode ? ThemeDark : ThemeLight;
-
   return (
     <AppBar
       position="sticky"

@@ -19,24 +19,6 @@ const About = () => {
             <div id="Aboutus"></div>
             <section className="about-section" >
                 <p className="adout-title">About Us</p>
-
-                <div className="owner-details">
-                    <div data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000" className="lead">
-                        <img src={Admin} alt="Admin" />
-                        <p className="Lead-name"> Dasetti Hema latha</p>
-                        <p className='lead-title'> Grace Helping Hands - Lead</p>
-                    </div>
-                    <div data-aos="flip-right"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000" className="admin">
-                        <img src={Lead} alt="Lead" />
-                        <p className="Admin-name">Metta Bhanupratap</p>
-                        <p className='admin-title'> Grace Helping Hands - Admin</p>
-                    </div>
-                </div>
-
                 <div className="mission">
                     <h3 className='mission-title'>Our Mission</h3>
                     <div className="mission-statement">
