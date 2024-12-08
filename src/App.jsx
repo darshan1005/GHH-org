@@ -17,8 +17,8 @@ const App = () => {
       <Aboutus />
       <Ourwork />
       <GridImages />
-      <Instruct />
       <Footer />
+      <Instruct />
       <Top />
     </>
   );
