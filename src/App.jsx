@@ -6,12 +6,10 @@ import Ourwork from "./Components/Ourwork/ourwork.jsx";
 import Instruct from "./Components/Instructions/Instruct.jsx";
 import Footer from "./Components/Footer/footer.jsx";
 import GridImages from "./Components/Grid-gallery/grid-images.jsx";
-import { CssBaseline } from "@mui/material";
 
 const App = () => {
   return (
     <>
-      <CssBaseline />
       <Nav />
       <Hero />
       <Aboutus />
