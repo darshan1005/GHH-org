@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 
 // Import AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import ImageAnimation from "./image-animation";
-import { Box, Button, Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
 import { Donate } from "../Donate/Donate";
+import TargetButton from "../TargetButton/TargetButton";
 
 const Hero = () => {
   const theme = useTheme();
@@ -109,14 +109,11 @@ const Hero = () => {
               <Typography variant="subtitle1">
                 Let’s collaborate to make a positive difference in the world.
               </Typography>
-              <Button variant="contained" href="" sx={{ width: "max-content" }}>
-                <Link
-                  to="/stories"
-                  style={{ color: "inherit", textDecoration: "none" }}
-                >
-                  UnTold-stories
-                </Link>
-              </Button>
+              <TargetButton
+                title={"UnTold-stories"}
+                to={"/stories"}
+                setWidth={true}
+              />
             </Box>
             <Box sx={{ height: "max-content", width: "max-content" }}>
               <Box
@@ -131,14 +128,11 @@ const Hero = () => {
               <Typography variant="h6" fontWeight={600}>
                 Join Us in Building a Beautiful World
               </Typography>
-              <Button variant="contained" size="small">
-                <Link
-                  to="/gallery"
-                  style={{ color: "inherit", textDecoration: "none" }}
-                >
-                  Gallery
-                </Link>
-              </Button>
+              <TargetButton
+                title={"Gallery"}
+                to={"/gallery"}
+                setWidth={false}
+              />
             </Box>
           </Box>
         </Box>

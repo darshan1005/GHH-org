@@ -12,6 +12,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { TitleHeader } from "../Title-Header/title-header";
 import { Link } from "react-router-dom";
+import TargetButton from "../TargetButton/TargetButton";
+import { Rotate90DegreesCcw } from "@mui/icons-material";
 
 const AboutUs =
   " We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by providing the basic necessities. We may not able to help everyone but we are trying to help because WE BELIEVE HUMANITY DRIVES THE WORLD.";
@@ -69,22 +71,11 @@ const About = () => {
       >
         <Box display={"flex"} flexDirection={"column"} justifyContent={"start"}>
           <TruncatedText text={whyUs} textAlign="left" />
-          <Button
-            variant="contained"
-            size="large"
-            sx={{ width: "max-content" }}
-          >
-            <Link
-              to={"/timeLine"}
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              TimeLine
-            </Link>
-          </Button>
+          <TargetButton title={"TimeLine"} to={"/timeLine"} setWidth={true} />
         </Box>
         <Box
           sx={{
-            height: "400px",
+            height: "300px",
             width: "500px",
             border: "1px solid black",
             padding: "5px",
