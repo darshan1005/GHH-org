@@ -29,7 +29,7 @@ export const ThemeLight = createTheme({
     h1: {
       fontSize: "2rem",
       fontWeight: "bold",
-      color: "#5e606b",
+      color: "#fff",
     },
     h2: {
       fontSize: "1.75rem",
