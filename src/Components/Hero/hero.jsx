@@ -28,14 +28,14 @@ const Hero = () => {
             alignItems: "center",
             textAlign: "center",
             flexDirection: "column",
-            mx: 0,
-            my: 5,
-            gap: 3,
+            gap: 2,
+            p: 2,
+            background: theme.palette.background.main,
           }}
         >
           <Box
             display="flex"
-            alignItems={"center"}
+            alignItems={"baseline"}
             justifyContent={"center"}
             gap={2}
           >
@@ -43,7 +43,7 @@ const Hero = () => {
               style={{
                 fontFamily: "inter",
                 fontWeight: "600",
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
@@ -52,7 +52,7 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: '"Inknut Antiqua", serif',
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
@@ -61,7 +61,7 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: "'Julee', cursive",
-                fontSize: "4vw",
+                fontSize: "3vw",
                 width: "max-content",
               }}
             >
@@ -70,7 +70,7 @@ const Hero = () => {
             <span
               style={{
                 fontFamily: '"Inknut Antiqua", serif',
-                fontSize: "4.5vw",
+                fontSize: "4vw",
                 width: "max-content",
               }}
             >
@@ -79,7 +79,7 @@ const Hero = () => {
           </Box>
           <Donate />
         </Box>
-        <Box>
+        <Box sx={{ py: 4 }}>
           <Box
             sx={{
               display: "flex",
