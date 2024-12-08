@@ -9,10 +9,10 @@ export const TitleHeader = ({ title }) => {
     >
       <Typography
         sx={{
-          background: theme.palette.text.secondary,
-          color: theme.palette.common.white,
+          background: theme.palette.background.main,
+          color: theme.palette.primary.contrastText,
           textAlign: "center",
-          fontSize: "1.5rem",
+          fontSize: theme.typography.h1,
           padding: "0.5rem 2rem",
           borderRadius: "8px",
           marginBottom: "1.5rem",

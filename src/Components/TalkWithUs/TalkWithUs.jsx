@@ -152,10 +152,6 @@ export const TalkWithUs = () => {
             rows={4}
           />
 
-          <Typography variant="body2" textAlign="center" color="text.secondary">
-            We will never share your information.
-          </Typography>
-
           <Box display="flex" justifyContent="center" mt={2}>
             <Button
               variant="contained"

@@ -81,7 +81,7 @@ const Hero = () => {
         </Box>
         <Box
           sx={{
-            py: 4,
+            py: 5,
             background: `linear-gradient(to right, ${theme.palette.background.main},  ${theme.palette.background.main}50)`,
           }}
         >

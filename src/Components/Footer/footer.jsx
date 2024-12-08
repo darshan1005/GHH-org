@@ -40,12 +40,7 @@ const Footer = () => {
       >
         {details.map((detail) => (
           <Grid key={detail.id} item xs={12} sm={3}>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              flexDirection="column"
-            >
+            <Box display="flex" alignItems="center" flexDirection="column">
               <img
                 src={detail.image}
                 alt={detail.name}
