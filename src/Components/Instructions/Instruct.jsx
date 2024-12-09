@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme } from "@mui/material";
 
-const Instruct = () => {
+export const Instruct = () => {
   const theme = useTheme();
   return (
     <Box sx={{ background: theme.palette.background.paper }}>
@@ -25,5 +25,3 @@ const Instruct = () => {
     </Box>
   );
 };
-
-export default Instruct;

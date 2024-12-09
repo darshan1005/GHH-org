@@ -6,13 +6,13 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import ImageAnimation from "./image-animation";
 import { Box, Typography, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
+import { ImageAnimation } from "./image-animation";
 
-const Hero = () => {
+export const Hero = () => {
   const theme = useTheme();
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -140,5 +140,3 @@ const Hero = () => {
     </>
   );
 };
-
-export default Hero;

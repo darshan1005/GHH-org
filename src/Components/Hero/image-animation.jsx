@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Box, Fade } from "@mui/material";
 
-const ImageAnimation = ({ images, interval = 5000 }) => {
+export const ImageAnimation = ({ images, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -42,5 +42,3 @@ const ImageAnimation = ({ images, interval = 5000 }) => {
     </Box>
   );
 };
-
-export default ImageAnimation;

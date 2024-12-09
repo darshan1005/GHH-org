@@ -4,7 +4,7 @@ import { imagesArray } from "../MockData/Gallery-images";
 import { TitleHeader } from "../Title-Header/title-header";
 import { Box } from "@mui/material";
 
-export default function gridimages() {
+export const GridImages = () => {
   return (
     <>
       <Box component={"section"}>
@@ -18,4 +18,4 @@ export default function gridimages() {
       </Box>
     </>
   );
-}
+};
