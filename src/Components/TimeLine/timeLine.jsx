@@ -13,6 +13,7 @@ export const TimeLine = () => {
           <Chrono
             items={timeLine}
             mode="VERTICAL_ALTERNATING"
+            useReadMore
             disableToolbar
             enableBreakPoint
             verticalBreakPoint={400}

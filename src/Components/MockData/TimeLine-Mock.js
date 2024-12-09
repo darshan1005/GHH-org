@@ -12,7 +12,7 @@ export const timeLine = [
     title: "May 1940",
     cardTitle: "Dunkirk",
     cardDetailedText:
-      "Men of the British Expeditionary Force (BEF) wade out to..",
+      "Men of the British Expeditionary Force (BEF) wade out to.Men of the British Expeditionary Force (BEF) wade out to.Men of the British Expeditionary Force (BEF) wade out to.Men of the British Expeditionary Force (BEF) wade out to.",
     media: {
       type: "IMAGE",
       source: {
