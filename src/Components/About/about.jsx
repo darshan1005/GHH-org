@@ -1,56 +1,91 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
-import Emailjs from '../../Components/Emailjs/EmailForm'
+import React, { useEffect, useState } from "react";
+import { Box, useTheme } from "@mui/material";
+import { TruncatedText } from "../TruncatedText/TruncatedText";
+import { ImageAnimation } from "../Hero/image-animation";
 
-import Lead from '../../assets/leads/Lead.jpg'
-import Admin from '../../assets/leads/Admin.jpg'
+import boy from "../../assets/hands-images/School_boy_img.png";
+import tree from "../../assets/hands-images/tress-removebg-preview.png";
 
 // Import AOS
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { TitleHeader } from "../Title-Header/title-header";
+import TargetButton from "../TargetButton/TargetButton";
 
+const AboutUs =
+  " We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by providing the basic necessities. We may not able to help everyone but we are trying to help because WE BELIEVE HUMANITY DRIVES THE WORLD.";
 
-const About = () => {
-    useEffect(() => {
-        AOS.init({ duration: 2000 });
-    }, []);
-    return (
-        <>
-            <div id="Aboutus"></div>
-            <section className="about-section" >
-                <p className="adout-title">About Us</p>
+const whyUs =
+  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
 
-                <div className="owner-details">
-                    <div data-aos="flip-left"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000" className="lead">
-                        <img src={Admin} alt="Admin" />
-                        <p className="Lead-name"> Dasetti Hema latha</p>
-                        <p className='lead-title'> Grace Helping Hands - Lead</p>
-                    </div>
-                    <div data-aos="flip-right"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="2000" className="admin">
-                        <img src={Lead} alt="Lead" />
-                        <p className="Admin-name">Metta Bhanupratap</p>
-                        <p className='admin-title'> Grace Helping Hands - Admin</p>
-                    </div>
-                </div>
+const images = [
+  {
+    alt: "boy",
+    caption: "",
+    src: boy,
+  },
+  {
+    alt: "tree",
+    caption: "",
+    src: tree,
+  },
+];
 
-                <div className="mission">
-                    <h3 className='mission-title'>Our Mission</h3>
-                    <div className="mission-statement">
-                        <p className="statement">
-                            We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by  providing the basic necessities. We may not able to help everyone but we are trying to help because <b>WE BELIEVE HUMANITY DRIVES THE WORLD</b>.
-                        </p>
-                    </div>
-                </div>
-                <div className='Email-Form' id='Email-form'>
-                    <Emailjs />
-                </div>
-            </section>
-        </>
-    )
-}
+export const About = () => {
+  const theme = useTheme();
 
-export default About;
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+  return (
+    <Box
+      component={"section"}
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        textAlign: "center",
+        width: "100%",
+        padding: "2rem",
+        boxSizing: "border-box",
+        backgroundColor: theme.palette.background.default,
+      }}
+    >
+      {/* About Us Heading */}
+      <TitleHeader title={"About us"} />
+
+      {/* About Us Text */}
+      <Box sx={{ maxWidth: "700px" }}>
+        <TruncatedText text={AboutUs} textAlign="center" />
+      </Box>
+      {/* Why Us Heading */}
+      <TitleHeader title={"Why us?"} />
+      {/* Why Us Text */}
+      <Box
+        sx={{ display: "flex", alignItems: "center", width: "70%", gap: 10 }}
+      >
+        <Box display={"flex"} flexDirection={"column"} justifyContent={"start"}>
+          <TruncatedText text={whyUs} textAlign="left" />
+          <TargetButton
+            title={"TimeLine Series"}
+            to={"/timeLine"}
+            setWidth={true}
+          />
+        </Box>
+        <Box
+          sx={{
+            height: "300px",
+            width: "500px",
+            border: "1px solid black",
+            padding: "5px",
+          }}
+        >
+          <ImageAnimation images={images} />
+        </Box>
+      </Box>
+    </Box>
+  );
+};

@@ -1,36 +1,44 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { Box, Fade } from "@mui/material";
 
-const ImageAnimation = ({ images, className }) => {
-  const [randomImages, setRandomImages] = useState([]);
+export const ImageAnimation = ({ images, interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    const shuffleArray = (array) => {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    };
+    const imageInterval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, interval);
 
-    setRandomImages(shuffleArray(images));
-
-    const interval = setInterval(() => {
-        setTimeout(() => {
-          setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 2000);
-      }, 5000);
-    return () => clearInterval(interval);
-  }, [images]);
+    return () => clearInterval(imageInterval);
+  }, [images, interval]);
 
   return (
-    <div className={className}>
-      <img src={randomImages[currentIndex]} alt={`Image ${currentIndex}`} 
-        className="image-animation"/>
-    </div>
+    <Box
+      sx={{
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+      }}
+    >
+      {images.map((image, index) => (
+        <Fade in={index === currentIndex} timeout={1000} key={index}>
+          <Box
+            component="img"
+            src={image.src}
+            alt={image.alt}
+            sx={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              borderRadius: "10px",
+            }}
+          />
+        </Fade>
+      ))}
+    </Box>
   );
 };
-
-export default ImageAnimation;
