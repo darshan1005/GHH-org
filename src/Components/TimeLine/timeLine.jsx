@@ -1,4 +1,4 @@
-import { TitleHeader } from "../Title-Header/title-header";
+import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box, useTheme } from "@mui/material";
 import { Chrono } from "react-chrono";
 import { timeLine } from "../MockData/TimeLine-Mock";

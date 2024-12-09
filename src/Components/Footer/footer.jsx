@@ -1,10 +1,7 @@
-import { useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import Lead from "../../assets/leads/Lead.jpg";
@@ -15,13 +12,9 @@ import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
 export const Footer = () => {
   const theme = useTheme();
 
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
-
   const details = [
-    { id: 1, name: "Metta Bhanupratap", type: "Admin", image: Admin },
-    { id: 2, name: "Dasetti Hema Latha", type: "Lead", image: Lead },
+    { id: 1, name: "Dasetti Hema Latha", type: "Admin", image: Admin },
+    { id: 2, name: "Metta Bhanupratap", type: "Lead", image: Lead },
   ];
 
   return (

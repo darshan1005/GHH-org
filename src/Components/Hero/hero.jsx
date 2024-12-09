@@ -10,7 +10,7 @@ import { Box, Typography, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
-import { ImageAnimation } from "./image-animation";
+import { ImageAnimation } from "./ImageAnimation";
 
 export const Hero = () => {
   const theme = useTheme();

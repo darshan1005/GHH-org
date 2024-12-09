@@ -1,4 +1,4 @@
-import { TitleHeader } from "../Title-Header/title-header";
+import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box, Button, Typography } from "@mui/material";
 import { Blogs } from "../MockData/Blog-Mock";
 import { Link } from "react-router-dom";

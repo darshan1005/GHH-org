@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, useTheme } from "@mui/material";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
-import { ImageAnimation } from "../Hero/image-animation";
+import { ImageAnimation } from "../Hero/ImageAnimation";
 
 import boy from "../../assets/hands-images/School_boy_img.png";
 import tree from "../../assets/hands-images/tress-removebg-preview.png";
@@ -10,7 +10,7 @@ import tree from "../../assets/hands-images/tress-removebg-preview.png";
 // Import AOS
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { TitleHeader } from "../Title-Header/title-header";
+import { TitleHeader } from "../Title-Header/TitleHeader";
 import TargetButton from "../TargetButton/TargetButton";
 
 const AboutUs =

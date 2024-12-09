@@ -14,7 +14,7 @@ export const Instruct = () => {
         }}
       >
         <Typography variant="h6">
-          <mark>Disclamimer!!</mark>
+          <mark>Disclaimer!!</mark>
         </Typography>
         <Typography fontWeight={"bold"}>
           Our <b>services</b> are always available to you. Please use the
