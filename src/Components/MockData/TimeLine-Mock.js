@@ -7,53 +7,101 @@ import image6 from "../../assets/Gallery/image6.jpg";
 import image7 from "../../assets/Gallery/image7.jpg";
 import image8 from "../../assets/Gallery/image8.jpg";
 
-export const TimeLine = [
+export const timeLine = [
   {
-    id: 1,
-    src: image1,
-    description: "Descrption 1",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image1,
+      },
+    },
   },
   {
-    id: 2,
-    src: image2,
-    description: "Descrption 2",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image2,
+      },
+    },
   },
   {
-    id: 3,
-    src: image3,
-    description: "Descrption 3",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image3,
+      },
+    },
   },
   {
-    id: 4,
-    src: image4,
-    description: "Descrption 4",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image4,
+      },
+    },
   },
   {
-    id: 5,
-    src: image5,
-    description: "Descrption 5",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image5,
+      },
+    },
   },
   {
-    id: 6,
-    src: image6,
-    description: "Descrption 6",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image6,
+      },
+    },
   },
   {
-    id: 7,
-    src: image7,
-    description: "Descrption 7",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image7,
+      },
+    },
   },
   {
-    id: 8,
-    src: image8,
-    description: "Descrption 8",
-    year: "2024",
+    title: "May 1940",
+    cardTitle: "Dunkirk",
+    cardDetailedText:
+      "Men of the British Expeditionary Force (BEF) wade out to..",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: image8,
+      },
+    },
   },
 ];
