@@ -7,7 +7,7 @@ import { Instruct } from "./Components/Instructions/Instruct.jsx";
 import { Footer } from "./Components/Footer/footer.jsx";
 import { Nav } from "./Components/Nav-bar/Nav.jsx";
 import { GridImages } from "./Components/Grid-gallery/grid-images.jsx";
-import { TimeLine } from "./Components/TimeLine/timeLine.jsx";
+import { TimeLine } from "./Components/TimeLine/TimeLine.jsx";
 import { Stories } from "./Components/Stories/stories.jsx";
 import { SingelStory } from "./Components/Stories/singleStory.jsx";
 import { TopButton } from "./Components/Top-button/TopButton.jsx";

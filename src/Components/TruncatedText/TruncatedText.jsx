@@ -49,7 +49,3 @@ TruncatedText.propTypes = {
   text: PropTypes.string.isRequired,
   textAlign: PropTypes.string,
 };
-
-TruncatedText.defaultProps = {
-  textAlign: "left",
-};
