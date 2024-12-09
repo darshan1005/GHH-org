@@ -12,7 +12,7 @@ import Admin from "../../assets/leads/Admin.jpg";
 import { useTheme } from "@mui/material";
 import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
 
-const Footer = () => {
+export const Footer = () => {
   const theme = useTheme();
 
   useEffect(() => {
@@ -141,5 +141,3 @@ const Footer = () => {
     </Box>
   );
 };
-
-export default Footer;

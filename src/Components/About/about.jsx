@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
-import { Typography, Button, Box, useTheme } from "@mui/material";
-import ImageAnimation from "../Hero/image-animation";
+import { Box, useTheme } from "@mui/material";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
+import { ImageAnimation } from "../Hero/image-animation";
 
 import boy from "../../assets/hands-images/School_boy_img.png";
 import tree from "../../assets/hands-images/tress-removebg-preview.png";
@@ -11,9 +11,7 @@ import tree from "../../assets/hands-images/tress-removebg-preview.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { TitleHeader } from "../Title-Header/title-header";
-import { Link } from "react-router-dom";
 import TargetButton from "../TargetButton/TargetButton";
-import { Rotate90DegreesCcw } from "@mui/icons-material";
 
 const AboutUs =
   " We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by providing the basic necessities. We may not able to help everyone but we are trying to help because WE BELIEVE HUMANITY DRIVES THE WORLD.";
@@ -34,7 +32,7 @@ const images = [
   },
 ];
 
-const About = () => {
+export const About = () => {
   const theme = useTheme();
 
   useEffect(() => {
@@ -71,7 +69,11 @@ const About = () => {
       >
         <Box display={"flex"} flexDirection={"column"} justifyContent={"start"}>
           <TruncatedText text={whyUs} textAlign="left" />
-          <TargetButton title={"TimeLine"} to={"/timeLine"} setWidth={true} />
+          <TargetButton
+            title={"TimeLine Series"}
+            to={"/timeLine"}
+            setWidth={true}
+          />
         </Box>
         <Box
           sx={{
@@ -87,5 +89,3 @@ const About = () => {
     </Box>
   );
 };
-
-export default About;

@@ -21,7 +21,7 @@ import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Nav = () => {
+export const Nav = () => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -69,19 +69,21 @@ const Nav = () => {
             data-aos-once="true"
             sx={{ display: "flex", alignItems: "center", mr: 2 }}
           >
-            <img
-              src={logo}
-              alt="GHH"
-              onError={(e) => {
-                e.target.src = logo2;
-              }}
-              style={{
-                height: "40px",
-                width: "60px",
-                marginRight: "10px",
-                marginLeft: "10px",
-              }}
-            />
+            <Link to="/">
+              <img
+                src={logo}
+                alt="GHH"
+                onError={(e) => {
+                  e.target.src = logo2;
+                }}
+                style={{
+                  height: "40px",
+                  width: "60px",
+                  marginRight: "10px",
+                  marginLeft: "10px",
+                }}
+              />
+            </Link>
           </Box>
 
           {/* Navigation Links for Larger Screens */}
@@ -167,5 +169,3 @@ const Nav = () => {
     </AppBar>
   );
 };
-
-export default Nav;

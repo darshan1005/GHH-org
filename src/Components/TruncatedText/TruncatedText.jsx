@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Typography, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import PropTypes from "prop-types";
 
 export const TruncatedText = ({ text, textAlign }) => {
@@ -10,27 +10,36 @@ export const TruncatedText = ({ text, textAlign }) => {
     setShowFullText((prev) => !prev);
   };
 
+  const isTextLong = text.length > 150;
+
   return (
     <Typography
-      variant="h6"
+      variant="bodyL"
       sx={{
-        textAlign: { textAlign },
+        textAlign: textAlign,
         marginBottom: "1rem",
       }}
     >
-      {showFullText ? text : `${text.substring(0, 250)}...`}
-      <span
-        onClick={handleToggleText}
-        style={{
-          color: theme.palette.primary.main,
-          cursor: "pointer",
-          fontWeight: "bold",
-          fontSize: "1rem",
-          marginLeft: "0.5rem",
-        }}
-      >
-        {showFullText ? "Read less" : "Read more"}
-      </span>
+      {isTextLong ? (
+        <>
+          {showFullText ? text : `${text.substring(0, 250)}...`}
+          <Box
+            component="span"
+            onClick={handleToggleText}
+            style={{
+              color: theme.palette.primary.main,
+              cursor: "pointer",
+              fontWeight: "bold",
+              fontSize: "1rem",
+              marginLeft: "0.5rem",
+            }}
+          >
+            {showFullText ? "Read less" : "Read more"}
+          </Box>
+        </>
+      ) : (
+        text
+      )}
     </Typography>
   );
 };
@@ -38,5 +47,9 @@ export const TruncatedText = ({ text, textAlign }) => {
 // PropTypes
 TruncatedText.propTypes = {
   text: PropTypes.string.isRequired,
-  textAlign: PropTypes.string.isRequired,
+  textAlign: PropTypes.string,
+};
+
+TruncatedText.defaultProps = {
+  textAlign: "left",
 };

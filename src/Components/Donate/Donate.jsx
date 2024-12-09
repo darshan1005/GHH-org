@@ -46,7 +46,7 @@ export const Donate = () => {
         >
           {/* Title */}
           <Typography variant="h5" textAlign="center" fontWeight="bold">
-            Donate
+            Donate to
           </Typography>
 
           <Typography variant="h5" textAlign="center" color="text.secondary">
@@ -61,7 +61,7 @@ export const Donate = () => {
               sx={{ width: "150px" }}
               onClose={handleClose}
             >
-              Close
+              Thank you!
             </Button>
           </Box>
         </Box>

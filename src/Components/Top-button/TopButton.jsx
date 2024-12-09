@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
 
-const TopButton = () => {
+export const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -39,5 +39,3 @@ const TopButton = () => {
     </button>
   );
 };
-
-export default TopButton;
