@@ -7,7 +7,7 @@ import { Box } from "@mui/material";
 export const GridImages = () => {
   return (
     <>
-      <Box component={"section"}>
+      <Box component="section">
         <TitleHeader title={"Gallery"} />
         <Box px={4}>
           <ImageGallery

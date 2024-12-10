@@ -32,7 +32,7 @@ export const About = () => {
 
   return (
     <Box
-      component={"section"}
+      component="section"
       sx={{
         display: "flex",
         flexDirection: "column",
@@ -66,13 +66,7 @@ export const About = () => {
           }}
         >
           {/* Text and Button Section */}
-          <Grid
-            item
-            xs={12}
-            md={6}
-            display={"flex"}
-            justifyContent={"flex-end"}
-          >
+          <Grid item xs={12} md={6} display="flex" justifyContent="flex-end">
             <Box
               sx={{
                 width: { xs: "100%", md: "80%" },

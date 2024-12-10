@@ -53,7 +53,7 @@ export const Donate = () => {
             Below QR or UPI
           </Typography>
 
-          <Box textAlign={"center"}>Payment Details</Box>
+          <Box textAlign="center">Payment Details</Box>
 
           <Box display="flex" justifyContent="center" mt={2}>
             <Button

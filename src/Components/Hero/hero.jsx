@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Box, Typography, Grid, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
 import { Donate } from "../Donate/Donate";
@@ -10,12 +7,8 @@ import { ImageAnimation } from "./ImageAnimation";
 export const Hero = () => {
   const theme = useTheme();
 
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
-    <Box component={"section"} id="Home">
+    <Box component="section" id="Home">
       {/* Header Section */}
       <Box
         sx={{
