@@ -1,4 +1,4 @@
-import { Box, Typography, Grid, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { imagesArray } from "../MockData/Gallery-images";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
@@ -82,28 +82,31 @@ export const Hero = () => {
           background: `linear-gradient(to right, ${theme.palette.background.main}, ${theme.palette.background.main}50)`,
         }}
       >
-        <Grid
-          container
-          spacing={3}
-          justifyContent="center"
-          alignItems="center"
+        <Box
           sx={{
-            px: { xs: 2, sm: 4, md: 8 },
-            m: -3,
+            display: "flex",
+            flexDirection: { xs: "column", md: "row" },
+            gap: 3,
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           {/* Text Content */}
-          <Grid
-            item
-            xs={12}
-            md={6}
-            display={"flex"}
-            justifyContent={"flex-end"}
+          <Box
+            sx={{
+              width: { xs: "100%", md: "50%" },
+              display: "flex",
+              flexDirection: "column",
+              alignItems: { xs: "center", md: "flex-start" },
+              justifyContent: "center",
+              p: 2,
+            }}
           >
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
+                alignItems: { xs: "center", md: "flex-start" },
                 gap: "1rem",
               }}
             >
@@ -113,6 +116,7 @@ export const Hero = () => {
                 sx={{
                   fontSize: { xs: "1.6rem", sm: "1.8rem", md: "2rem" },
                   fontWeight: 700,
+                  textAlign: { xs: "center", md: "left" },
                 }}
               >
                 Uniting hands, like threads weaving hope, Grace Helping Hands
@@ -127,7 +131,7 @@ export const Hero = () => {
                 setWidth={true}
               />
             </Box>
-          </Grid>
+          </Box>
 
           {/* Image and Button */}
           <Box
@@ -162,7 +166,7 @@ export const Hero = () => {
             </Typography>
             <TargetButton title={"Gallery"} to={"/gallery"} setWidth={false} />
           </Box>
-        </Grid>
+        </Box>
       </Box>
     </Box>
   );

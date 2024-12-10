@@ -1,4 +1,4 @@
-import { Box, Grid, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
 import { ImageAnimation } from "../Hero/ImageAnimation";
 
@@ -54,52 +54,44 @@ export const About = () => {
       {/* Why Us Heading */}
       <TitleHeader title={"Why us?"} />
       {/* Why Us Text */}
-      <Box>
-        <Grid
-          container
-          spacing={3}
-          alignItems="center"
-          justifyContent="center"
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: { xs: "column", md: "row" },
+          gap: 3,
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        {/* Text and Button Section */}
+        <Box
           sx={{
-            px: { xs: 2, sm: 4, md: 8 },
-            m: -3,
+            width: { xs: "100%", md: "50%" },
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "center", md: "flex-start" },
+            justifyContent: "center",
           }}
         >
-          {/* Text and Button Section */}
-          <Grid item xs={12} md={6} display="flex" justifyContent="flex-end">
-            <Box
-              sx={{
-                width: { xs: "100%", md: "80%" },
-                display: "flex",
-                flexDirection: "column",
-              }}
-            >
-              <TruncatedText text={whyUs} textAlign="left" />
-              <TargetButton
-                title={"TimeLine Series"}
-                to={"/timeLine"}
-                setWidth={true}
-              />
-            </Box>
-          </Grid>
+          <TruncatedText text={whyUs} textAlign="left" />
+          <TargetButton
+            title={"TimeLine Series"}
+            to={"/timeLine"}
+            setWidth={true}
+          />
+        </Box>
 
-          {/* Image Section */}
-          <Box
-            sx={{
-              width: "400px",
-              padding: "20px",
-            }}
-          >
-            <Box
-              sx={{
-                width: { xs: "500px", md: "80%" },
-                border: "1px solid black",
-              }}
-            >
-              <ImageAnimation images={images} />
-            </Box>
-          </Box>
-        </Grid>
+        {/* Image Section */}
+        <Box
+          sx={{
+            display: "grid",
+            placeItems: "center",
+            width: { xs: "90%", md: "300px" },
+            border: "1px solid black",
+          }}
+        >
+          <ImageAnimation images={images} />
+        </Box>
       </Box>
     </Box>
   );
