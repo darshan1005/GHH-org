@@ -34,7 +34,7 @@ const App = () => {
         <Route path="/timeLine" element={<TimeLine />} />
         {/* Stories Page */}
         <Route path="/stories" element={<Stories />} />
-        {/* Single Story */}
+        {/* Single Story Page */}
         <Route path="/blog/:id" element={<SingelStory />} />
       </Routes>
     </Router>
