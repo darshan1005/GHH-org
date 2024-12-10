@@ -7,7 +7,7 @@ import { TruncatedText } from "../TruncatedText/TruncatedText";
 export const Stories = () => {
   return (
     <>
-      <Box component={"section"}>
+      <Box component="section">
         <TitleHeader title={"Untold Stories"} />
         <Box
           style={{
@@ -40,7 +40,7 @@ export const Stories = () => {
               >
                 <Typography
                   variant="h5"
-                  fontWeight={"bold"}
+                  fontWeight="bold"
                   sx={{ width: "max-content" }}
                 >
                   {blog.title}

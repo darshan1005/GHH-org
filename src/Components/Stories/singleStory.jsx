@@ -27,7 +27,7 @@ export const SingelStory = () => {
       >
         <Typography
           variant="h5"
-          fontWeight={"bold"}
+          fontWeight="bold"
           sx={{ width: "max-content" }}
         >
           {blog.title}
