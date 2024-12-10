@@ -9,12 +9,14 @@ export const GridImages = () => {
     <>
       <Box component={"section"}>
         <TitleHeader title={"Gallery"} />
-        <ImageGallery
-          imagesInfoArray={imagesArray}
-          columnWidth={230}
-          gapSize={14}
-          className="images"
-        />
+        <Box px={4}>
+          <ImageGallery
+            imagesInfoArray={imagesArray}
+            columnWidth={230}
+            gapSize={14}
+            className="images"
+          />
+        </Box>
       </Box>
     </>
   );

@@ -8,11 +8,13 @@ export const TitleHeader = ({ title }) => {
       sx={{ display: "flex", alignItems: "center", justifyContent: "center" }}
     >
       <Typography
+        variant={"h5"}
         sx={{
           background: theme.palette.background.main,
-          color: theme.palette.primary.contrastText,
+          color: theme.palette.primary.main,
+          border: `1px solid ${theme.palette.divider}`,
+          fontWeight: "600",
           textAlign: "center",
-          fontSize: theme.typography.h1,
           padding: "0.5rem 2rem",
           borderRadius: "8px",
           marginBottom: "1.5rem",

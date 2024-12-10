@@ -27,17 +27,17 @@ export const ThemeLight = createTheme({
   },
   typography: {
     h1: {
-      fontSize: "2rem",
+      fontSize: "1.55rem",
       fontWeight: "bold",
       color: "#663A1D", // Dark brown
     },
     h2: {
-      fontSize: "1.75rem",
+      fontSize: "1.25rem",
       fontWeight: "500",
       color: "#8C5429", // Brown
     },
     subtitle1: {
-      fontSize: "1.25rem",
+      fontSize: "1.05rem",
       fontWeight: "400",
       color: "#B3743D", // Medium brown
     },
@@ -81,17 +81,17 @@ export const ThemeDark = createTheme({
   },
   typography: {
     h1: {
-      fontSize: "2rem",
+      fontSize: "1.55rem",
       fontWeight: "bold",
       color: "#F3DCB9", // Cream
     },
     h2: {
-      fontSize: "1.75rem",
+      fontSize: "1.25rem",
       fontWeight: "500",
       color: "#E8C08C", // Light orange
     },
     subtitle1: {
-      fontSize: "1.25rem",
+      fontSize: "1.05rem",
       fontWeight: "400",
       color: "#AD8150", // Medium brown
     },

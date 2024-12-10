@@ -25,20 +25,23 @@ export const Footer = () => {
         p: 1,
       }}
     >
-      <Grid
-        container
-        spacing={2}
-        justifyContent="space-between"
-        alignItems="stretch"
-      >
+      <Grid container justifyContent="space-around" gap={2} display={"flex"}>
         {details.map((detail) => (
-          <Grid key={detail.id} item xs={12} sm={3}>
-            <Box display="flex" alignItems="center" flexDirection="column">
-              <img
+          <>
+            <Box
+              display="flex"
+              justifyContent="center"
+              alignItems={"center"}
+              flexDirection="column"
+              background="black"
+              sx={{ width: "max-content" }}
+            >
+              <Box
+                component="img"
                 src={detail.image}
                 alt={detail.name}
                 style={{
-                  width: "290px",
+                  width: "100%",
                   height: "290px",
                   padding: "8px",
                   borderRadius: "20px",
@@ -67,26 +70,29 @@ export const Footer = () => {
                 Grace Helping Hands - {detail.type}
               </Typography>
             </Box>
-          </Grid>
+          </>
         ))}
 
         {/* Logo Box */}
         <Grid
           item
           xs={12}
-          sm={3}
-          sx={{ display: "flex", alignItems: "center", padding: "20px" }}
+          sm={4}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
         >
-          <Box>
-            <img
-              src={logo2}
-              alt="GHH Logo"
-              onError={(e) => {
-                e.target.src = logo;
-              }}
-              style={{ maxWidth: "100%", maxHeight: "100%" }}
-            />
-          </Box>
+          <Box
+            component="img"
+            src={logo2}
+            alt="GHH Logo"
+            onError={(e) => {
+              e.target.src = logo;
+            }}
+            sx={{ width: "90%" }}
+          />
         </Grid>
 
         {/* Contact Details */}
@@ -99,34 +105,40 @@ export const Footer = () => {
             alignItems: "start",
             flexDirection: "column",
             justifyContent: "center",
-            gap: 5,
+            gap: 1,
+            p: 1,
           }}
         >
+          <Typography variant="h5" gutterBottom>
+            Contact Details
+          </Typography>
+          <Typography variant="body1" gutterBottom>
+            <b>{details.map((person) => person.name).join(", ")}</b>
+          </Typography>
+          <Typography variant="body2" gutterBottom>
+            <b>Plot No:</b> 2, Srilakshminagar Colony, Arasavilli, Srikakulam
+            District - 532001
+          </Typography>
+          <Typography variant="body2" gutterBottom>
+            <b>Ph:</b>
+            <Link href="tel:7382745053" color="inherit">
+              7382745053
+            </Link>
+          </Typography>
           <Box>
-            <Typography variant="h5" gutterBottom>
-              Contact Details
-            </Typography>
-            <Typography variant="body1" gutterBottom>
-              <b>{details.map((person) => person.name).join(", ")}</b>
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <b>Plot No:</b> 2, Srilakshminagar Colony, Arasavilli, Srikakulam
-              District - 532001
-            </Typography>
-            <Typography variant="body2" gutterBottom>
-              <b>Ph:</b>{" "}
-              <Link href="tel:7382745053" color="inherit">
-                7382745053
-              </Link>
-            </Typography>
-            <Typography variant="body2">
-              <Link
-                href="mailto:gracehelpinghands.hema@gmail.com"
-                color="inherit"
+            <b>GMail:</b>
+            <Link
+              href="mailto:gracehelpinghands.hema@gmail.com"
+              color="inherit"
+            >
+              <Typography
+                variant="caption"
+                gutterBottom
+                sx={{ display: "block" }}
               >
                 gracehelpinghands.hema@gmail.com
-              </Link>
-            </Typography>
+              </Typography>
+            </Link>
           </Box>
           <TalkWithUs />
         </Grid>

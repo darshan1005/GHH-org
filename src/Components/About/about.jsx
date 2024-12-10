@@ -1,15 +1,10 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from "react";
-import { Box, useTheme } from "@mui/material";
+import { Box, Grid, useTheme } from "@mui/material";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
 import { ImageAnimation } from "../Hero/ImageAnimation";
 
 import boy from "../../assets/hands-images/School_boy_img.png";
 import tree from "../../assets/hands-images/tress-removebg-preview.png";
 
-// Import AOS
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import TargetButton from "../TargetButton/TargetButton";
 
@@ -35,10 +30,6 @@ const images = [
 export const About = () => {
   const theme = useTheme();
 
-  useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
-
   return (
     <Box
       component={"section"}
@@ -56,7 +47,6 @@ export const About = () => {
     >
       {/* About Us Heading */}
       <TitleHeader title={"About us"} />
-
       {/* About Us Text */}
       <Box sx={{ maxWidth: "700px" }}>
         <TruncatedText text={AboutUs} textAlign="center" />
@@ -64,27 +54,58 @@ export const About = () => {
       {/* Why Us Heading */}
       <TitleHeader title={"Why us?"} />
       {/* Why Us Text */}
-      <Box
-        sx={{ display: "flex", alignItems: "center", width: "70%", gap: 10 }}
-      >
-        <Box display={"flex"} flexDirection={"column"} justifyContent={"start"}>
-          <TruncatedText text={whyUs} textAlign="left" />
-          <TargetButton
-            title={"TimeLine Series"}
-            to={"/timeLine"}
-            setWidth={true}
-          />
-        </Box>
-        <Box
+      <Box>
+        <Grid
+          container
+          spacing={3}
+          alignItems="center"
+          justifyContent="center"
           sx={{
-            height: "300px",
-            width: "500px",
-            border: "1px solid black",
-            padding: "5px",
+            px: { xs: 2, sm: 4, md: 8 },
+            m: -3,
           }}
         >
-          <ImageAnimation images={images} />
-        </Box>
+          {/* Text and Button Section */}
+          <Grid
+            item
+            xs={12}
+            md={6}
+            display={"flex"}
+            justifyContent={"flex-end"}
+          >
+            <Box
+              sx={{
+                width: { xs: "100%", md: "80%" },
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <TruncatedText text={whyUs} textAlign="left" />
+              <TargetButton
+                title={"TimeLine Series"}
+                to={"/timeLine"}
+                setWidth={true}
+              />
+            </Box>
+          </Grid>
+
+          {/* Image Section */}
+          <Box
+            sx={{
+              width: "400px",
+              padding: "20px",
+            }}
+          >
+            <Box
+              sx={{
+                width: { xs: "500px", md: "80%" },
+                border: "1px solid black",
+              }}
+            >
+              <ImageAnimation images={images} />
+            </Box>
+          </Box>
+        </Grid>
       </Box>
     </Box>
   );

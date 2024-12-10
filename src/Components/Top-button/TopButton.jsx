@@ -1,6 +1,6 @@
-// eslint-disable-next-line no-unused-vars
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import KeyboardDoubleArrowUpIcon from "@mui/icons-material/KeyboardDoubleArrowUp";
+import { IconButton } from "@mui/material";
 
 export const TopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,13 +29,29 @@ export const TopButton = () => {
   };
 
   return (
-    <button
-      className={`top ${isVisible ? "visible" : ""}`}
+    <IconButton
       onClick={scrollToTop}
+      sx={{
+        position: "fixed",
+        right: { xs: "10px", sm: "20px" },
+        bottom: { xs: "10px", sm: "20px" },
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        width: { xs: "40px", sm: "50px" },
+        height: { xs: "40px", sm: "50px" },
+        backgroundColor: "rgba(252, 222, 192, 0.3)",
+        border: "2px solid black",
+        visibility: isVisible ? "visible" : "hidden",
+        opacity: isVisible ? 1 : 0,
+        transition: "visibility 0.3s ease, opacity 0.3s ease",
+        zIndex: 3,
+        "&:hover": {
+          backgroundColor: "rgba(252, 222, 192, 0.6)",
+        },
+      }}
     >
-      <a href="#nav-bar">
-        <KeyboardDoubleArrowUpIcon />
-      </a>
-    </button>
+      <KeyboardDoubleArrowUpIcon fontSize="small" />
+    </IconButton>
   );
 };
