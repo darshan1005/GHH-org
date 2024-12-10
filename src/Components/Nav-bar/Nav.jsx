@@ -70,7 +70,8 @@ export const Nav = () => {
             sx={{ display: "flex", alignItems: "center", mr: 2 }}
           >
             <Link to="/">
-              <img
+              <Box
+                component={"img"}
                 src={logo}
                 alt="GHH"
                 onError={(e) => {
@@ -79,8 +80,6 @@ export const Nav = () => {
                 style={{
                   height: "40px",
                   width: "60px",
-                  marginRight: "10px",
-                  marginLeft: "10px",
                 }}
               />
             </Link>
@@ -147,7 +146,10 @@ export const Nav = () => {
               transformOrigin={{ vertical: "top", horizontal: "left" }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{
+                display: { xs: "block", md: "none" },
+                my: 6,
+              }}
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>

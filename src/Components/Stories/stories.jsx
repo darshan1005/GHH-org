@@ -28,7 +28,6 @@ export const Stories = () => {
                 border: "1px solid #ccc",
                 borderRadius: "8px",
                 padding: "20px",
-                width: "50%",
               }}
             >
               <Box

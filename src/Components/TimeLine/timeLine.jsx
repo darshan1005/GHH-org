@@ -9,7 +9,7 @@ export const TimeLine = () => {
     <>
       <Box component={"section"} sx={{ display: "grid", placeItems: "center" }}>
         <TitleHeader title={"Time Line"} />
-        <Box sx={{ width: "50%" }}>
+        <Box sx={{ width: { xs: "100%", md: "70%" } }}>
           <Chrono
             items={timeLine}
             mode="VERTICAL_ALTERNATING"
