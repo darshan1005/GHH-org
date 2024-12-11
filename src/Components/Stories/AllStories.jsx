@@ -49,7 +49,7 @@ export const Stories = () => {
                   {blog.date}
                 </Typography>
               </Box>
-              <TruncatedText text={blog.description} textAlign="left" />
+              <TruncatedText text={blog.shortDiscription} textAlign="left" />
               <Box>
                 <Link to={`/blog/${blog.id}`}>
                   <Button variant="contained" sx={{ width: "max-content" }}>
