@@ -19,7 +19,7 @@ export const Donate = () => {
   return (
     <>
       <TargetButton
-        title={"Donate to"}
+        title={"Donate"}
         onClick={handleClickOpen}
         setWidth={true}
       />

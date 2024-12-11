@@ -1,4 +1,4 @@
-import { Box, useTheme } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
 import { ImageAnimation } from "../Hero/ImageAnimation";
 
@@ -46,7 +46,7 @@ export const About = () => {
       }}
     >
       {/* About Us Heading */}
-      <TitleHeader title={"About us"} />
+      <TitleHeader title={"GHH Works"} />
       {/* About Us Text */}
       <Box sx={{ maxWidth: "700px" }}>
         <TruncatedText text={AboutUs} textAlign="center" />
@@ -87,10 +87,21 @@ export const About = () => {
             display: "grid",
             placeItems: "center",
             width: { xs: "90%", sm: "300px" },
-            border: "1px solid black",
           }}
         >
-          <ImageAnimation images={images} />
+          <Box sx={{ border: "1px solid black" }}>
+            <ImageAnimation images={images} />
+          </Box>
+          <Typography
+            variant="h6"
+            fontWeight={600}
+            textAlign="center"
+            sx={{
+              fontSize: { xs: "1rem", sm: "1.2rem" },
+            }}
+          >
+            Money spent on welfare services
+          </Typography>
         </Box>
       </Box>
     </Box>

@@ -18,7 +18,7 @@ export const TruncatedText = ({ text, textAlign }) => {
       sx={{
         textAlign: {
           xs: textAlign === "left" ? "left" : "center",
-          md: textAlign,
+          md: textAlign !== "left" ? "left" : "",
         },
         marginBottom: "1rem",
       }}

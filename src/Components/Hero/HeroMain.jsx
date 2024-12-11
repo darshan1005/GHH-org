@@ -35,41 +35,41 @@ export const Hero = () => {
             sx={{
               fontFamily: "inter",
               fontWeight: "600",
-              fontSize: { xs: "6vw", sm: "6vw", md: "4vw" },
+              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
               width: "max-content",
             }}
           >
-            Humanity
+            Donate
           </Typography>
           <Typography
             component="span"
             sx={{
               fontFamily: '"Inknut Antiqua", serif',
-              fontSize: { xs: "6vw", sm: "6vw", md: "4vw" },
+              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
               width: "max-content",
             }}
           >
-            Bonds
+            For
           </Typography>
           <Typography
             component="span"
             sx={{
               fontFamily: "'Julee', cursive",
-              fontSize: { xs: "6vw", sm: "5vw", md: "3vw" },
+              fontSize: { xs: "7vw", sm: "5vw", md: "3vw" },
               width: "max-content",
             }}
           >
-            Us
+            a
           </Typography>
           <Typography
             component="span"
             sx={{
               fontFamily: '"Inknut Antiqua", serif',
-              fontSize: { xs: "6vw", sm: "6vw", md: "4vw" },
+              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
               width: "max-content",
             }}
           >
-            Together
+            Change
           </Typography>
         </Box>
         <Donate />
@@ -130,7 +130,7 @@ export const Hero = () => {
                 Let’s collaborate to make a positive difference in the world.
               </Typography>
               <TargetButton
-                title={"UnTold-stories"}
+                title={"Unheard stories"}
                 to={"/stories"}
                 setWidth={true}
               />
@@ -145,7 +145,7 @@ export const Hero = () => {
               justifyContent: "center",
               flexDirection: "column",
               gap: 2,
-              width: "max-content",
+              width: { xs: "300px", md: "max-content" },
               padding: "20px",
             }}
           >
@@ -159,16 +159,6 @@ export const Hero = () => {
             >
               <ImageAnimation images={imagesArray} interval={3000} />
             </Box>
-            <Typography
-              variant="h6"
-              fontWeight={600}
-              textAlign="center"
-              sx={{
-                fontSize: { xs: "1rem", sm: "1.2rem" },
-              }}
-            >
-              Join Us in Building a Beautiful World
-            </Typography>
             <TargetButton title={"Gallery"} to={"/gallery"} setWidth={false} />
           </Box>
         </Box>
