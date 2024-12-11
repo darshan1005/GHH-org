@@ -33,8 +33,8 @@ export const TopButton = () => {
       onClick={scrollToTop}
       sx={{
         position: "fixed",
-        right: { xs: "10px", sm: "20px" },
-        bottom: { xs: "10px", sm: "20px" },
+        right: { xs: "15px", sm: "20px" },
+        bottom: { xs: "15px", sm: "20px" },
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
