@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { blogs } from "../MockData/BlogMock";
 import { Alert, Box, Typography } from "@mui/material";
+import TargetButton from "../TargetButton/TargetButton";
 
 export const SingelStory = () => {
   const { id } = useParams();
@@ -15,18 +16,23 @@ export const SingelStory = () => {
   }
 
   return (
-    <Box style={{ padding: "20px" }}>
+    <Box
+      style={{ padding: "20px" }}
+      sx={{ display: "flex" }}
+      flexDirection={"column"}
+      gap={2}
+    >
+      <TargetButton to={"/stories"} title={"Stories"} setWidth={true} />
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "baseline",
-          marginBottom: "20px",
         }}
       >
         <Typography
-          variant="h5"
+          variant="h6"
           fontWeight="bold"
           sx={{ width: "max-content" }}
         >
