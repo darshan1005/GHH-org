@@ -96,6 +96,7 @@ export const Nav = () => {
               display: { xs: "none", md: "flex" },
               alignItems: "center",
               justifyContent: "end",
+              gap: 2,
               height: "40px",
               margin: "0px",
             }}
@@ -105,9 +106,9 @@ export const Nav = () => {
                 key={index}
                 href={page.href}
                 color="inherit"
+                size="small"
                 sx={{
-                  margin: "0 10px",
-                  width: "150px",
+                  width: "max-content",
                   color: theme.palette.text.primary,
                 }}
               >
