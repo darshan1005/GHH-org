@@ -8,7 +8,7 @@ import { SingelStory } from "./Components/Stories/EachStory.jsx";
 import { TopButton } from "./Components/Top-button/TopButton.jsx";
 import { About } from "./Components/About/AboutGhh.jsx";
 import { Footer } from "./Components/Footer/FooterGhh.jsx";
-import { TimeLine } from "./Components/TimeLine/TimeLine.jsx";
+import { TimeLine } from "./Components/TimeLine/TimeLineGhh.jsx";
 
 const App = () => {
   return (
