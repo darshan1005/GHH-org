@@ -1,3 +1,4 @@
+import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -26,8 +27,8 @@ export const Footer = () => {
       }}
     >
       <Grid container justifyContent="space-around" gap={2} display={"flex"}>
-        {details.map((detail) => (
-          <>
+        {details.map((detail, _index) => (
+          <React.Fragment key={_index}>
             <Box
               display="flex"
               justifyContent="center"
@@ -70,7 +71,7 @@ export const Footer = () => {
                 Grace Helping Hands - {detail.type}
               </Typography>
             </Box>
-          </>
+          </React.Fragment>
         ))}
 
         {/* Logo Box */}
