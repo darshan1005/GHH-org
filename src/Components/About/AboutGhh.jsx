@@ -73,7 +73,7 @@ export const About = () => {
             justifyContent: "center",
           }}
         >
-          <TruncatedText text={whyUs} textAlign="left" />
+          <TruncatedText text={whyUs} />
           <TargetButton
             title={"TimeLine Series"}
             to={"/timeLine"}
@@ -86,7 +86,7 @@ export const About = () => {
           sx={{
             display: "grid",
             placeItems: "center",
-            width: { xs: "90%", md: "300px" },
+            width: { xs: "90%", sm: "300px" },
             border: "1px solid black",
           }}
         >

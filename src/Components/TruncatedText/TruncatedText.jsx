@@ -16,7 +16,10 @@ export const TruncatedText = ({ text, textAlign }) => {
     <Typography
       variant="bodyL"
       sx={{
-        textAlign: { xs: "center", md: textAlign },
+        textAlign: {
+          xs: textAlign === "left" ? "left" : "center",
+          md: textAlign,
+        },
         marginBottom: "1rem",
       }}
     >

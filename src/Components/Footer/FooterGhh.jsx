@@ -110,7 +110,7 @@ export const Footer = () => {
             p: 1,
           }}
         >
-          <Typography variant="h5" gutterBottom>
+          <Typography variant="h5" fontWeight={"bold"} gutterBottom>
             Contact Details
           </Typography>
           <Typography variant="body1" gutterBottom>
