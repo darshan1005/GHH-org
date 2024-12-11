@@ -114,7 +114,7 @@ export const Hero = () => {
                 variant="h1"
                 color={theme.palette.text.primary}
                 sx={{
-                  fontSize: { xs: "1.6rem", sm: "1.8rem", md: "2rem" },
+                  fontSize: { xs: "1.2rem", sm: "1.8rem", md: "2rem" },
                   fontWeight: 700,
                   textAlign: { xs: "center", md: "left" },
                 }}
@@ -122,7 +122,11 @@ export const Hero = () => {
                 Uniting hands, like threads weaving hope, Grace Helping Hands
                 organization forms a tapestry of change.
               </Typography>
-              <Typography variant="subtitle2" lineHeight={"1.2"}>
+              <Typography
+                variant="subtitle2"
+                lineHeight={"1.2"}
+                sx={{ textAlign: { xs: "center", md: "left" } }}
+              >
                 Let’s collaborate to make a positive difference in the world.
               </Typography>
               <TargetButton
