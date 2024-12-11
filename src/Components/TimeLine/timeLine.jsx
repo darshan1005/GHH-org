@@ -1,7 +1,7 @@
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box, useTheme } from "@mui/material";
 import { Chrono } from "react-chrono";
-import { timeLine } from "../MockData/TimeLine-Mock";
+import { timeLine } from "../MockData/TimeLineMock";
 
 export const TimeLine = () => {
   const theme = useTheme();

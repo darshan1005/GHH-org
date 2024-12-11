@@ -1,6 +1,6 @@
 "use client";
 import { ImageGallery } from "react-image-grid-gallery";
-import { imagesArray } from "../MockData/Gallery-images";
+import { imagesArray } from "../MockData/Galleryimages";
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box } from "@mui/material";
 

@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import { Blogs } from "../MockData/Blog-Mock";
+import { blogs } from "../MockData/BlogMock";
 import { Alert, Box, Typography } from "@mui/material";
 
 export const SingelStory = () => {
   const { id } = useParams();
-  const blog = Blogs.find((blog) => blog.id === parseInt(id));
+  const blog = blogs.find((blog) => blog.id === parseInt(id));
 
   if (!blog) {
     return (

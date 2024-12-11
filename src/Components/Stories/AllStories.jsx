@@ -1,6 +1,6 @@
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box, Button, Typography } from "@mui/material";
-import { Blogs } from "../MockData/Blog-Mock";
+import { blogs } from "../MockData/BlogMock";
 import { Link } from "react-router-dom";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
 
@@ -18,7 +18,7 @@ export const Stories = () => {
             padding: "20px",
           }}
         >
-          {Blogs.map((blog) => (
+          {blogs.map((blog) => (
             <Box
               key={blog.id}
               style={{

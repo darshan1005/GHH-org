@@ -1,4 +1,4 @@
-export const Blogs = [
+export const blogs = [
   {
     id: 1,
     title: "Lorem ipsum 1",

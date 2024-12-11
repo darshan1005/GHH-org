@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { imagesArray } from "../MockData/Gallery-images";
+import { imagesArray } from "../MockData/Galleryimages";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
 import { ImageAnimation } from "./ImageAnimation";
