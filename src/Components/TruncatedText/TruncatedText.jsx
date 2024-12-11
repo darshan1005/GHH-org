@@ -10,7 +10,7 @@ export const TruncatedText = ({ text, textAlign }) => {
     setShowFullText((prev) => !prev);
   };
 
-  const isTextLong = text.length > 150;
+  const isTextLong = text.length > 200;
 
   return (
     <Typography
@@ -22,7 +22,7 @@ export const TruncatedText = ({ text, textAlign }) => {
     >
       {isTextLong ? (
         <>
-          {showFullText ? text : `${text.substring(0, 250)}...`}
+          {showFullText ? text : `${text.substring(0, 200)}...`}
           <Box
             component="span"
             onClick={handleToggleText}
