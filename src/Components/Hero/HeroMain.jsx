@@ -86,7 +86,7 @@ export const Hero = () => {
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            gap: 3,
+            gap: { xs: 0, sm: 2, md: 3 },
             alignItems: "center",
             justifyContent: "center",
           }}
