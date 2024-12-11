@@ -40,7 +40,7 @@ export const About = () => {
         justifyContent: "center",
         textAlign: "center",
         width: "100%",
-        padding: "2rem",
+        padding: "1rem",
         boxSizing: "border-box",
         backgroundColor: theme.palette.background.default,
       }}

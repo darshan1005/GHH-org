@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-const TargetButton = ({ title, to, setWidth }) => {
+const TargetButton = ({ title, to, setWidth, onClick }) => {
   return (
     <Button
       variant="contained"
@@ -19,6 +19,7 @@ const TargetButton = ({ title, to, setWidth }) => {
           md: "1rem",
         },
       }}
+      onClick={onClick}
     >
       <Link to={to} style={{ color: "inherit", textDecoration: "none" }}>
         {title}
@@ -31,6 +32,7 @@ TargetButton.propTypes = {
   title: PropTypes.string,
   to: PropTypes.string,
   setWidth: PropTypes.bool,
+  onClick: PropTypes.func,
 };
 
 export default TargetButton;

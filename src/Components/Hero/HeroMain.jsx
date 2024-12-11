@@ -114,7 +114,7 @@ export const Hero = () => {
                 variant="h1"
                 color={theme.palette.text.primary}
                 sx={{
-                  fontSize: { xs: "1.2rem", sm: "1.8rem", md: "2rem" },
+                  fontSize: { xs: "1rem", sm: "1.8rem", md: "2rem" },
                   fontWeight: 700,
                   textAlign: { xs: "center", md: "left" },
                 }}
@@ -145,12 +145,13 @@ export const Hero = () => {
               justifyContent: "center",
               flexDirection: "column",
               gap: 2,
-              width: "400px",
+              width: "max-content",
               padding: "20px",
             }}
           >
             <Box
               sx={{
+                width: { xs: "100%", md: "400px" },
                 border: "1px solid black",
                 borderRadius: "10px",
                 overflow: "hidden",

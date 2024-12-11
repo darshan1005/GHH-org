@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Button, Typography, Dialog, Slide } from "@mui/material";
+import TargetButton from "../TargetButton/TargetButton";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -17,13 +18,11 @@ export const Donate = () => {
 
   return (
     <>
-      <Button
-        variant="contained"
+      <TargetButton
+        title={"Donate to"}
         onClick={handleClickOpen}
-        sx={{ width: "max-content" }}
-      >
-        Donate to
-      </Button>
+        setWidth={true}
+      />
 
       <Dialog
         open={open}
