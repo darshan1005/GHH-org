@@ -27,49 +27,19 @@ export const Hero = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "baseline",
-            gap: 1,
+            gap: { xs: 1, md: 2 },
           }}
         >
           <Typography
             component="span"
             sx={{
-              fontFamily: "inter",
+              fontFamily: '"Inknut Antiqua", serif',
               fontWeight: "600",
-              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
+              fontSize: { xs: "9vw", sm: "7vw", md: "5vw" },
               width: "max-content",
             }}
           >
-            Donate
-          </Typography>
-          <Typography
-            component="span"
-            sx={{
-              fontFamily: '"Inknut Antiqua", serif',
-              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
-              width: "max-content",
-            }}
-          >
-            For
-          </Typography>
-          <Typography
-            component="span"
-            sx={{
-              fontFamily: "'Julee', cursive",
-              fontSize: { xs: "7vw", sm: "5vw", md: "3vw" },
-              width: "max-content",
-            }}
-          >
-            a
-          </Typography>
-          <Typography
-            component="span"
-            sx={{
-              fontFamily: '"Inknut Antiqua", serif',
-              fontSize: { xs: "8vw", sm: "6vw", md: "4vw" },
-              width: "max-content",
-            }}
-          >
-            Change
+            Donate for a change
           </Typography>
         </Box>
         <Donate />
@@ -78,7 +48,7 @@ export const Hero = () => {
       {/* Content Section */}
       <Box
         sx={{
-          py: 3,
+          py: { xs: 0, md: 3 },
           background: `linear-gradient(to right, ${theme.palette.background.main}, ${theme.palette.background.main}50)`,
         }}
       >
@@ -123,9 +93,11 @@ export const Hero = () => {
                 organization forms a tapestry of change.
               </Typography>
               <Typography
-                variant="subtitle2"
                 lineHeight={"1.2"}
-                sx={{ textAlign: { xs: "center", md: "left" } }}
+                sx={{
+                  textAlign: { xs: "center", md: "left" },
+                  fontSize: { xs: ".8rem", sm: ".9rem", md: "1rem" },
+                }}
               >
                 Let’s collaborate to make a positive difference in the world.
               </Typography>

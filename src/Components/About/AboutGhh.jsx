@@ -9,7 +9,7 @@ import { TitleHeader } from "../Title-Header/TitleHeader";
 import TargetButton from "../TargetButton/TargetButton";
 
 const AboutUs =
-  " We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by providing the basic necessities. We may not able to help everyone but we are trying to help because WE BELIEVE HUMANITY DRIVES THE WORLD.";
+  "We have started this organization as group of friends who are willing to make lives of people around them better. Our mission is to make lives of people better by providing the basic necessities. We may not able to help everyone but we are trying to help because WE BELIEVE HUMANITY DRIVES THE WORLD.";
 
 const whyUs =
   "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";
@@ -87,9 +87,11 @@ export const About = () => {
             display: "grid",
             placeItems: "center",
             width: { xs: "90%", sm: "300px" },
+            border: "1px solid black",
+            background: theme.palette.background.main,
           }}
         >
-          <Box sx={{ border: "1px solid black" }}>
+          <Box>
             <ImageAnimation images={images} />
           </Box>
           <Typography
@@ -100,7 +102,7 @@ export const About = () => {
               fontSize: { xs: "1rem", sm: "1.2rem" },
             }}
           >
-            Money spent on welfare services
+            Money donated to the needy up to the date 15 lakh rupees
           </Typography>
         </Box>
       </Box>

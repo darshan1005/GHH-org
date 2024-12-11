@@ -10,11 +10,6 @@ import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
 export const Footer = () => {
   const theme = useTheme();
 
-  const details = [
-    { id: 1, name: "Dasetti Hema Latha" },
-    { id: 2, name: "Metta Bhanupratap" },
-  ];
-
   return (
     <Box
       component="footer"
@@ -64,7 +59,7 @@ export const Footer = () => {
             Contact Details
           </Typography>
           <Typography variant="body1" gutterBottom>
-            <b>{details.map((person) => person.name).join(", ")}</b>
+            <b>Dasetti Hema Latha</b>
           </Typography>
           <Typography variant="body2" gutterBottom>
             <b>Plot No:</b> 2, Srilakshminagar Colony, Arasavilli, Srikakulam
