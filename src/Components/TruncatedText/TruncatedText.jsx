@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import PropTypes from "prop-types";
 
-export const TruncatedText = ({ text, textAlign }) => {
+export const TruncatedText = ({ text, textAlign, truncatedValue }) => {
   const theme = useTheme();
   const [showFullText, setShowFullText] = useState(false);
 
@@ -10,7 +10,7 @@ export const TruncatedText = ({ text, textAlign }) => {
     setShowFullText((prev) => !prev);
   };
 
-  const isTextLong = text.length > 200;
+  const isTextLong = text.length > truncatedValue;
 
   return (
     <Typography
@@ -25,7 +25,7 @@ export const TruncatedText = ({ text, textAlign }) => {
     >
       {isTextLong ? (
         <>
-          {showFullText ? text : `${text.substring(0, 200)}...`}
+          {showFullText ? text : `${text.substring(0, truncatedValue)}...`}
           <Box
             component="span"
             onClick={handleToggleText}
@@ -51,4 +51,5 @@ export const TruncatedText = ({ text, textAlign }) => {
 TruncatedText.propTypes = {
   text: PropTypes.string.isRequired,
   textAlign: PropTypes.string,
+  truncatedValue: PropTypes.number,
 };
