@@ -20,7 +20,6 @@ export const TruncatedText = ({ text, textAlign, truncatedValue }) => {
           xs: textAlign === "left" ? "left" : "center",
           md: textAlign !== "left" ? "left" : "",
         },
-        marginBottom: "1rem",
       }}
     >
       {isTextLong ? (

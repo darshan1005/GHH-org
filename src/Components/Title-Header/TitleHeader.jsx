@@ -17,8 +17,7 @@ export const TitleHeader = ({ title }) => {
           textAlign: "center",
           padding: { xs: "0.5rem 1rem", md: "0.5rem 2rem" },
           borderRadius: "8px",
-          marginBottom: "1.5rem",
-          marginTop: "1.5rem",
+          margin: { xs: "1rem 0", md: "1.5rem 0" },
           width: "max-content",
         }}
       >
