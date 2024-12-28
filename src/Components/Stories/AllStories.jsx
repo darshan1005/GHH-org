@@ -35,7 +35,7 @@ export const Stories = () => {
         <Box
           sx={{
             padding: "0 20px",
-            height: "500px",
+            height: { xs: "600px", md: "500px" },
             overflow: "auto",
             scrollbarWidth: "none",
             "&::-webkit-scrollbar": {
