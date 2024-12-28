@@ -93,6 +93,7 @@ export const About = () => {
             width: { xs: "90%", sm: "300px" },
             border: "1px solid black",
             background: theme.palette.background.main,
+            py: 1,
           }}
         >
           <ImageAnimation images={images} />
@@ -105,7 +106,7 @@ export const About = () => {
               lineHeight: 1.3,
             }}
           >
-            Money donated by us to the needy till the date 15 lakh rupees
+            Money donated by us to the needy till the date 1,500,000
           </Typography>
         </Box>
       </Box>

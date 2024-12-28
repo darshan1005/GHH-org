@@ -9,7 +9,7 @@ export const GridImages = () => {
     <>
       <Box component="section">
         <TitleHeader title={"Gallery"} />
-        <Box px={4}>
+        <Box sx={{ padding: "0 10px 10px" }}>
           <ImageGallery
             imagesInfoArray={imagesArray}
             columnWidth={230}

@@ -1,64 +1,126 @@
+import { useState } from "react";
 import { TitleHeader } from "../Title-Header/TitleHeader";
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Typography, useTheme } from "@mui/material";
+import Alert from "@mui/material/Alert";
 import { blogs } from "../MockData/BlogMock";
-import { Link } from "react-router-dom";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
+import InfiniteScroll from "react-infinite-scroll-component";
+import TargetButton from "../TargetButton/TargetButton";
 
 export const Stories = () => {
+  const theme = useTheme();
+  const [displayedBlogs, setDisplayedBlogs] = useState(blogs.slice(0, 5));
+  const [hasMore, setHasMore] = useState(true);
+
+  const fetchMoreBlogs = () => {
+    const nextBatch = blogs.slice(
+      displayedBlogs.length,
+      displayedBlogs.length + 5
+    );
+    setDisplayedBlogs((prevBlogs) => [...prevBlogs, ...nextBatch]);
+    if (displayedBlogs.length + nextBatch.length >= blogs.length) {
+      setHasMore(false);
+    }
+  };
+
+  const refreshBlogs = () => {
+    setDisplayedBlogs(blogs.slice(0, 5));
+    setHasMore(true);
+  };
+
   return (
     <>
       <Box component="section">
         <TitleHeader title={"Untold Stories"} />
         <Box
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: "20px",
-            padding: "20px",
+          sx={{
+            padding: "0 20px",
+            height: "500px",
+            overflow: "auto",
+            scrollbarWidth: "none",
+            "&::-webkit-scrollbar": {
+              display: "none",
+            },
           }}
+          id="scrollDiv"
         >
-          {blogs.map((blog) => (
-            <Box
-              key={blog.id}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                gap: 5,
-                border: "1px solid #ccc",
-                borderRadius: "8px",
-                padding: "20px",
-              }}
-            >
+          <InfiniteScroll
+            dataLength={displayedBlogs.length}
+            next={fetchMoreBlogs}
+            hasMore={hasMore}
+            loader={<h4>Loading more stories...</h4>}
+            endMessage={
               <Box
-                sx={{
+                display="flex"
+                justifyContent={"center"}
+                alignItems={"center"}
+                margin="10px 0px"
+                textAlign={"center"}
+              >
+                <Alert
+                  severity="info"
+                  sx={{
+                    width: { xs: "100&", md: "max-content" },
+                    background: theme.palette.background.main,
+                    color: theme.palette.primary.main,
+                  }}
+                  icon={false}
+                >
+                  You have seen all stories!
+                </Alert>
+              </Box>
+            }
+            pullDownToRefresh={true}
+            pullDownToRefreshThreshold={50}
+            refreshFunction={refreshBlogs}
+            scrollableTarget="scrollDiv"
+          >
+            {displayedBlogs.map((blog) => (
+              <Box
+                key={blog.id}
+                style={{
                   display: "flex",
-                  flexDirection: "row",
-                  justifyContent: "space-between",
-                  alignItems: "baseline",
+                  flexDirection: "column",
+                  gap: 10,
+                  border: "1px solid #ccc",
+                  borderRadius: "8px",
+                  padding: "20px",
+                  marginBottom: "20px",
                 }}
               >
-                <Typography
-                  variant="h5"
-                  fontWeight="bold"
-                  sx={{ width: "max-content" }}
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "row",
+                    justifyContent: "space-between",
+                    alignItems: "baseline",
+                  }}
                 >
-                  {blog.title}
-                </Typography>
-                <Typography variant="subtitle2" sx={{ width: "max-content" }}>
-                  {blog.date}
-                </Typography>
+                  <Typography
+                    fontWeight="bold"
+                    sx={{
+                      width: "max-content",
+                      fontSize: { xs: "20px", md: "24px" },
+                    }}
+                  >
+                    {blog.title}
+                  </Typography>
+                  <Typography
+                    variant="subtitle2"
+                    sx={{ width: "max-content", opacity: ".7" }}
+                  >
+                    {blog.date}
+                  </Typography>
+                </Box>
+                <TruncatedText text={blog.shortDiscription} textAlign="left" />
+                <TargetButton
+                  title={"Read Full story"}
+                  to={`/blog/${blog.id}`}
+                  setWidth={true}
+                />
               </Box>
-              <TruncatedText text={blog.shortDiscription} textAlign="left" />
-              <Box>
-                <Link to={`/blog/${blog.id}`}>
-                  <Button variant="contained" sx={{ width: "max-content" }}>
-                    Read Full
-                  </Button>
-                </Link>
-              </Box>
-            </Box>
-          ))}
+            ))}
+          </InfiniteScroll>
         </Box>
       </Box>
     </>

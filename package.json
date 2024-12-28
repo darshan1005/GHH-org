@@ -23,6 +23,7 @@
     "react-chrono": "^2.6.1",
     "react-dom": "^18.2.0",
     "react-image-grid-gallery": "^2.1.2",
+    "react-infinite-scroll-component": "^6.1.0",
     "react-router-dom": "^7.0.2"
   },
   "devDependencies": {

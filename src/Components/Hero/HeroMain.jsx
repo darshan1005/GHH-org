@@ -3,6 +3,7 @@ import { imagesArray } from "../MockData/Galleryimages";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
 import { ImageAnimation } from "./ImageAnimation";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   const theme = useTheme();
@@ -121,16 +122,18 @@ export const Hero = () => {
               padding: "20px",
             }}
           >
-            <Box
-              sx={{
-                width: { xs: "100%", md: "400px" },
-                border: "1px solid black",
-                borderRadius: "10px",
-                overflow: "hidden",
-              }}
-            >
-              <ImageAnimation images={imagesArray} interval={3000} />
-            </Box>
+            <Link to={"/gallery"}>
+              <Box
+                sx={{
+                  width: { xs: "100%", md: "400px" },
+                  border: "1px solid black",
+                  borderRadius: "10px",
+                  overflow: "hidden",
+                }}
+              >
+                <ImageAnimation images={imagesArray} interval={3000} />
+              </Box>
+            </Link>
             <TargetButton title={"Gallery"} to={"/gallery"} setWidth={false} />
           </Box>
         </Box>
