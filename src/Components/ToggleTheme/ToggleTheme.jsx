@@ -9,8 +9,8 @@ const ThemeToggle = () => {
   return (
     <Box
       sx={{
-        maxWidth: "3rem",
-        height: "1.57rem",
+        maxWidth: { xs: "2.7rem", md: "3rem" },
+        height: { xs: "1.27rem", md: "1.57rem" },
         borderRadius: "1rem",
         display: "flex",
         alignItems: "center",
@@ -26,8 +26,8 @@ const ThemeToggle = () => {
         sx={{
           borderRadius: "50%",
           background: darkMode ? "#000" : "#fff",
-          height: "1.2rem",
-          width: "1.2rem",
+          height: { xs: "1rem", md: "1.2rem" },
+          width: { xs: "1rem", md: "1.2rem" },
         }}
       ></Box>
     </Box>

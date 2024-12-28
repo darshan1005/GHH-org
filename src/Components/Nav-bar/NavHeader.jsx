@@ -31,7 +31,12 @@ export const Nav = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const pages = [{ name: "Home", href: "/" }];
+  const pages = [
+    { name: "Home", href: "/" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "TimeLine", href: "/timeLine" },
+    { name: "Stories", href: "/stories" },
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -101,20 +106,17 @@ export const Nav = () => {
               margin: "0px",
             }}
           >
-            {pages.map((page, index) => (
-              <Button
-                key={index}
-                href={page.href}
-                color="inherit"
-                size="small"
-                sx={{
-                  width: "max-content",
-                  color: theme.palette.text.primary,
-                }}
-              >
-                {page.name}
-              </Button>
-            ))}
+            <Button
+              href="/"
+              color="inherit"
+              size="small"
+              sx={{
+                width: "max-content",
+                color: theme.palette.text.primary,
+              }}
+            >
+              Home
+            </Button>
             <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
           </Box>
 
@@ -154,7 +156,7 @@ export const Nav = () => {
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
+                  <Typography textAlign="right">
                     <Link
                       to={page.href}
                       style={{ textDecoration: "none", color: "inherit" }}
