@@ -10,13 +10,14 @@ export const TitleHeader = ({ title }) => {
       <Typography
         sx={{
           background: theme.palette.background.main,
-          color: theme.palette.primary.contrastText,
+          color: theme.palette.primary.main,
+          border: `1px solid ${theme.palette.divider}`,
+          fontSize: { xs: "1.2rem", sm: "1.4rem", md: "1.6rem" },
+          fontWeight: "600",
           textAlign: "center",
-          fontSize: theme.typography.h1,
-          padding: "0.5rem 2rem",
+          padding: { xs: "0.5rem 1rem", md: "0.5rem 2rem" },
           borderRadius: "8px",
-          marginBottom: "1.5rem",
-          marginTop: "1.5rem",
+          margin: { xs: "1rem 0", md: "1.5rem 0" },
           width: "max-content",
         }}
       >

@@ -10,6 +10,10 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import HomeIcon from "@mui/icons-material/Home";
+import BurstModeIcon from "@mui/icons-material/BurstMode";
+import TimelineIcon from "@mui/icons-material/Timeline";
+import AutoStoriesIcon from "@mui/icons-material/AutoStories";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import MenuOpenIcon from "@mui/icons-material/MenuOpen";
@@ -31,7 +35,12 @@ export const Nav = () => {
 
   const [anchorElNav, setAnchorElNav] = useState(null);
 
-  const pages = [{ name: "Home", href: "/" }];
+  const pages = [
+    { name: "Home", href: "/", icon: <HomeIcon /> },
+    { name: "Gallery", href: "/gallery", icon: <BurstModeIcon /> },
+    { name: "TimeLine", href: "/timeLine", icon: <TimelineIcon /> },
+    { name: "Stories", href: "/stories", icon: <AutoStoriesIcon /> },
+  ];
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -70,7 +79,8 @@ export const Nav = () => {
             sx={{ display: "flex", alignItems: "center", mr: 2 }}
           >
             <Link to="/">
-              <img
+              <Box
+                component={"img"}
                 src={logo}
                 alt="GHH"
                 onError={(e) => {
@@ -79,8 +89,6 @@ export const Nav = () => {
                 style={{
                   height: "40px",
                   width: "60px",
-                  marginRight: "10px",
-                  marginLeft: "10px",
                 }}
               />
             </Link>
@@ -97,24 +105,22 @@ export const Nav = () => {
               display: { xs: "none", md: "flex" },
               alignItems: "center",
               justifyContent: "end",
+              gap: 2,
               height: "40px",
               margin: "0px",
             }}
           >
-            {pages.map((page, index) => (
-              <Button
-                key={index}
-                href={page.href}
-                color="inherit"
-                sx={{
-                  margin: "0 10px",
-                  width: "150px",
-                  color: theme.palette.text.primary,
-                }}
-              >
-                {page.name}
-              </Button>
-            ))}
+            <Button
+              href="/"
+              color="inherit"
+              size="small"
+              sx={{
+                width: "max-content",
+                color: theme.palette.text.primary,
+              }}
+            >
+              <HomeIcon />
+            </Button>
             <ToggleTheme onToggleSwitch={toggleTheme} darkMode={darkMode} />
           </Box>
 
@@ -147,17 +153,24 @@ export const Nav = () => {
               transformOrigin={{ vertical: "top", horizontal: "left" }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{
+                display: { xs: "block", md: "none" },
+                my: 6,
+              }}
             >
               {pages.map((page, index) => (
                 <MenuItem key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">
+                  <Typography
+                    textAlign="right"
+                    sx={{ display: "flex", gap: 2 }}
+                  >
                     <Link
                       to={page.href}
                       style={{ textDecoration: "none", color: "inherit" }}
                     >
                       {page.name}
                     </Link>
+                    {page.icon}
                   </Typography>
                 </MenuItem>
               ))}

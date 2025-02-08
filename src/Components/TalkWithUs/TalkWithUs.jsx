@@ -10,6 +10,7 @@ import {
   CircularProgress,
 } from "@mui/material";
 import emailjs from "@emailjs/browser";
+import TargetButton from "../TargetButton/TargetButton";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -95,13 +96,11 @@ export const TalkWithUs = () => {
 
   return (
     <>
-      <Button
-        variant="contained"
+      <TargetButton
+        title={"Talk With us"}
         onClick={handleClickOpen}
-        sx={{ width: "max-content" }}
-      >
-        Talk With Us
-      </Button>
+        setWidth={true}
+      />
 
       <Dialog
         open={open}

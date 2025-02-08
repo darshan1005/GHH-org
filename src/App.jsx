@@ -1,16 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// Import Components
-import { Hero } from "./Components/Hero/hero.jsx";
-import { About } from "./Components/About/About.jsx";
+import { Hero } from "./Components/Hero/HeroMain.jsx";
 import { Instruct } from "./Components/Instructions/Instruct.jsx";
-import { Footer } from "./Components/Footer/footer.jsx";
-import { Nav } from "./Components/Nav-bar/Nav.jsx";
-import { GridImages } from "./Components/Grid-gallery/grid-images.jsx";
-import { TimeLine } from "./Components/TimeLine/timeLine.jsx";
-import { Stories } from "./Components/Stories/stories.jsx";
-import { SingelStory } from "./Components/Stories/singleStory.jsx";
+import { Nav } from "./Components/Nav-bar/NavHeader.jsx";
+import { GridImages } from "./Components/Grid-gallery/GridImages.jsx";
+import { Stories } from "./Components/Stories/AllStories.jsx";
+import { SingelStory } from "./Components/Stories/EachStory.jsx";
 import { TopButton } from "./Components/Top-button/TopButton.jsx";
+import { About } from "./Components/About/AboutGhh.jsx";
+import { Footer } from "./Components/Footer/FooterGhh.jsx";
+import { TimeLine } from "./Components/TimeLine/TimeLineGhh.jsx";
 
 const App = () => {
   return (
@@ -36,7 +34,7 @@ const App = () => {
         <Route path="/timeLine" element={<TimeLine />} />
         {/* Stories Page */}
         <Route path="/stories" element={<Stories />} />
-        {/* Single Story */}
+        {/* Single Story Page */}
         <Route path="/blog/:id" element={<SingelStory />} />
       </Routes>
     </Router>

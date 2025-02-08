@@ -1,5 +1,16 @@
 import React, { useState } from "react";
-import { Box, Button, Typography, Dialog, Slide } from "@mui/material";
+import {
+  Box,
+  Button,
+  Typography,
+  Dialog,
+  Slide,
+  IconButton,
+  Stack,
+} from "@mui/material";
+import TargetButton from "../TargetButton/TargetButton";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -7,23 +18,32 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export const Donate = () => {
   const [open, setOpen] = useState(false);
+  const [copied, setCopied] = useState({});
 
-  // Open/close dialog
-  const handleClickOpen = () => {
-    setOpen(true);
+  const handleClickOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
+  const handleCopy = (id, value) => {
+    navigator.clipboard.writeText(value);
+    setCopied((prev) => ({ ...prev, [id]: true }));
+
+    setTimeout(() => {
+      setCopied((prev) => ({ ...prev, [id]: false }));
+    }, 2000);
   };
 
-  const handleClose = () => setOpen(false);
+  const upiDetails = [
+    { id: 1, name: "UPI", value: "7382745053@ybl" },
+    { id: 2, name: "Phone", value: "7382745053" },
+  ];
 
   return (
     <>
-      <Button
-        variant="contained"
+      <TargetButton
+        title={"Donate"}
         onClick={handleClickOpen}
-        sx={{ width: "max-content" }}
-      >
-        Donate to
-      </Button>
+        setWidth={true}
+      />
 
       <Dialog
         open={open}
@@ -46,12 +66,46 @@ export const Donate = () => {
         >
           {/* Title */}
           <Typography variant="h5" textAlign="center" fontWeight="bold">
-            Donate to
+            Donate to below QR or UPI
           </Typography>
 
-          <Typography variant="h5" textAlign="center" color="text.secondary">
-            Below QR or UPI
-          </Typography>
+          <Box textAlign="center">
+            <Typography
+              variant="bodyM"
+              sx={{ fontWeight: "bold", fontSize: "large" }}
+            >
+              Payment Details
+            </Typography>
+            {upiDetails.map((detail) => (
+              <Stack
+                key={detail.id}
+                display="flex"
+                flexDirection="row"
+                alignItems="center"
+                justifyContent="center"
+              >
+                <Typography variant="bodyL" sx={{ width: "max-content" }}>
+                  {detail.name} : <strong>{detail.value}</strong>
+                </Typography>
+                <IconButton
+                  onClick={() => handleCopy(detail.id, detail.value)}
+                  sx={{
+                    width: "max-content",
+                  }}
+                  title="copy"
+                >
+                  {copied[detail.id] ? (
+                    <CheckCircleOutlineIcon color="success" />
+                  ) : (
+                    <ContentCopyIcon />
+                  )}
+                </IconButton>
+              </Stack>
+            ))}
+            <Typography variant="bodyS" sx={{ width: "max-content" }}>
+              <b>Banking name</b> : <strong>DASETTI HEMALATHA</strong>
+            </Typography>
+          </Box>
 
           <Box display="flex" justifyContent="center" mt={2}>
             <Button

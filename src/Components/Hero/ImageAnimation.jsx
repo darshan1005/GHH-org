@@ -16,8 +16,7 @@ export const ImageAnimation = ({ images, interval = 5000 }) => {
     <Box
       sx={{
         position: "relative",
-        width: "100%",
-        height: "100%",
+        height: "300px",
         overflow: "hidden",
       }}
     >
