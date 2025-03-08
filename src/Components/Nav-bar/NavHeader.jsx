@@ -20,15 +20,12 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import ToggleTheme from "../ToggleTheme/ToggleTheme";
 import { ThemeContext } from "../../ThemeContext";
 import { Link } from "react-router-dom";
-
-// Import AOS
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { initializeAOS } from "../Animations/aos"; 
 
 export const Nav = () => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
-  }, []);
+    initializeAOS();
+  }, []);  
 
   const theme = useTheme();
   const { darkMode, toggleTheme } = useContext(ThemeContext);
@@ -74,8 +71,6 @@ export const Nav = () => {
           <Box
             component="div"
             data-aos="fade-down"
-            data-aos-duration="1000"
-            data-aos-once="true"
             sx={{ display: "flex", alignItems: "center", mr: 2 }}
           >
             <Link to="/">
@@ -155,7 +150,7 @@ export const Nav = () => {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: "block", md: "none" },
-                my: 6,
+                my: 8,
               }}
             >
               {pages.map((page, index) => (
