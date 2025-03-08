@@ -66,7 +66,7 @@ export const Donate = () => {
         >
           {/* Title */}
           <Typography variant="h5" textAlign="center" fontWeight="bold">
-            Donate to below QR or UPI
+            Donate to below number or UPI
           </Typography>
 
           <Box textAlign="center">
