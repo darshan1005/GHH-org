@@ -103,7 +103,7 @@ export const Donate = () => {
               </Stack>
             ))}
             <Typography variant="bodyS" sx={{ width: "max-content" }}>
-              <b>Banking name</b> : <strong>DASETTI HEMALATHA</strong>
+              <b>Banking name</b> : <strong>GRACE HELPING HANDS</strong>
             </Typography>
           </Box>
 
