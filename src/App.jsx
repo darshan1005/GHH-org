@@ -9,6 +9,8 @@ import { TopButton } from "./Components/Top-button/TopButton.jsx";
 import { About } from "./Components/About/AboutGhh.jsx";
 import { Footer } from "./Components/Footer/FooterGhh.jsx";
 import { TimeLine } from "./Components/TimeLine/TimeLineGhh.jsx";
+import { Banner } from "./Components/Banner/Banner.jsx";
+import { CustomAlert } from "./Components/Banner/CustomAlert.jsx";
 
 const App = () => {
   return (
@@ -21,7 +23,9 @@ const App = () => {
           path="/"
           element={
             <>
+              <CustomAlert />
               <Hero />
+              <Banner />
               <About />
               <Footer />
               <Instruct />
