@@ -33,7 +33,7 @@ export const Donate = () => {
   };
 
   const upiDetails = [
-    { id: 1, name: "UPI", value: "7382745053@ybl" },
+    { id: 1, name: "UPI", value: "7382745053@sbi" },
     { id: 2, name: "Phone", value: "7382745053" },
   ];
 
