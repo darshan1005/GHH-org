@@ -1,4 +1,3 @@
-### Note: We are Re-Designing the GHH - WEBSITE
 # Grace Helping Hands
 ## Grace Helping Hands is an organization dedicated to assisting people, students, and the elderly by providing essential support using their own funds. Our mission is to make a positive impact on the lives of those in need by offering assistance with basic necessities and support services.
 # [Visit](https://gracehelpinghandsorg.netlify.app)
