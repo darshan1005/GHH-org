@@ -11,6 +11,7 @@ import {
 import TargetButton from "../TargetButton/TargetButton";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import DonateQR from "../../assets/Donate/Media.jpg";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -106,16 +107,25 @@ export const Donate = () => {
               <b>Banking name</b> : <strong>GRACE HELPING HANDS</strong>
             </Typography>
           </Box>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img src={DonateQR} style={{ width: "200px" }} />
+          </Box>
 
           <Box display="flex" justifyContent="center" mt={2}>
             <Button
               variant="contained"
               color="primary"
               type="submit"
-              sx={{ width: "150px" }}
+              sx={{ width: "100px" }}
               onClose={handleClose}
             >
-              Thank you!
+              Close
             </Button>
           </Box>
         </Box>
