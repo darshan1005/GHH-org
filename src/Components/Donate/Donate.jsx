@@ -61,22 +61,16 @@ export const Donate = () => {
             display: "flex",
             flexDirection: "column",
             gap: 2,
-            padding: 4,
+            p: 4,
             backgroundColor: "background.paper",
           }}
         >
           {/* Title */}
           <Typography variant="h5" textAlign="center" fontWeight="bold">
-            Donate to below number or UPI
+            Donate using below UPI details
           </Typography>
 
-          <Box textAlign="center">
-            <Typography
-              variant="bodyM"
-              sx={{ fontWeight: "bold", fontSize: "large" }}
-            >
-              Payment Details
-            </Typography>
+          <Box textAlign="center" display={"flex"} flexDirection="column">  
             {upiDetails.map((detail) => (
               <Stack
                 key={detail.id}
@@ -103,18 +97,15 @@ export const Donate = () => {
                 </IconButton>
               </Stack>
             ))}
-            <Typography variant="bodyS" sx={{ width: "max-content" }}>
-              <b>Banking name</b> : <strong>GRACE HELPING HANDS</strong>
-            </Typography>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <img src={DonateQR} style={{ width: "200px" }} />
+            <Box display="flex" flexDirection="row" alignItems="center" justifyContent="center" mb={1}>
+              <Typography variant="bodyS" sx={{ width: "max-content" }}>
+                <b>Banking name</b> : <strong>GRACE HELPING HANDS</strong>
+              </Typography>
+            </Box>
+            <a href={DonateQR} download={true}>
+              <img src={DonateQR} style={{ width: "200px" }} />
+            </a>
+            <Typography sx={{ opacity: 0.5 }}>Click on the QR to Download</Typography>
           </Box>
 
           <Box display="flex" justifyContent="center" mt={2}>
