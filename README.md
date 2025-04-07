@@ -6,6 +6,17 @@ Grace Helping Hands is an organization dedicated to empowering and supporting in
 
 Experience our work in action at our live site: [Grace Helping Hands](https://gracehelpinghandsorg.netlify.app)
 
+ #### The v1.0.1 release introduces several enhancements and new features, including:
+
+- MUI Custom Components: Updated with light and dark theme options.
+- Additional Pages: Includes Unheard stories , new gallery and timeline pages.
+- Popup Windows: Improved popup windows for better user interactions.
+- Enhanced User Experience: Overall improvements in user interactions compared to v1.0.0.
+- SEO Improvements: Enhanced SEO scripts for better search engine optimization.
+- Fully responsive site for all screens.
+
+This release aims to provide a more polished and user-friendly experience.
+
 ## Overview
 
 This repository offers a React + Vite template that simplifies modern web development by providing:
