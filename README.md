@@ -6,7 +6,7 @@ Grace Helping Hands is an organization dedicated to empowering and supporting in
 
 Experience our work in action at our live site: [Grace Helping Hands](https://gracehelpinghandsorg.netlify.app)
 
- #### The v1.0.1 release introduces several enhancements and new features, including:
+ ### The v1.0.1 release introduces several enhancements and new features, including:
 
 - MUI Custom Components: Updated with light and dark theme options.
 - Additional Pages: Includes Unheard stories , new gallery and timeline pages.
