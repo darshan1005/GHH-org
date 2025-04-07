@@ -102,7 +102,7 @@ export const Donate = () => {
                 <b>Banking name</b> : <strong>GRACE HELPING HANDS</strong>
               </Typography>
             </Box>
-            <a href={DonateQR} download={true}>
+            <a href={DonateQR} download>
               <img src={DonateQR} style={{ width: "200px" }} />
             </a>
             <Typography sx={{ opacity: 0.5 }}>Click on the QR to Download</Typography>

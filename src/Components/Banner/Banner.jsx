@@ -60,7 +60,7 @@ export const Banner = () => {
             width: { xs: "200px", md: "350px" },
           }}
         >
-          <img src={Donate} />
+          <a href={Donate} download><img src={Donate} /></a>
         </Box>
       </Box>
     </Paper>
