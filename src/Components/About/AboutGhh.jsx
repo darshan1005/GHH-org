@@ -70,7 +70,6 @@ export const About = () => {
           fontSize: { xs: "1rem", sm: "1.2rem" },
           background: theme.palette.background.main,
           p: 1,
-          boxShadow: `-2px -2px 4px ${theme.palette.primary.contrastText}`,
         }}
       >
         Money spend on cancer patients hospital expenses: 4 lakh rupees.
