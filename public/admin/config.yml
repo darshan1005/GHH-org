@@ -2,7 +2,7 @@ local_backend: true
 
 backend:
   name: git-gateway
-  branch: main
+  branch: GHH-Live
 
 media_folder: 'public/uploads'
 public_folder: '/uploads'
@@ -137,12 +137,12 @@ collections:
     access:
       roles: [admin, editor]
     files:
-      - label: "All Timeline Events"
-        name: "Timeline"
+      - label: "TimelineData"
+        name: "TimelineData"
         file: "src/Content/Timeline.json"
         format: 'json'
         fields:
-          - label: "Timeline Items"
+          - label: "Events"
             name: "events"
             widget: "list"
             label_singular: "Timeline Event"
@@ -150,13 +150,28 @@ collections:
               - label: "Title"
                 name: "title"
                 widget: "string"
-              - label: "Date"
-                name: "date"
+              - label: "Card Title"
+                name: "cardTitle"
                 widget: "string"
-              - label: "Description"
-                name: "description"
-                widget: "text"
-              - label: "Image"
-                name: "image"
-                widget: "image"
-                required: false
+              - label: "Card Detailed Text"
+                name: "cardDetailedText"
+                widget: "list"
+                field:
+                  label: "Text Item"
+                  widget: "text"
+              - label: "Media"
+                name: "media"
+                widget: "object"
+                fields:
+                  - label: "Type"
+                    name: "type"
+                    widget: "select"
+                    options: ["IMAGE"]
+                    default: "IMAGE"
+                  - label: "Source"
+                    name: "source"
+                    widget: "object"
+                    fields:
+                      - label: "Image"
+                        name: "url"
+                        widget: "image"
