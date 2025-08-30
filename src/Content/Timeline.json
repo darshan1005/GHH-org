@@ -12,7 +12,7 @@
       "media": {
         "type": "IMAGE",
         "source": {
-          "url": "/uploads/image1"
+          "url": "/uploads/image1.jpg"
         }
       }
     },
@@ -32,7 +32,7 @@
       "media": {
         "type": "IMAGE",
         "source": {
-          "url": "/uploads/image2"
+          "url": "/uploads/image2.jpg"
         }
       }
     },
@@ -50,7 +50,7 @@
       "media": {
         "type": "IMAGE",
         "source": {
-          "url": "/uploads/image3"
+          "url": "/uploads/image3.jpg"
         }
       }
     },
@@ -66,7 +66,7 @@
       "media": {
         "type": "IMAGE",
         "source": {
-          "url": "/uploads/image4"
+          "url": "/uploads/image4.jpg"
         }
       }
     }
