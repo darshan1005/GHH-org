@@ -156,6 +156,10 @@ collections:
               - label: "Card Detailed Text"
                 name: "cardDetailedText"
                 widget: "list"
+                field:
+                  label: "Text Item"
+                  name: "textItem"
+                  widget: "text"
               - label: "Media"
                 name: "media"
                 widget: "object"
