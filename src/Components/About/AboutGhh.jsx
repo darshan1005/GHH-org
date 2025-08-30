@@ -1,5 +1,4 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { TruncatedText } from "../TruncatedText/TruncatedText";
 import { ImageAnimation } from "../Hero/ImageAnimation";
 
 import boy from "../../assets/hands-images/School_boy_img.png";
@@ -8,14 +7,7 @@ import tree from "../../assets/hands-images/tress-removebg-preview.png";
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import TargetButton from "../TargetButton/TargetButton";
 
-const AboutUs =
-  "We are a group of friends who have lived 40 years of our lives, who are not content with just having a life for us and our children. We saw people struggling for livelihood in villages from different corners of Andhra Pradesh. We heard stories of people who are left unheard, where NGOs did not reach. Mostly the slums of India are seen where the poor people live. But every village has people who suffer from poverty, waiting for help. So, we wanted to help the people in the villages nearby. This is the thought that brought us together to form Grace helping hands organization. We started by 1 lakh rupees which, I, the founder of Grace helping hands, Dasetti Hema Latha have saved from my earning. From there we collected donations from our friends. So know we are a family of100, who are continuously trying to do the best to provide peoplewith basic needs. Our family increases with people joining us to make lives better";
-
-const whyUs =
-  "There are many organizations, few are very big and sound, financiallyand expansion wise. There are many people who are willing to donate. So, these people donate to these organizations but what about those people who are left unheard. We help them, we help people around us, we help people you see daily struggling to live. We try to make society around us better by providing basic necessities to the needy. We are not big and sound financially but not in our actions";
-
-const GhhWorks =
-  "We work for helping people to live life. We donated groceries for many so people can eat, we donated clothes and blankets so they can cover themselves, we paid fees for many so they can study and earn their own livelihood, we helped many by paying their hospital fees so they can be cured from illness and live lives";
+import aboutData from "../../Content/About.json";
 
 const images = [
   {
@@ -32,7 +24,6 @@ const images = [
 
 export const About = () => {
   const theme = useTheme();
-
   return (
     <Box
       component="section"
@@ -50,13 +41,20 @@ export const About = () => {
     >
       {/* About Us */}
       <TitleHeader title={"About us"} />
-      <Box sx={{ maxWidth: "700px" }}>
-        <TruncatedText text={AboutUs} textAlign="center" truncatedValue={500} />
+      <Box sx={{ maxWidth: { xs: "100%", md: "80%" } }}>
+        <Typography
+          sx={{ fontSize: { xs: "1.1rem", md: "1.3rem" } }}
+          fontWeight={600}
+        >
+          {aboutData.aboutus}
+        </Typography>
       </Box>
       {/* GHH Works */}
       <TitleHeader title={"GHH Works"} />
-      <Box sx={{ maxWidth: "700px", mb: { xs: 1, md: 3 } }}>
-        <TruncatedText text={GhhWorks} textAlign="center" />
+      <Box sx={{ maxWidth: { xs: "100%", md: "80%" }, mb: { xs: 1, md: 3 } }}>
+        <Typography sx={{ fontSize: { xs: "1.1rem", md: "1.3rem" } }} fontWeight={400}>
+          {aboutData.ghhwork}
+        </Typography>
       </Box>
       <TargetButton
         title={"TimeLine Series"}
@@ -72,7 +70,7 @@ export const About = () => {
           p: 1,
         }}
       >
-        Money spend on cancer patients hospital expenses: 4 lakh rupees.
+        {aboutData.spent}
       </Typography>
       {/* Why Us */}
       <TitleHeader title={"Why us?"} />
@@ -87,13 +85,15 @@ export const About = () => {
       >
         <Box
           sx={{
-            width: { xs: "100%", md: "50%" },
+            width: { xs: "100%", md: "70%" },
             display: "flex",
             alignItems: { xs: "center", md: "flex-start" },
             justifyContent: "center",
           }}
         >
-          <TruncatedText text={whyUs} truncatedValue={500} />
+          <Typography  sx={{ fontSize: { xs: "1.1rem", md: "1.3rem" } }} textAlign={"center"} fontWeight={600}>
+            {aboutData.whyus}
+          </Typography>
         </Box>
 
         {/* Image Section */}
@@ -117,7 +117,7 @@ export const About = () => {
               lineHeight: 1.3,
             }}
           >
-            Money donated by us to the needy till the date 1,500,000
+            {aboutData.donated}
           </Typography>
         </Box>
       </Box>

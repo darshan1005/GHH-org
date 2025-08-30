@@ -1,6 +1,6 @@
 "use client";
 import { ImageGallery } from "react-image-grid-gallery";
-import { imagesArray } from "../MockData/Galleryimages";
+import imagesArray from "../../Content/Gallery.json";
 import { TitleHeader } from "../Title-Header/TitleHeader";
 import { Box } from "@mui/material";
 
@@ -11,7 +11,7 @@ export const GridImages = () => {
         <TitleHeader title={"Gallery"} />
         <Box sx={{ padding: "0 10px 10px" }}>
           <ImageGallery
-            imagesInfoArray={imagesArray}
+            imagesInfoArray={imagesArray.images}
             columnWidth={230}
             gapSize={14}
             className="images"

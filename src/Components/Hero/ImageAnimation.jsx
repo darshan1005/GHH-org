@@ -1,16 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Box, Fade } from "@mui/material";
+import PropTypes from "prop-types";
 
-export const ImageAnimation = ({ images, interval = 5000 }) => {
+export const ImageAnimation = ({ images = [], interval = 5000 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Memoize the validated images array
+  const validImages = useMemo(
+    () => (Array.isArray(images) ? images : []),
+    [images]
+  );
+
   useEffect(() => {
+    if (validImages.length === 0) return;
+
     const imageInterval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % validImages.length);
     }, interval);
 
     return () => clearInterval(imageInterval);
-  }, [images, interval]);
+  }, [validImages, interval]);
+
+  if (validImages.length === 0) {
+    return null;
+  }
 
   return (
     <Box
@@ -20,7 +33,7 @@ export const ImageAnimation = ({ images, interval = 5000 }) => {
         overflow: "hidden",
       }}
     >
-      {images.map((image, index) => (
+      {validImages.map((image, index) => (
         <Fade in={index === currentIndex} timeout={1000} key={index}>
           <Box
             component="img"
@@ -40,4 +53,19 @@ export const ImageAnimation = ({ images, interval = 5000 }) => {
       ))}
     </Box>
   );
+};
+
+ImageAnimation.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+    })
+  ),
+  interval: PropTypes.number,
+};
+
+ImageAnimation.defaultProps = {
+  images: [],
+  interval: 5000,
 };

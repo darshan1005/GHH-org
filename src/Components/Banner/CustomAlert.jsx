@@ -1,5 +1,6 @@
 import { Box, useTheme } from "@mui/material";
 import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
+import alertData from "../../Content/CustomAlert.json";
 
 export const CustomAlert = () => {
   const theme = useTheme();
@@ -24,9 +25,13 @@ export const CustomAlert = () => {
         <NotificationsActiveIcon />
       </Box>
       <Box>
-        Here is a gentle request, we are raising funds to provide food
-        support for Cancer Patients.&nbsp;
-        <span style={{ fontWeight: "bold", opacity: 0.5 }}>scroll down 👇</span>
+        <span style={{ fontWeight: "bold" }}>{alertData.message}</span>
+        {alertData.showScrollHint && (
+          <span style={{ fontWeight: "bold", opacity: 0.5 }}>
+            {" "}
+            {alertData.scrollHintText}
+          </span>
+        )}
       </Box>
     </Box>
   );

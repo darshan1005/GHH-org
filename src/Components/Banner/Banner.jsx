@@ -1,9 +1,10 @@
 import { Box, Typography, Paper } from "@mui/material";
 import FavoriteIcon from "@mui/icons-material/Favorite";
-import Donate from "../../assets/Donate/Media.jpg";
 import TargetButton from "../TargetButton/TargetButton";
+import bannerData from "../../Content/Banner.json";
 
 export const Banner = () => {
+  const banner = bannerData.banners[0];
   return (
     <Paper
       elevation={3}
@@ -45,13 +46,11 @@ export const Banner = () => {
             fontWeight="bold"
             gutterBottom
           >
-            Help Nourish Hope: Food Support for Cancer Patients
+            {banner.title}
           </Typography>
 
           <Typography variant="body1" sx={{ mb: 3 }}>
-            Every donation helps provide nutritious meals to cancer patients
-            during their treatment journey. Join our mission to ensure no
-            patient faces hunger while fighting cancer.
+            {banner.description}
           </Typography>
           <TargetButton title={"To Donate scan"} setWidth={true} />
         </Box>
@@ -60,7 +59,13 @@ export const Banner = () => {
             width: { xs: "200px", md: "350px" },
           }}
         >
-          <a href={Donate} download><img src={Donate} /></a>
+          <a href={banner.image} download>
+            <img
+              src={banner.image}
+              alt="Donate"
+              style={{ maxWidth: "100%", height: "auto" }}
+            />
+          </a>
         </Box>
       </Box>
     </Paper>

@@ -1,6 +1,6 @@
 import { Box, Typography, useTheme, Grid } from "@mui/material";
 import { TitleHeader } from "../Title-Header/TitleHeader";
-import { blogs } from "../MockData/BlogMock";
+import blogs from "../../Content/Blogs.json";
 import { TruncatedText } from "../TruncatedText/TruncatedText";
 import TargetButton from "../TargetButton/TargetButton";
 import { useEffect } from "react";
@@ -24,7 +24,7 @@ export const Stories = () => {
           }}
         >
           <Grid container spacing={2} data-aos="fade-up">
-            {blogs.map((blog) => (
+            {blogs.posts.map((blog) => (
               <Grid item xs={12} sm={6} md={4} key={blog.id}>
                 <Box
                   sx={{
@@ -36,7 +36,8 @@ export const Stories = () => {
                     padding: "20px",
                     height: "100%",
                     boxShadow: `0px 2px 6px ${theme.palette.background.paper}`,
-                    transition: "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
+                    transition:
+                      "transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out",
                     "&:hover": {
                       transform: "translateY(-5px)",
                       boxShadow: `0px 6px 12px ${theme.palette.background.paper}`,

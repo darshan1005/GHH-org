@@ -1,5 +1,5 @@
 import { Box, Typography, useTheme } from "@mui/material";
-import { imagesArray } from "../MockData/Galleryimages";
+import imagesArray from "../../Content/Gallery.json";
 import { Donate } from "../Donate/Donate";
 import TargetButton from "../TargetButton/TargetButton";
 import { ImageAnimation } from "./ImageAnimation";
@@ -132,7 +132,7 @@ export const Hero = () => {
                   overflow: "hidden",
                 }}
               >
-                <ImageAnimation images={imagesArray} interval={3000} />
+                <ImageAnimation images={imagesArray.images} interval={3000} />
               </Box>
             </Link>
             <TargetButton title={"Gallery"} to={"/gallery"} setWidth={false} />

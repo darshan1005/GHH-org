@@ -5,7 +5,7 @@ import Link from "@mui/material/Link";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import { useTheme } from "@mui/material";
-import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
+// import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
 
 export const Footer = () => {
   const theme = useTheme();
@@ -80,7 +80,7 @@ export const Footer = () => {
               gracehelpinghands.hema@gmail.com
             </Link>
           </Typography>
-          <TalkWithUs />
+          {/* <TalkWithUs /> */}
         </Grid>
       </Grid>
     </Box>
