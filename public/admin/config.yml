@@ -125,7 +125,7 @@ collections:
                 name: "alt"
                 widget: "string"
               - label: "Image"
-                name: "image"
+                name: "src"
                 widget: "image"
               - label: "Caption"
                 name: "caption"
