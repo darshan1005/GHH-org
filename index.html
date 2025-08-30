@@ -32,6 +32,18 @@
       }
     }
     </script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', user => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/'
+            })
+          }
+        })
+      }
+    </script>
   </body>
 </html>
 <!-- This HTML file serves as the entry point for a React application. It includes meta tags for SEO, a link to a favicon, and a script to load the main JavaScript file for the app. The body contains a div with an id of "root" where the React app will be rendered. -->
