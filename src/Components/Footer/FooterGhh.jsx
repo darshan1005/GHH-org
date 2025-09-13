@@ -5,7 +5,6 @@ import Link from "@mui/material/Link";
 import logo from "../../assets/Asset 10@2x.png";
 import logo2 from "../../assets/GHH 9@2x.png";
 import { useTheme } from "@mui/material";
-// import { TalkWithUs } from "../TalkWithUs/TalkWithUs";
 
 export const Footer = () => {
   const theme = useTheme();
@@ -62,13 +61,13 @@ export const Footer = () => {
             <b>Dasetti Hema Latha</b>
           </Typography>
           <Typography variant="body2" gutterBottom>
-            <b>Plot No:</b> 2, Srilakshminagar Colony, Arasavilli, Srikakulam
+            <b>Plot No:</b>{" "}2, Srilakshminagar Colony, Arasavilli, Srikakulam
             District - 532001
           </Typography>
           <Typography variant="body2" gutterBottom>
             <b>Ph:</b>
             <Link href="tel:7382745053" color="inherit">
-              7382745053
+            {" "}7382745053
             </Link>
           </Typography>
           <Typography variant="body2" gutterBottom>
@@ -77,7 +76,7 @@ export const Footer = () => {
               href="mailto:gracehelpinghands.hema@gmail.com"
               color="inherit"
             >
-              gracehelpinghands.hema@gmail.com
+            {" "}gracehelpinghands.hema@gmail.com
             </Link>
           </Typography>
           {/* <TalkWithUs /> */}

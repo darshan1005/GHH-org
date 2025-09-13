@@ -14,7 +14,7 @@ export const TimeLine = () => {
       media: {
         type: "IMAGE",
         source: {
-          url: `${event.media.source.url}.jpg`,
+          url: `${event.media.source.url}`,
         },
         loading: "lazy",
       },
