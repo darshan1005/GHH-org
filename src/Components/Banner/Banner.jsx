@@ -52,7 +52,6 @@ export const Banner = () => {
           <Typography variant="body1" sx={{ mb: 3 }}>
             {banner.description}
           </Typography>
-          <TargetButton title={"To Donate scan"} setWidth={true} />
         </Box>
         <Box
           sx={{

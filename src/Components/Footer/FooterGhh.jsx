@@ -65,18 +65,18 @@ export const Footer = () => {
             District - 532001
           </Typography>
           <Typography variant="body2" gutterBottom>
-            <b>Ph:</b>
+            <b>Ph: </b>
             <Link href="tel:7382745053" color="inherit">
-            {" "}7382745053
+            7382745053
             </Link>
           </Typography>
           <Typography variant="body2" gutterBottom>
-            <b>GMail:</b>
+            <b>GMail: </b>
             <Link
               href="mailto:gracehelpinghands.hema@gmail.com"
               color="inherit"
             >
-            {" "}gracehelpinghands.hema@gmail.com
+            gracehelpinghands.hema@gmail.com
             </Link>
           </Typography>
           {/* <TalkWithUs /> */}
